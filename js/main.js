@@ -17,17 +17,26 @@ $('#header').mouseenter(function(){
 })
 
 $('#header').mouseleave(function(){
-	headerTransBlack();
+	if (scrlActive == 1) {
+		
+	} else {
+		headerTransBlack();
+	}
+
 })
+
+var scrlActive = 0
 
 window.addEventListener('scroll', function(){
 	var scrlValue = window.scrollY;
 	if (scrlValue > 500) {
 		headerTransWhite();
 		$('#header').css("border-bottom", "1px solid grey");
+		scrlActive = 1;
 	} else {
 		headerTransBlack();
 		$('#header').css("border-bottom", "0px solid transparent");
+		scrlActive = 0;
 	}
 });
 
