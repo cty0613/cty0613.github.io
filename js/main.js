@@ -89,7 +89,7 @@ $('.year-each-cell').click(function(e){
 		$('.gallery-cell-show img').attr("src", e.currentTarget.dataset.showurl);
 		setTimeout(function(){
 			$('.gallery-cell-show').removeClass('vhidden');
-		}, 80)
+		}, 120)
 	}
 	
 	
