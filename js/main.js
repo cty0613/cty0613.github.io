@@ -1,3 +1,5 @@
+// common script // 
+
 function headerTransWhite() {
 	$('#header a').css("color", "black");
 	$('#title').css("background-image", "url('../files/title/titleBlack.png')");
@@ -41,6 +43,9 @@ window.addEventListener('scroll', function(){
 });
 
 
+// members.html //
+
+
 $('.members-cell').mouseenter((e)=>{
 	// $(e.currentTarget).css("border-right", "10px solid grey").css("border-bottom", "10px solid grey");
 	$(e.currentTarget).css("opacity", "1.0").css("filter", "contrast(120%)");
@@ -59,4 +64,38 @@ $('.members-cell').click((e)=>{
 		$('.right-container').css("opacity", "0").css("visibility", "hidden");
 		$(`#${currentId}-detail`).css("opacity", "1").css("visibility", "visible");
 	}
+})
+
+
+// gallery.html //
+
+$('.year-select span').click(function(e){
+	var currentGCELL = e.currentTarget.innerHTML;
+	var currentGSPAN = e.currentTarget;
+	$('.year-gallery').addClass('year-deslcted');
+	$(`.year-${currentGCELL}`).removeClass('year-deslcted');
+	$('.year-select span').removeClass('foc')
+	$(currentGSPAN).addClass('foc')
+})
+
+var galleyshowActive = 0;
+
+$('.year-each-cell').click(function(e){
+	if (galleyshowActive == 1) {
+		
+	} else {
+		console.log(e.currentTarget.dataset.showurl);
+		galleyshowActive = 1;
+		$('.gallery-cell-show img').attr("src", e.currentTarget.dataset.showurl);
+		setTimeout(function(){
+			$('.gallery-cell-show').removeClass('vhidden');
+		}, 80)
+	}
+	
+	
+})
+
+$('.gallery-cell-show img').click(function(){
+	galleyshowActive = 0;
+	$('.gallery-cell-show').addClass('vhidden');
 })
