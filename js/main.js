@@ -89,7 +89,8 @@ $('.year-each-cell').click(function(e){
 		$('.gallery-cell-show img').attr("src", e.currentTarget.dataset.showurl);
 		setTimeout(function(){
 			$('.gallery-cell-show').removeClass('vhidden');
-		}, 120)
+	
+		}, 50)
 	}
 	
 	
@@ -97,5 +98,9 @@ $('.year-each-cell').click(function(e){
 
 $('.gallery-cell-show img').click(function(){
 	galleyshowActive = 0;
-	$('.gallery-cell-show').addClass('vhidden');
+	setTimeout(function(){
+		$('.gallery-cell-show img').attr("src", "../files/loading.svg");
+	}, 300)
+	$('.gallery-cell-show').addClass('vhidden')
+	
 })
