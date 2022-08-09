@@ -104,3 +104,21 @@ $('.gallery-cell-show img').click(function(){
 	$('.gallery-cell-show').addClass('vhidden')
 	
 })
+
+// video.html //
+
+$('.vid-cell').click((e)=>{
+	$('.youtube-embd-warp iframe').attr("src", e.currentTarget.dataset.showurl);
+	$('.youtube-embd-warp p').html(e.currentTarget.dataset.date)
+	$('.youtube-embd-warp h2').html(e.currentTarget.dataset.title)
+})
+
+$('.vid-cell').mouseenter((e)=>{
+	$(e.currentTarget).children().css("background-color", "rgba(0,0,0,0.9)")
+})
+
+$('.vid-cell').mouseleave((e)=>{
+	$(e.currentTarget).children().css("background-color", "rgba(0,0,0,0.5)")
+})
+
+
