@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
+@media screen {
 #main-container {
 	font-family: 'Noto Sans KR', sans-serif;
 }
@@ -470,4 +471,147 @@
 	font-size: 20px;
 	background-color: rgba(0,0,0,0.5);
 	transition: all 0.5s;
+}
+
+}
+
+@media screen and (max-width:420px) {
+    body {
+        width: 100%;
+    }
+    
+    
+    #wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-width: 0px;
+    }
+    
+    #header {
+        width: 100%;
+        height: 2.5em;
+        min-width: 0px;
+        max-width: 420px;
+        transition: 0.3s all;
+        background-color: white !important;
+        
+    }
+    
+    #title {
+        width: 20%;
+        top: 5px;
+        margin-left: 5px;
+        margin-bottom: 0px;
+        background-image: url('../files/title/titleBlack.png') !important;
+    }
+    
+    .header-list {
+        top: 1.2vh;
+        font-size: 16px;
+        right: 0px;
+        margin-right: 0px;
+        
+    }
+    
+    .header-list li {
+        margin-right: 4px;
+        
+    }
+    
+    .list-item a{
+        color: black !important;
+    }
+    
+    #csl-box1 {
+        width: 100%;
+        height: 50vh !important;
+        max-width: 500px;
+        margin-top: 25px;
+        background-position: center;
+        
+    }
+    
+    #footer {
+        font-size: 9px;
+        height: 50px;
+    }
+    
+    #main-container {
+        width: 100%;
+        height: auto !important;
+        padding: 2vh 2vh 2.5vh 2vh;
+        top: 35vh;
+        height: 100% !important;
+    }
+    
+    .left-item {
+        float: none;
+        width: 100%;
+        
+    }
+    
+    .right-item {
+        float: none;
+        width: 100% !important;
+    }
+    
+    #small-members-img1 {
+        height: 250px;
+        margin-top: 20px;
+    }
+    
+    #small-members-img2 {
+        height: 250px;
+    }
+    
+    .members-table {
+        
+    }
+    
+    .members-cell {
+        width: 35vw;
+        height: 16vh;
+        border: 5px solid white;
+    }
+    
+    .google-info {
+        margin: 0px !important;
+    }
+    
+    #google-instr {
+        visibility: hidden;
+        
+    }
+    
+    #google-ic {
+        margin: 0px;
+        visibility: hidden;
+    }
+    
+    .m-imp1 {
+        visibility: hidden;
+    }
+    
+    .m-imp2 {
+        top: 1400px !important;
+    }
+    
+    .m-imp-index {
+        top: 50vh !important;
+    }
+    
+    #video-warp {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .youtube-embd-warp iframe {
+        height: 30vh;
+    }
+    
+    .video-select-panel {
+        top: 45vh;
+    }
 }

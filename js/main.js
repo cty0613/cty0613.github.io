@@ -80,6 +80,10 @@ $('.year-select span').click(function(e){
 
 var galleyshowActive = 0;
 
+if (window.innerWidth < 420) {
+    galleyshowActive = 1;
+}
+
 $('.year-each-cell').click(function(e){
 	if (galleyshowActive == 1) {
 		
