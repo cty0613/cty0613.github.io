@@ -381,16 +381,16 @@
 
 .gallery-cell-show {
 	position: fixed;
-	width: 80%;
-	height: 85%;
-	top: 120px;
+	width: 100%;
+	height: 90%;
+	top: 8vh;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 9999999;
-	background-color: rgba(0,0,0, 0.75);
-	padding: 30px;
+	background-color: rgba(0,0,0, 0.0);
+	padding: 0px;
 	padding-bottom: 50px;
 	transition: all 0.3s;
 	opacity: 1;
@@ -405,6 +405,7 @@
 	width: auto;
 	max-height: 100%;
 	max-width: 100%;
+	background-color: rgba(0,0,0,0.75);
 	
 }
 
@@ -564,10 +565,11 @@
     #small-members-img2 {
         height: 250px;
     }
+	
+	.members-warp {
+		position: relative;
+	}
     
-    .members-table {
-        
-    }
     
     .members-cell {
         width: 35vw;
