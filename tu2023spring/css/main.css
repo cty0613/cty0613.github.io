@@ -138,12 +138,13 @@ html {
 }
 
 #poster {
-    position: relative;
-    top: 100px;
-    height: 100%;
-    max-width: 100%;
-    max-height: 800vh;
-    margin: auto;
+    	position: relative;
+	display: grid;
+    	top: 100px;
+    	height: 100%;
+    	max-width: 100%;
+    	max-height: 800vh;
+    	margin: auto;
 }
 
 
