@@ -352,10 +352,15 @@ html {
 .member-table-col2 p {
 	margin-bottom: 5px;
 	color: gray;
+	font-size: 14px;
 }
 
 .member-table-col1 {
-	width: 16vh;
+	width: 17vh;
+}
+
+.member-table-col1 h2 {
+	font-size: 2.5vh;
 }
 
 .alert_one p {
@@ -378,3 +383,10 @@ html {
 }
 
 
+
+#kakaopay-send {
+	display: block;
+	position: relative;
+	top: 5vh;
+	text-align: center;
+}
