@@ -121,7 +121,7 @@ html {
 
 #footer {
     position: relative;
-    top: 12vh;
+	display: grid;
 	width: 100%;
 	height: 100px;
 	background: #282828;
@@ -138,14 +138,15 @@ html {
 }
 
 #poster {
-    	position: relative;
 	display: grid;
-    	top: 100px;
-    	height: 100%;
-    	max-width: 100%;
-    	max-height: 800vh;
-    	margin: 0 auto;
-}
+	position: relative;
+	top: 100px;
+	background-image: url("../files/image/poster_temp.jpg");
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	
+	}
 
 
 #main-container {
@@ -332,11 +333,11 @@ html {
 		max-height: 100vh;
 	}
     
-    #poster {
-        top: 2.5em;
-	    max-width: 375px;
-	    max-height: 80vh;
-    }
+#poster {
+    top: 2.5em;
+	max-width: 420px;
+	max-height: 80vh;
+}
 }
 
 
@@ -385,8 +386,21 @@ html {
 
 
 #kakaopay-send {
-	display: block;
+	height: 10vh;
+	display: grid;
 	position: relative;
-	top: 5vh;
 	text-align: center;
+	background: #282828;
+	top: 5vh;
+}
+
+#kakaopay-send p {
+	display: grid;
+	position: relative;
+	text-align: center;
+	top: 2vh;
+}
+
+#kakaopay-send p a {
+	text-decoration: none;
 }
