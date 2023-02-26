@@ -363,6 +363,7 @@ html {
 }
 
 .set-list-container p {
+	display: none;
 	text-decoration: none;
 	color: gray;
 	text-align: center;
