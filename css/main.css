@@ -234,3 +234,8 @@
 	opacity: 0;
 	visibility: hidden;
 }
+
+.setlist-ovf {
+	overflow: scroll;
+	max-height: 550px;
+}
