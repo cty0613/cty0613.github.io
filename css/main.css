@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+.navlist-item {
+	display: inline-block;
+	list-style: none;
+	padding-right: 10px;
+	
+}
+
+.navlist-item a {
+	color: black;
+	text-decoration: none;
+}
+
+.title {
+	display: inline-block;
+	position: absolute;
+	text-decoration: none;
+	background-image: url("../sources/title/titleBlack.png");
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	width: 8vh;
+	height: 100%;
+	text-indent: -999%;
+}
+
+.navbar {
+	
+}
+
+.navbar-cont {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	transition: 0.5s all;
+	width: 100%;
+	height: 60px;
+	z-index: 999;
+	overflow: hidden;
+}
+
+.navlist {
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 0;
+	margin-top: 15px;
+}
+
+#init-wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.main-container {
+	font-family: 'Noto Sans KR', sans-serif;
+	position: fixed;
+	top: 60px;
+	background-color: dimgray;
+	width: 100%;
+	height: 100%;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	background-color: gray;
+	width: 100%;
+	height: 60px;
+	
+}
+
+.footer p {
+	font-size: 9px;
+	text-align: center;
+}
+
+.poster {
+	position: absolute;
+	display: block;
+	background-image: url("../sources/img/poster_temp.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 0;
+	min-width: 375px;
+	width: 100%;
+	max-height: 650px;
+	height: 100%;
+	left: 50%;
+	margin: 0 auto;
+	transform: translateX(-50%);
+	
+}
+
+.tipbox {
+	position: absolute;
+	display: block;
+	top: 650px;
+	width: 100%;
+	height: 60px;
+	/* 공연포스터 나온거 보고 유동적으로 조절 */
+}
+
+.tipbox p {
+	text-align: center;
+}
+
+.tipbox a {
+	color: white;
+}
+
+.member-table-col {
+	padding-right: 0.2vh;
+}
+
+.member-table-col2 p {
+	margin-bottom: 5px;
+	color: gray;
+	font-size; 14px;
+}
+
+.member-table-col1 {
+	width: 17vh;
+}
+
+.members-table {
+	position: absolute;
+	left: 16px;
+	overflow: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.blackbgd {
+	background-color: black;
+}
+
+.flw-siblings {
+	height: auto; !important
+}
+
+.tableflow {
+	height: 1200px;
+	position: relative;
+}
+
+.set-list-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.set-list-container p {
+	color: darkgray;
+}
+
+.set-list-part {
+	margin-bottom: 25px;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}
+
+.set-list-guide {
+	text-align: center;
+}
+
+.song-detail {
+	position: fixed;
+	z-index: 10;
+	top: 80px;
+	width: 90%;
+	height: auto;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	border: 1px solid gray;
+	padding: 5px;
+	
+}
+
+
+
+.song-detail-lyc {
+	margin-left: 10px;
+	overflow: scroll;
+	height: 65vh;
+	margin-top: 5px;
+}
+.song-detail-lyc p {
+	font-size: 16px;
+	color: lightgray;
+}
+
+.song-detail-table {
+	margin-left: 10px;
+}
+
+
+
+
+
+.gradation {
+	
+	background-image: url("../sources/img/please_lucky.png");
+	
+}
+
+.song-detail-wrap {
+	position: relative;
+}
+
+.kongal {
+	position: absolute;
+	right: 0;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 90px;
+}
+
+.gradation-detail {
+	visibility: hidden;
+}
+
+#gradation-detail {
+	opacity: 0;
+	visibility: hidden;
+}
