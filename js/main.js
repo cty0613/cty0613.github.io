@@ -10,3 +10,11 @@ $('.song-detail').click(function(e){
 	console.log(showedId);
 	$(`#${showedId}`).css('opacity', '0').css("visibility", "hidden");
 })
+
+$('.poster').click((e)=>{
+	$('.infobox').fadeIn(300);
+})
+
+$('.infobox').click((e)=>{
+	$('.infobox').fadeOut(300);
+})
