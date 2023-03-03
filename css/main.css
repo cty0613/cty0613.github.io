@@ -133,9 +133,12 @@
 .members-table {
 	position: absolute;
 	left: 16px;
-	overflow: auto;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	overflow: scroll;
+	top: 20px;
+	bottom: 50px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
 }
 
 .blackbgd {
@@ -174,7 +177,8 @@
 .song-detail {
 	position: fixed;
 	z-index: 10;
-	top: 80px;
+	top: 70px;
+	bottom: 70px;
 	width: 90%;
 	height: auto;
 	left: 50%;
@@ -183,6 +187,7 @@
 	background-color: rgba(0,0,0,0.8);
 	border: 1px solid gray;
 	padding: 5px;
+	transition: 50ms all; !important
 	
 }
 
@@ -191,7 +196,7 @@
 .song-detail-lyc {
 	margin-left: 10px;
 	overflow: scroll;
-	height: 65vh;
+	height: 75%;
 	margin-top: 5px;
 }
 .song-detail-lyc p {
@@ -208,8 +213,7 @@
 
 
 .gradation {
-	
-	background-image: url("../sources/img/please_lucky.png");
+	background-image: url("../sources/img/goodluck.png");
 	
 }
 
@@ -219,23 +223,130 @@
 
 .kongal {
 	position: absolute;
-	right: 0;
+	top: 5px;
+	left: 62%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 50%;
-	height: 90px;
+	height: 100px;
 }
 
-.gradation-detail {
-	visibility: hidden;
-}
 
 #gradation-detail {
-	opacity: 0;
 	visibility: hidden;
 }
 
 .setlist-ovf {
 	overflow: scroll;
 	max-height: 550px;
+}
+
+.bit {
+	background-image: url("../sources/img/backintime.png");
+}
+
+#bit-detail {
+	visibility: hidden;
+}
+
+#seoul-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.seoul {
+	background-image: url("../sources/img/seoul.png");
+}
+
+.actually {
+	background-image: url("../sources/img/sasilmal.png");
+}
+
+.sleep {
+	background-image: url("../sources/img/sleep.png");
+}
+
+
+
+#actually-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#sleep-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.clnbrn {
+	background-image: url("../sources/img/brain.png");
+}
+
+#clnbrn-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.toyou {
+	background-image: url("../sources/img/toyou.png");
+}
+
+#toyou-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.lucky {
+	background-image: url("../sources/img/goodluck.png");
+}
+
+#lucky-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nocel {
+	background-image: url("../sources/img/nocel.png");
+}
+
+#nocel-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.wim {
+	background-image: url("../sources/img/whatimean.png");
+}
+
+#wim-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.ling {
+	background-image: url("../sources/img/lingling.png");
+}
+
+#ling-detail {
+	visibility: hidden;
+}
+
+.soyouwhy {
+	background-image: url("../sources/img/soyouwhy.png");
+}
+
+#soyouwhy-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.jc {
+	background-image: url("../sources/img/jukcham.png");
+	margin-top: 40px; 
+	left: 65%;
+}
+
+#jc-detail {
+	opacity: 0;
+	visibility: hidden;
 }
