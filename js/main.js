@@ -1,3 +1,6 @@
+var easterfactor = 0;
+var boom = '../pages/easter.html';
+
 $('.songcell').click((e)=>{
 	var currentId = $(e.currentTarget).attr('id');
 	console.log(currentId);
@@ -17,4 +20,13 @@ $('.poster').click((e)=>{
 
 $('.infobox').click((e)=>{
 	$('.infobox').fadeOut(300);
+})
+
+$('.footer').click(()=>{
+	easterfactor = easterfactor + 1;
+	if(easterfactor > 2) {
+		window.alert("%#$!KO!$$!#?#??GA??*!@L!!");
+		location.href = boom;
+		
+	}
 })
