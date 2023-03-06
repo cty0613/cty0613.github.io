@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+@import url('../css/easterstyle.css');
 @keyframes swing {
 	15% {
 	transform: translateX(15px);
@@ -443,16 +445,65 @@
 }
 
 .easter-kongal-img {
+	position: absolute;
+	background-color: #202421;
 	background-image: url("../sources/img/easter_kongal.png");
-	background-size: contain;
-	height: 50%;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 20px;
-	transition: all 0.2s ease-in-out;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: translate3d(0,0,0);
+	background-blend-mode: none;
+	width: 100%;
+	height: 60%;
 }
 
-.easter-kongal-img:hover {
-	animation: swing 1s ease;
-	animation-iteration-count: 1;
+.easter-kongal-img:nth-child(n+2) {
+	opacity: 0;
+}
+
+.easter-kongal-img:nth-child(n+2) {
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.easter-kongal-img:nth-child(2) {
+	background-color: transparent;
+	background-blend-mode: none;
+	animation-name: glitch-anim-1;
+}
+
+.easter-kongal-img:nth-child(3) {
+	background-color: transparent;
+	background-blend-mode: none;
+	animation-name: glitch-anim-2;
+}
+
+.easter-kongal-img:nth-child(4) {
+	background-color: transparent;
+	background-blend-mode: none;
+	animation-name: glitch-anim-3;
+}
+
+.easter-kongal-img:nth-child(5) {
+	background-color: #862a2a;
+	background-blend-mode: overlay;
+	animation-name: glitch-anim-flash;
+}
+
+
+
+.easter-kongal-desc {
+	background: #202421;
+	font-family: 'Changa', sans-serif;
+	position: absolute;
+	animation-name: glitch-anim-text;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	width: 100%;
+	top: 60%;
+	font-size: 1.5em;
+	text-align: right;
+	font-weight: 400;
+	animation-delay: calc(2s + 4s * 0.25);
 }
