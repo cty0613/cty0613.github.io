@@ -30,3 +30,7 @@ $('.footer').click(()=>{
 		
 	}
 })
+
+$('.navlist-item').click(()=> {
+    $('.nav-extend').slideToggle('0.4');
+})

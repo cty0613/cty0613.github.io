@@ -26,9 +26,16 @@
 
 .navlist-item {
 	display: inline-block;
-	list-style: none;
-	padding-right: 10px;
+    padding-right: 18px;
 	
+}
+
+.navlist-item div {
+    background-image: url("../sources/img/nav-icon-fixed.png");
+    background-size: cover;;
+    background-position: center;
+    width: 35px;
+    height: 35px;
 }
 
 .navlist-item a {
@@ -44,7 +51,7 @@
 	background-position: left;
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-left: 10px;
+	margin-left: 24px;
 	width: 8vh;
 	height: 100%;
 	text-indent: -999%;
@@ -152,11 +159,15 @@
 .member-table-col2 p {
 	margin-bottom: 5px;
 	color: gray;
-	font-size; 14px;
+	font-size; 12px;
 }
 
 .member-table-col1 {
 	width: 17vh;
+}
+
+.member-table-col1 h2 {
+    font-size: 22px;
 }
 
 .members-table {
@@ -168,6 +179,10 @@
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	margin-top: 0px;
+}
+
+.members-table td{
+    padding-bottom: 16px
 }
 
 .blackbgd {
@@ -506,4 +521,31 @@
 	text-align: right;
 	font-weight: 400;
 	animation-delay: calc(2s + 4s * 0.25);
+}
+
+.member-table-row { 
+}
+
+.nav-extend {
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: rgba(0,0,0, 0.7);
+    height: 150px;
+    width: 100%;
+    z-index: 5;
+    padding-top: 10px;
+}
+
+.nav-extend  li {
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    padding-bottom: 8px;
+}
+
+.nav-extend-list-item a {
+    text-decoration: none;
+    color: white;
+    
 }
