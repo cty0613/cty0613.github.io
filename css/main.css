@@ -54,7 +54,7 @@
 	background-position: left;
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-left: 24px;
+	margin-left: 21px;
 	width: 8vh;
 	height: 100%;
 	text-indent: -999%;
@@ -120,7 +120,7 @@
 	position: absolute;
 	display: block;
 	overflow: auto;
-	background-image: url("../sources/img/poster_temp.png");
+	background-image: url("../sources/img/poster_temp.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -228,6 +228,7 @@
 
 .set-list-guide {
 	text-align: center;
+    font-size: 12px;
 }
 
 .song-detail {
@@ -251,7 +252,7 @@
 .song-detail-lyc {
 	margin-left: 10px;
 	overflow: scroll;
-	height: 75%;
+	height: 65%;
 	margin-top: 5px;
 	line-height: 180%
 }
@@ -265,6 +266,13 @@
 	margin-bottom: 10px
 }
 
+.song-detail-table td {
+    padding-bottom: 5px;
+}
+
+.song-detail-table td:first-child {
+    font-weight: 8000;
+}
 
 
 
@@ -539,7 +547,7 @@
     position: fixed;
     top: 60px;
     background-color: rgba(0,0,0, 0.9);
-    height: 150px;
+    height: 190px;
     width: 100%;
     z-index: 5;
     padding-top: 10px;
@@ -616,4 +624,9 @@
 	height: 60px;
 	z-index: 999;
 	overflow: hidden
+}
+
+.ovf {
+    overflow: scroll;
+
 }
