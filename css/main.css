@@ -191,9 +191,8 @@
 }
 
 .poster-bgd {
-	background-image: url("../sources/img/poster_temp_op.png");
-    background-size: contain;
-    height: calc()
+	background-image: url("../sources/img/poster_t_opb.png");
+    background-size: cover;
     
 }
 
@@ -642,4 +641,9 @@
     vertical-align: baseline;
     width: 36px;
     height: 18px;
+}
+
+.indexkpay {
+	position: absolute;
+	margin: 0 auto; !important
 }
