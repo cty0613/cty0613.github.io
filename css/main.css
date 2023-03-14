@@ -630,3 +630,16 @@
     overflow: scroll;
 
 }
+
+
+
+.kpayimg {
+    display: inline-block;
+    margin-left: 10px;
+    background-image: url('../sources/img/kpayicon.jpg');
+    background-size: contain;
+    background-position: center;
+    vertical-align: baseline;
+    width: 36px;
+    height: 18px;
+}
