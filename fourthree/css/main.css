@@ -499,6 +499,12 @@
         
     }
     
+    #big-container {
+        position: absolute;
+        top: 40px;
+        
+    }
+    
     #title {
         width: 20%;
         top: 5px;
@@ -535,7 +541,7 @@
     
     #footer {
         font-size: 9px;
-        height: 50px;
+        height: 60px;
     }
     
     #main-container {
@@ -600,7 +606,7 @@
     }
     
     .m-imp-index {
-        top: 50vh !important;
+        top: 38vh !important;
     }
     
     #video-warp {
@@ -657,4 +663,6 @@
     height: 32px;
   }
 }
+
+
 
