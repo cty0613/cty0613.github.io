@@ -103,7 +103,7 @@ $('.year-each-cell').click(function(e){
 $('.gallery-cell-show img').click(function(){
 	galleyshowActive = 0;
 	setTimeout(function(){
-		$('.gallery-cell-show img').attr("src", "../files/loading.svg");
+		$('.gallery-cell-show img').attr("src", "");
 	}, 300)
 	$('.gallery-cell-show').addClass('vhidden')
 	
