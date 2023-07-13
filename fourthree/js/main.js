@@ -43,6 +43,15 @@ window.addEventListener('scroll', function(){
 });
 
 
+$('.carousel-control-prev').click(()=>{
+    $('.carousel').carousel('prev');
+})
+
+$('.carousel-control-next').click(()=>{
+    $('.carousel').carousel('next');
+})
+
+
 // members.html //
 
 
