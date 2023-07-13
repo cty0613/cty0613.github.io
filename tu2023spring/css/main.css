@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+@import url('../css/easterstyle.css');
+@keyframes swing {
+	15% {
+	transform: translateX(15px);
+	}
+	30% {
+	transform: translateX(-15px);
+	}
+	50% {
+	transform: translateX(9px);
+	}
+	65% {
+	transform: translateX(-9px);
+	}
+	80% {
+	transform: translateX(6px);
+	}
+	100% {
+	transform: translateX(0);
+	}
+}
+
+.blackbgd {
+    background-color: black; !important
+}
+
+.navlist-item {
+	display: inline-block;
+    padding-right: 18px;
+	
+}
+
+.navlist-item div {
+    background-image: url("../sources/img/nav-icon-fixed.png");
+    background-size: cover;;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+}
+
+.navlist-item a {
+	color: black;
+	text-decoration: none;
+}
+
+.title {
+	display: inline-block;
+	position: absolute;
+	text-decoration: none;
+	background-image: url("../sources/title/titleBlack.png");
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 21px;
+	width: 8vh;
+	height: 100%;
+	text-indent: -999%;
+}
+
+.navbar {
+	
+}
+
+.navbar-cont {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	transition: 0.5s all;
+	width: 100%;
+	height: 60px;
+	z-index: 999;
+	overflow: hidden;
+}
+
+.navlist {
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 0;
+	margin-top: 15px;
+}
+
+#init-wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.main-container {
+	font-family: 'Noto Sans KR', sans-serif;
+	position: fixed;
+	top: 60px;
+	background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 54%, rgba(26,48,74,1) 66%, rgba(74,114,179,1) 75%);
+	width: 100%;
+	height: 100%;
+}
+
+.footer {
+	position: fixed;
+    border-top: 1px solid gray;
+	bottom: 0;
+	background-color: black;
+	width: 100%;
+	height: 60px;
+}
+
+.footer p {
+	font-size: 9px;
+	text-align: center;
+    color: #D33841;
+}
+
+.poster {
+	position: absolute;
+	display: block;
+	overflow: auto;
+	background-image: url("../sources/img/poster_temp.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 0;
+	min-width: 375px;
+	width: 100%;
+	max-height: 650px;
+	height: 80%;
+	left: 50%;
+	margin: 0 auto;
+	transform: translateX(-50%);
+	
+}
+
+.infobox {
+	position: fixed;
+	display: none;
+	z-index: 20;
+	background-color: rgba(0,0,0,0.8);
+	top: 70px;
+	width: 95%;
+	height: 79%;
+	left: 50%;
+	transform: translateX(-50%);
+	/* 공연포스터 나온거 보고 유동적으로 조절 */
+}
+
+.infobox p {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.infobox a {
+	color: white;
+}
+
+.member-table-col {
+	padding-right: 0.2vh;
+}
+
+.member-table-col2 p {
+	margin-bottom: 4.5px;
+	color: gray;
+	font-size; 9px;
+}
+
+.member-table-col1 {
+	width: 13vh;
+}
+
+.member-table-col1 h2 {
+    font-size: 18px;
+}
+
+.members-table {
+	position: absolute;
+	left: 16px;
+	overflow: scroll;
+	top: 60px;
+	bottom: 50px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+}
+
+.members-table td{
+    padding-bottom: 10px
+}
+
+.poster-bgd {
+	background-image: url("../sources/img/poster_t_opb.png");
+    background-size: cover;
+    
+}
+
+.flw-siblings {
+	height: auto; !important
+}
+
+.tableflow {
+	max-height: 90%;
+    overflow: scroll;
+}
+
+.set-list-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.set-list-container p {
+	color: darkgray;
+	text-align: left;
+	margin-left: 32%;
+}
+
+.set-list-part {
+	margin-bottom: 25px;
+	padding: 10px 5px 10px 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}
+
+.set-list-guide {
+	text-align: center;
+    font-size: 12px;
+}
+
+.song-detail {
+	position: fixed;
+	z-index: 10;
+	top: 70px;
+	bottom: 70px;
+	width: 90%;
+	height: auto;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	border: 1px solid gray;
+	padding: 5px;
+	
+}
+
+
+
+.song-detail-lyc {
+	margin-left: 10px;
+	overflow: scroll;
+	height: 65%;
+	margin-top: 5px;
+	line-height: 180%
+}
+.song-detail-lyc p {
+	font-size: 16px;
+	color: lightgray;
+}
+
+.song-detail-table {
+	margin-left: 10px;
+	margin-bottom: 10px
+}
+
+.song-detail-table td {
+    padding-bottom: 5px;
+}
+
+.song-detail-table td:first-child {
+    font-weight: 8000;
+}
+
+
+
+
+.gradation {
+	background-image: url("../sources/img/gradation0.png");
+	
+}
+
+.song-detail-wrap {
+	position: relative;
+}
+
+.kongal {
+	position: absolute;
+	top: 5px;
+	left: 62%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 100px;
+}
+
+
+#gradation-detail {
+	visibility: hidden;
+}
+
+.setlist-ovf {
+	overflow: scroll;
+	max-height: 90%;
+}
+
+.bit {
+	background-image: url("../sources/img/backintime02.png");
+}
+
+#bit-detail {
+	visibility: hidden;
+}
+
+#seoul-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.seoul {
+	background-image: url("../sources/img/seoul0.png");
+}
+
+.actually {
+	background-image: url("../sources/img/sasilmal05.png");
+}
+
+.sleep {
+	background-image: url("../sources/img/sleepkongal01.png");
+}
+
+
+
+#actually-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#sleep-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.clnbrn {
+	background-image: url("../sources/img/brain01.png");
+}
+
+#clnbrn-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.toyou {
+	background-image: url("../sources/img/Toyou0.png");
+}
+
+#toyou-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.lucky {
+	background-image: url("../sources/img/goodluck0.png");
+}
+
+#lucky-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nocel {
+	background-image: url("../sources/img/nocel0.png");
+	margin-top: 10px;
+	left: 67%;
+}
+
+#nocel-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.wim {
+	background-image: url("../sources/img/whatimean0%20(1)%202.png");
+}
+
+#wim-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.ling {
+	background-image: url("../sources/img/lingling0.png");
+}
+
+#ling-detail {
+	visibility: hidden;
+}
+
+.soyouwhy {
+	background-image: url("../sources/img/soyouwhy0%20(1).png");
+}
+
+#soyouwhy-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.jc {
+	background-image: url("../sources/img/jukcham0.png");
+	margin-top: 40px; 
+	left: 65%;
+}
+
+#jc-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.notice-sec {
+	margin: 15px; 
+}
+
+.notice-sec p {
+	color: gray;
+}
+
+
+
+.infoTable {
+	margin-left:  10px;
+	margin-right: 10px;
+}
+
+.infoTable td {
+	padding-left:  5px;
+	color: lightgray;
+}
+
+
+.infoTable td:first-child {
+	padding-left: 0;
+	width: 70px;
+	color: white;
+}
+
+.snslink-wrap {
+	margin-top: 18vh;
+	font-size: 12px;
+	
+}
+
+.snslink {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.snslink td {
+	padding-left: 30px;
+	text-align: left; !mportant 
+}
+
+.snslink td:first-child{
+	padding-left: 0;
+}
+
+.infoTable-wrap {
+	margin-top: 30px
+}
+
+.payLinkP {
+	height: 150px;
+	margin-top: 20vh;
+	font-size: 24px;
+}
+
+.easter-kongal-img {
+	position: absolute;
+	background-color: #202421;
+	background-image: url("../sources/img/easter_kongal.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: translate3d(0,0,0);
+	background-blend-mode: none;
+	width: 100%;
+	height: 60%;
+}
+
+.easter-kongal-img:nth-child(n+2) {
+	opacity: 0;
+}
+
+.easter-kongal-img:nth-child(n+2) {
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.easter-kongal-img:nth-child(2) {
+	background-color: transparent;
+	background-blend-mode: none;
+	animation-name: glitch-anim-1;
+}
+
+.easter-kongal-img:nth-child(3) {
+	background-color: transparent;
+	background-blend-mode: none;
+	animation-name: glitch-anim-2;
+}
+
+.easter-kongal-img:nth-child(4) {
+	background-color: transparent;
+	background-blend-mode: none;
+	animation-name: glitch-anim-3;
+}
+
+.easter-kongal-img:nth-child(5) {
+	background-color: #862a2a;
+	background-blend-mode: overlay;
+	animation-name: glitch-anim-flash;
+}
+
+
+
+.easter-kongal-desc {
+	background: #202421;
+	font-family: 'Changa', sans-serif;
+	position: absolute;
+	animation-name: glitch-anim-text;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	width: 100%;
+	top: 60%;
+	font-size: 1.5em;
+	text-align: right;
+	font-weight: 400;
+	animation-delay: calc(2s + 4s * 0.25);
+}
+
+.member-table-row { 
+}
+
+.nav-extend {
+    display: none;
+    position: fixed;
+    top: 60px;
+    background-color: rgba(0,0,0, 0.9);
+    height: 190px;
+    width: 100%;
+    z-index: 5;
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+}
+
+.nav-extend  li {
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    padding-bottom: 8px;
+}
+
+.nav-extend-list-item a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.hq {
+    position: absolute;
+    top: 20px;
+    height: 30px;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+}
+
+.division-desc {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.division-line {
+    display: inline-block;
+    width: 33%;
+    height: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid lightgray;
+}
+
+.next {
+    top: 340px;
+}
+
+.hq2 {
+    position: absolute;
+    top: 300px;
+    height: 30px;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+}
+
+.main-container0 {
+	font-family: 'Noto Sans KR', sans-serif;
+	position: fixed;
+	top: 60px;
+	width: 100%;
+	height: 100%;
+}
+
+.navbar-cont-e {
+    background-color: black;
+	position: fixed;
+	top: 0;
+	transition: 0.5s all;
+	width: 100%;
+	height: 60px;
+	z-index: 999;
+	overflow: hidden
+}
+
+.ovf {
+    overflow: scroll;
+
+}
+
+
+
+.kpayimg {
+    display: inline-block;
+    margin-left: 10px;
+    background-image: url('../sources/img/kpayicon.jpg');
+    background-size: contain;
+    background-position: center;
+    vertical-align: baseline;
+    width: 36px;
+    height: 18px;
+}
+
+.indexkpay {
+	position: absolute;
+	margin: 0 auto; !important
+}

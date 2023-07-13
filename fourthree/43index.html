@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>43 :: Four Three</title>
+	<link href="./files/favicon.ico" rel="shortcut icon"> 
+	<link href="./css/main.css" rel="stylesheet">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<script href = ".."></script>
+</head>
+
+	
+<body style="background-color: black">
+	<div id = "wrap"> 
+		<div id = "header">
+			<a href="./43index.html"><h1 id = "title" style="background-image: url('./files/title/titleWhite.png')">43 :: Four Three</h1></a>
+			<ul class = "header-list">
+				<li class = "list-item"><a href="./html/aboutus.html">ABOUT US</a></li>
+				<li class = "list-item"><a href="./html/members.html">MEMBERS</a></li>
+				<li class = "list-item"><a href="./html/gallery.html">GALLERY</a></li>
+				<li class = "list-item"><a href="./html/video.html">VIDEO</a></li>
+				<li class = "list-item"><a href="./html/notice.html">NOTICE</a></li>
+			</ul>
+		</div>
+		
+		<div id = "big-container">
+			<div id = "carousel">
+				<div id = "csl-box1" style="height: 1400px;">
+				</div>
+			</div>
+		
+		</div>
+		
+		<div id = "footer" class = "m-imp-index" style="top:1400px">
+			<img >
+			<p>Copyright(c) 2023 Tae Young Choi, Hongik University. ALL RIGHT RESERVED.<br> <a href="../index.html" style = "text-decoration: none;">GIT PAGE POTAL</a></p>
+		
+		</div>
+	
+	
+	</div>
+	
+	
+	<script src = "./js/jquery-3.6.0.min.js"></script>
+	<script src = "./js/main.js"></script>
+	<script>
+		function headerTransWhite() {
+		$('#header a').css("color", "black");
+		$('#title').css("background-image", "url('./files/title/titleBlack.png')");
+		$('#header').css("background", "white").css("color", "black").css("opacity", "0.9")
+		$('.list-item a').css("color", "black");
+		}
+
+		function headerTransBlack() {
+			$('#header a').css("color", "white");
+			$('#title').css("background-image", "url('./files/title/titleWhite.png')");
+			$('#header').css("background", "transparent").css("color", "white").css("opacity", "1.0")
+			$('.list-item a').css("color", "white");
+		}
+	</script>
+</body>
+
+</html>
