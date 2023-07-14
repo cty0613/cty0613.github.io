@@ -113,8 +113,7 @@
 	height: 100px;
 	background: #282828;
 	color: #6a6a6a;
-	position: absolute;
-	top: 1900px;
+    position: relative;
 	text-align: center;
 	
 }
@@ -344,7 +343,7 @@
 	text-decoration: none;
 	transition: all 0.3s;
 	cursor: default;
-	margin-right: 15px;
+	margin-right: 12px;
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -477,9 +476,6 @@
 }
 
 @media screen and (max-width:420px) {
-    body {
-        width: 100%;
-    }
     
     
     #wrap {
@@ -515,7 +511,7 @@
     
     .header-list {
         top: 1.2vh;
-        font-size: 16px;
+        font-size: 14px;
         right: 0px;
         margin-right: 0px;
         
@@ -540,8 +536,7 @@
     }
     
     #footer {
-        font-size: 9px;
-        height: 60px;
+        visibility: hidden;
     }
     
     #main-container {
@@ -597,17 +592,6 @@
         visibility: hidden;
     }
     
-    .m-imp1 {
-        visibility: hidden;
-    }
-    
-    .m-imp2 {
-        top: 1400px !important;
-    }
-    
-    .m-imp-index {
-        top: 38vh !important;
-    }
     
     #video-warp {
         height: 100%;
@@ -666,3 +650,7 @@
 
 
 
+
+#gallery-warp {
+ width: 100%;   
+}
