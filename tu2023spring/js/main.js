@@ -5,6 +5,7 @@ var kapay = "https://qr.kakaopay.com/281006011123554622002048";
 $('.songcell').click((e)=>{
 	var currentId = $(e.currentTarget).attr('id');
 	console.log(currentId);
+    console.log("opened")
 	$(`#${currentId}-detail`).css('opacity', '1').css("visibility", "visible");
 	
 })
@@ -12,6 +13,7 @@ $('.songcell').click((e)=>{
 $('.song-detail').click(function(e){
 	var showedId = $(e.currentTarget).attr('id');
 	console.log(showedId);
+    console.log("closed")
 	$(`#${showedId}`).css('opacity', '0').css("visibility", "hidden");
 })
 
