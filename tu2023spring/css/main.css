@@ -30,6 +30,7 @@
 .navlist-item {
 	display: inline-block;
     padding-right: 18px;
+    padding-right: 18px;
 	
 }
 
@@ -113,14 +114,14 @@
 .footer p {
 	font-size: 9px;
 	text-align: center;
-    color: #D33841;
+    color: #303030;
 }
 
 .poster {
 	position: absolute;
 	display: block;
 	overflow: auto;
-	background-image: url("../sources/img/poster_temp.jpg");
+	background-image: url("../sources/img/");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -191,7 +192,7 @@
 }
 
 .poster-bgd {
-	background-image: url("../sources/img/poster_t_opb.png");
+	background-image: url("../sources/img/");
     background-size: cover;
     
 }
@@ -276,11 +277,6 @@
 
 
 
-.gradation {
-	background-image: url("../sources/img/gradation0.png");
-	
-}
-
 .song-detail-wrap {
 	position: relative;
 }
@@ -296,7 +292,26 @@
 }
 
 
-#gradation-detail {
+/** onepage : 한페이지
+    isitgood : 좋지 아니한가
+    power : 힘 내 !
+    takeoff : 26
+    dancewrain : 비오는 거리에서 춤을 추자
+    wac : We Are The Champions
+    shine : 찬란
+    lifelikethat :  그렇게 살아가는 것
+    ugatsa : 우리 같은 사람들
+    lukas : 루카스
+    saramsarang : 사랑은 변하고 사랑은 변하지만
+    throwaway : 다 던저벼려
+    heera : 윤희라 자작곡
+    suwon : 채수원 자작곡
+    chami : 차미
+    jrkrn : 절룩거리네 
+                                        **/
+
+
+#onepage-detail {
 	visibility: hidden;
 }
 
@@ -305,114 +320,87 @@
 	max-height: 90%;
 }
 
-.bit {
-	background-image: url("../sources/img/backintime02.png");
-}
 
-#bit-detail {
+#isitgood-detail {
 	visibility: hidden;
 }
 
-#seoul-detail {
+#power-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-.seoul {
-	background-image: url("../sources/img/seoul0.png");
-}
-
-.actually {
-	background-image: url("../sources/img/sasilmal05.png");
-}
-
-.sleep {
-	background-image: url("../sources/img/sleepkongal01.png");
-}
 
 
-
-#actually-detail {
+#takeoff-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#sleep-detail {
+#dancewrain-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-.clnbrn {
-	background-image: url("../sources/img/brain01.png");
-}
 
-#clnbrn-detail {
+#wac-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-.toyou {
-	background-image: url("../sources/img/Toyou0.png");
-}
 
-#toyou-detail {
+
+#shine-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-.lucky {
-	background-image: url("../sources/img/goodluck0.png");
-}
 
-#lucky-detail {
+#lifelikethat-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-.nocel {
-	background-image: url("../sources/img/nocel0.png");
-	margin-top: 10px;
-	left: 67%;
-}
 
-#nocel-detail {
+#ugatsa-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-.wim {
-	background-image: url("../sources/img/whatimean0%20(1)%202.png");
-}
 
-#wim-detail {
+#lukas-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-.ling {
-	background-image: url("../sources/img/lingling0.png");
-}
 
-#ling-detail {
+
+#saramsarang-detail {
 	visibility: hidden;
 }
 
-.soyouwhy {
-	background-image: url("../sources/img/soyouwhy0%20(1).png");
-}
 
-#soyouwhy-detail {
+#throwaway-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-.jc {
-	background-image: url("../sources/img/jukcham0.png");
-	margin-top: 40px; 
-	left: 65%;
+#heera-detail {
+	opacity: 0;
+	visibility: hidden;
 }
 
-#jc-detail {
+#suwon-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#chami-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#jrkrn-detail {
 	opacity: 0;
 	visibility: hidden;
 }
@@ -593,12 +581,12 @@
 }
 
 .next {
-    top: 340px;
+    top: 180px;
 }
 
 .hq2 {
     position: absolute;
-    top: 300px;
+    top: 140px;
     height: 30px;
     width: 95%;
     left: 50%;
