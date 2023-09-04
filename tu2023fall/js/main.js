@@ -25,9 +25,9 @@ $('.infobox').click((e)=>{
 	$('.infobox').fadeOut(300);
 })
 
-$('.footer').click(()=>{
+$('.navbar-cont').click(()=>{
 	easterfactor = easterfactor + 1;
-	if(easterfactor > 2) {
+	if(easterfactor > 5) {
 		window.alert("%#$!KO!$$!#?#??GA??*!@L!!");
 		location.href = boom;
 		
