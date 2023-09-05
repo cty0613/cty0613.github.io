@@ -113,7 +113,7 @@
 	bottom: 0;
 	background-color: black;
 	width: 100%;
-	height: 65px;
+	height: 50px;
 }
 
 .footer p {
@@ -145,13 +145,19 @@
 	position: fixed;
 	display: none;
 	z-index: 20;
-	background-color: rgba(0,0,0,0.8);
+	/* background-color: rgba(0,0,0,0.8); */
 	top: 70px;
 	width: 95%;
 	height: 79%;
 	left: 50%;
 	transform: translateX(-50%);
 	/* 공연포스터 나온거 보고 유동적으로 조절 */
+    
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .infobox p {
@@ -256,7 +262,7 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3)
+    border: 1px solid rgba(255, 255, 255, 0.2)
 }
 
 
@@ -445,7 +451,7 @@
 }
 
 .snslink-wrap {
-	margin-top: 18vh;
+	margin-top: 8vh;
 	font-size: 12px;
 	
 }
@@ -663,4 +669,15 @@
 
 .nav-extend-list {
     margin-top: 5px;
+}
+
+.infobox-detail {
+    text-align-last: left;
+    padding-left: 15px;
+}
+
+.infobox-logo {
+    filter: invert();
+    padding-left: 120px;
+    padding-right: 120px;
 }
