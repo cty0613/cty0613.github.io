@@ -1,5 +1,5 @@
 var easterfactor = 0;
-var boom = '../pages/easter.html';
+var boom = './easter.html';
 var kapay = "https://qr.kakaopay.com/281006011123554622002048";
 
 $('.songcell').click((e)=>{
@@ -28,14 +28,13 @@ $('.infobox').click((e)=>{
 	$('.infobox').fadeOut(300);
 })
 
-$('.navbar-cont').click(()=>{
-	easterfactor = easterfactor + 1;
-	if(easterfactor > 5) {
-		window.alert("%#$!KO!$$!#?#??GA??*!@L!!");
-		location.href = boom;
+$('.sumin-easter').click(()=>{
+    console.log("easter detected");
+    window.alert("%#$!KO!$$!#?#??GA??*!@L!!");
+    location.href = boom;
 		
 	}
-})
+)
 
 $('.navlist-item').click(()=> {
     $('.nav-extend').slideToggle('0.4');
