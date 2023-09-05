@@ -239,6 +239,7 @@
 }
 
 .set-list-guide {
+    margin-top: 10px;
 	text-align: center;
     font-size: 12px;
 }
@@ -677,7 +678,8 @@
 }
 
 .infobox-logo {
+    position: relative;
     filter: invert();
-    padding-left: 120px;
-    padding-right: 120px;
+    left: 50%;
+    transform: translateX(-50%);
 }
