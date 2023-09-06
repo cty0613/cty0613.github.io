@@ -97,7 +97,7 @@
 }
 
 .main-container {
-    font-family: 'Pretendard', monospace;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	position: fixed;
 	top: 50px;
 	background: rgba(52, 178, 232);
@@ -151,7 +151,7 @@
 	height: 79%;
 	left: 50%;
 	transform: translateX(-50%);
-	/* 공연포스터 나온거 보고 유동적으로 조절 */
+	/* 공연포스터 확인해서 유동적으로 조절 */
     
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -186,7 +186,7 @@
 
 .member-table-col1 h2 {
     font-size: 18px;
-    text-shadow: -0.18px 0px lightgrey, 0px 0.18px lightgrey, 0.18px 0px lightgrey, 0px -0.18px lightgrey;
+    -webkit-text-stroke: 0.25px gray;
 }
 
 .members-table {
@@ -263,7 +263,7 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2)
+    border: 1px solid rgba(255, 255, 255, 0.15)
 }
 
 
@@ -272,7 +272,7 @@
 	overflow: scroll;
 	height: 65%;
 	margin-top: 5px;
-	line-height: 180%
+    line-height: 180%;
 }
 .song-detail-lyc p {
 	font-size: 16px;
@@ -282,7 +282,7 @@
 .song-detail-table {
     margin-top: 10px;
 	margin-left: 10px;
-	margin-bottom: 10px
+	margin-bottom: 10px;
 }
 
 .song-detail-table td {
@@ -298,6 +298,12 @@
 
 .song-detail-wrap {
 	position: relative;
+    margin: 3px;
+    background: rgba( 255, 255, 255, 0 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .kongal {
