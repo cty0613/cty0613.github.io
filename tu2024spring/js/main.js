@@ -1,6 +1,6 @@
 var easterfactor = 0;
 var boom = './easter.html';
-var kapay = "https://qr.kakaopay.com/281006011123554622002048";
+var kapay = "https://qr.kakaopay.com/Ej9DW5wgl";
 
 $('.songcell').click((e)=>{
 	var currentId = $(e.currentTarget).attr('id');
