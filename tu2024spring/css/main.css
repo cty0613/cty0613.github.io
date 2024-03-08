@@ -62,9 +62,6 @@
 	text-indent: -999%;
 }
 
-.navbar {
-	
-}
 
 .navbar-cont {
 	background-color: white;
@@ -317,26 +314,26 @@
 }
 
 
-/** onepage : 한페이지
-    isitgood : 좋지 아니한가
-    power : 힘 내 !
-    takeoff : 26
-    dancewrain : 비오는 거리에서 춤을 추자
-    wac : We Are The Champions
-    shine : 찬란
-    lifelikethat :  그렇게 살아가는 것
-    ugatsa : 우리 같은 사람들
-    lukas : 루카스
-    saramsarang : 사랑은 변하고 사랑은 변하지만
-    throwaway : 다 던저벼려
-    heera : 윤희라 자작곡
-    suwon : 채수원 자작곡
-    chami : 차미
-    jrkrn : 절룩거리네 
+/** flowerhorse : 꽃말
+    marigold : 마리골드
+    mirror : 입춘 + 거울
+    rocket : 로켓트
+    loneliest : 마네스킨
+    sunnyulster : 선율 승민
+    summer : Let it be summer
+    muinme : music in me
+    drunk : 맛있는 술
+    azirangyee : 아지랑이
+    mulme : 멀미
+    take five : Take Five
+    minju : 법무부
+    bankrob : 은행강도
+    tokyojihen : 군청일화
+    morning-star : 새벽별
                                         **/
 
 
-#onepage-detail {
+#flowerhorse-detail {
 	visibility: hidden;
 }
 
@@ -346,86 +343,86 @@
 }
 
 
-#isitgood-detail {
+#marigold-detail {
 	visibility: hidden;
 }
 
-#power-detail {
+#mirror-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
 
 
-#takeoff-detail {
+#rocket-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#dancewrain-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#wac-detail {
+#loneliest-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
 
-
-#shine-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#lifelikethat-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#ugatsa-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#lukas-detail {
+#sunnyulster-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
 
 
-#saramsarang-detail {
-	visibility: hidden;
-}
-
-
-#throwaway-detail {
+#summer-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#heera-detail {
+
+#muinme-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#suwon-detail {
+
+#drunk-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#chami-detail {
+
+#azirangyee-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#jrkrn-detail {
+
+
+#mulme-detail {
+	visibility: hidden;
+}
+
+
+#takefive-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#minju-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#bankrob-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#tokyojihen-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#morning-star-detail {
 	opacity: 0;
 	visibility: hidden;
 }
