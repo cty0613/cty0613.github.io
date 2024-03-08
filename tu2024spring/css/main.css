@@ -548,8 +548,6 @@
 	animation-delay: calc(2s + 4s * 0.25);
 }
 
-.member-table-row { 
-}
 
 .nav-extend {
     display: none;
