@@ -64,7 +64,17 @@
 }
 
 .members-title {
-	background-image: url("../sources/img/MEMBERS.png");
+	background-image: url("../sources/img/MEMBERS.svg");
+	width: 16vh;
+}
+
+.setlist-title {
+	background-image: url("../sources/img/SETLIST.svg");
+	width: 16vh;
+}
+
+.notice-title {
+	background-image: url("../sources/img/NOTICE.svg");
 	width: 16vh;
 }
 
@@ -255,16 +265,13 @@
 	height: auto;
 	left: 50%;
 	transform: translateX(-50%);
-	color: white;
-	/* background-color: rgba(0,0,0,0.8); */
+	color: black;
+	background-color: #d9d9d9;
 	/* border: 1px solid gray; */
 	padding: 5px;
     /* border-radius: 15px; */
-	
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
-    border-radius: 12px;
+
+    border-radius: 35px 0 0 0;
     border: 1px solid rgba(255, 255, 255, 0.15)
 }
 
@@ -278,7 +285,7 @@
 }
 .song-detail-lyc p {
 	font-size: 16px;
-	color: lightgray;
+	color: black;
 }
 
 .song-detail-table {
@@ -301,11 +308,11 @@
 .song-detail-wrap {
 	position: relative;
     margin: 3px;
-    background: rgba( 255, 255, 255, 0 );
+    /* background: rgba( 255, 255, 255, 0 );
     backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    -webkit-backdrop-filter: blur( 4px ); */
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 .kongal {
