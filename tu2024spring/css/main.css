@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+@import url("//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css");
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @import url('../css/easterstyle.css');
 @keyframes swing {
@@ -62,6 +63,11 @@
 	text-indent: -999%;
 }
 
+.members-title {
+	background-image: url("../sources/img/MEMBERS.png");
+	width: 16vh;
+}
+
 
 .navbar-cont {
 	background-color: white;
@@ -84,7 +90,7 @@
 	font-size: 20px;
 	font-family: 'Oswald', sans-serif;
 	margin-bottom: 0;
-	margin-top: 15px;
+	margin-top: 12px;
 }
 
 #init-wrap {
@@ -142,7 +148,7 @@
 	position: fixed;
 	display: none;
 	z-index: 20;
-	/* background-color: rgba(0,0,0,0.8); */
+	background-color: rgba(0,0,0,0.7);
 	top: 70px;
 	width: 95%;
 	height: 79%;
@@ -152,7 +158,6 @@
     
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -172,7 +177,7 @@
 
 .member-table-col2 p {
 	margin-bottom: 4.5px;
-	color: white;
+	color: black;
 	font-size: 12px;
     letter-spacing: -1px;
 }
@@ -190,7 +195,7 @@
 	position: absolute;
 	left: 16px;
 	overflow: scroll;
-	top: 60px;
+	top: 65px;
 	bottom: 50px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
@@ -202,7 +207,7 @@
 }
 
 .poster-bgd {
-	background-image: url("../sources/img/poster_t_opb.png");
+	background-color: white;
     background-size: cover;
 }
 
@@ -221,7 +226,7 @@
 }
 
 .set-list-container p {
-	color: white;
+	color: black;
 	text-align: left;
 	margin-left: 0%;
 }
@@ -564,7 +569,7 @@
     
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
@@ -591,29 +596,38 @@
     margin: 0 auto;
 }
 
+.divison {
+	height: 30px;
+	position: absolute;
+}
+
 .division-desc {
-    display: inline-block;
+    position: absolute;
+	font-size: 18px;
+	font-weight: 900;
     width: 30%;
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
+	height: 30px;
+	text-align: justify;
+	vertical-align: middle;
+    left: 45px;
 }
 
 .division-line {
-    display: inline-block;
-    width: 33%;
-    height: 1px;
-    margin-bottom: 4px;
-    border-bottom: 1px solid white;
+	position: absolute;
+	width: 8%;
+	height: 30px;
+	left: 7px;
+    background-image: url("../sources/img/member_index.png");
+	background-repeat: no-repeat;
 }
 
 .next {
-    top: 180px;
+    top: 195px;
 }
 
 .hq2 {
     position: absolute;
-    top: 140px;
+    top: 150px;
     height: 30px;
     width: 95%;
     left: 50%;
