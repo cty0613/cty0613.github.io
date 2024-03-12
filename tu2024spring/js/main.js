@@ -28,13 +28,13 @@ $('.infobox').click((e)=>{
 	$('.infobox').fadeOut(300);
 })
 
-$('.sumin-easter').click(()=>{
-    console.log("easter detected");
-    window.alert("%#$!KO!$$!#?#??GA??*!@L!!");
-    location.href = boom;
+// $('.sumin-easter').click(()=>{
+//     console.log("easter detected");
+//     window.alert("%#$!KO!$$!#?#??GA??*!@L!!");
+//     location.href = boom;
 		
-	}
-)
+// 	}
+// )
 
 $('.navlist-item').click(()=> {
     $('.nav-extend').slideToggle('0.4');
