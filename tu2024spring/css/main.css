@@ -289,7 +289,7 @@
 
 .song-detail {
 	position: fixed;
-	z-index: 10;
+	z-index: 990;
 	top: 70px;
 	bottom: 70px;
 	width: 90%;
@@ -301,17 +301,20 @@
 	/* border: 1px solid gray; */
 	padding: 5px;
     /* border-radius: 15px; */
-
+	box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.8); /* 그림자 설정 */
     border-radius: 35px 0 0 0;
-    border: 1px solid rgba(255, 255, 255, 0.15)
+    border: 1px solid rgba(255, 255, 255, 0.15);
+	transition: opacity 0.3s;
+	visibility: hidden;
 }
 
 
 .song-detail-lyc {
-	margin-left: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
 	overflow: scroll;
 	height: 65%;
-	margin-top: 5px;
+	padding-top: 5px;
     line-height: 180%;
 }
 .song-detail-lyc p {
@@ -335,12 +338,13 @@
 
 .song-detail-wrap {
 	position: relative;
-    margin: 3px;
+    margin: 15px;
     /* background: rgba( 255, 255, 255, 0 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px ); */
     /* border-radius: 10px; */
     /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+	border-bottom :1px solid black ;
 }
 
 .kongal {
@@ -390,6 +394,7 @@
 #tokyojihen-detail,
 #morning-star-detail  {
 	visibility: hidden;
+	opacity: 0;
 }
 
 .setlist-ovf {
@@ -523,12 +528,12 @@
 }
 
 .next {
-    top: 195px;
+    top: 235px;
 }
 
 .hq2 {
     position: absolute;
-    top: 150px;
+    top: 190px;
     height: 30px;
     width: 95%;
     left: 50%;
@@ -631,4 +636,8 @@
     filter: invert();
     left: 50%;
     transform: translateX(-50%);
+}
+
+.op-exclude {
+	opacity: 1 !important;
 }

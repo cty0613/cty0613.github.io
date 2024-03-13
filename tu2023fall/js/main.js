@@ -7,7 +7,8 @@ $('.songcell').click((e)=>{
     // $('.main-container').css('opacity', '0.8');
 	console.log(currentId);
     console.log("opened")
-	$(`#${currentId}-detail`).css('opacity', '1').css("visibility", "visible");
+	$(`#${currentId}-detail`).css('opacity', '1').css("visibility", "visible").addClass('.op-exclude');
+    $('.main-container').css('opacity', '0.5');
     
 	
 })
