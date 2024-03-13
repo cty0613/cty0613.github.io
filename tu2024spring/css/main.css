@@ -233,17 +233,39 @@
 .set-list-container {
 	position: absolute;
 	width: 100%;
-	margin-top: 20px;
 	overflow-x: auto;
 	white-space: nowrap;
 }
 
+.set-list-cont-head1 {
+	position: absolute;
+	font-size: 32px;
+	top: 45px;
+	left: 20px;
+}
+
+.set-list-cont-head1 h2 {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.set-list-cont-head2 {
+	position: absolute;
+	top: 295px;
+	left: 20px;
+}
+
+.set-list-cont-head2 h2 {
+	font-size: 26px;
+	font-weight: 700;
+}
+
 .cont-part1 {
-	top: 8vh;
+	top: 11vh;
 }
 
 .cont-part2 {
-	top: 45vh;
+	top: 49vh;
 }
 .set-list-container p {
 	color: black;
@@ -311,9 +333,6 @@
     font-weight: 8000;
 }
 
-
-
-
 .song-detail-wrap {
 	position: relative;
     margin: 3px;
@@ -354,98 +373,28 @@
  **/
 
 
-#flowerhorse-detail {
+#flowerhorse-detail, 
+#marigold-detail, 
+#mirror-detail, 
+#rocket-detail, 
+#loneliest-detail, 
+#sunnyulster-detail,
+#summer-detail,
+#muinme-detail,
+#drunk-detail,
+#azirangyee-detail,
+#mulme-detail,
+#takefive-detail,
+#minju-detail,
+#bankrob-detail,
+#tokyojihen-detail,
+#morning-star-detail  {
 	visibility: hidden;
 }
 
 .setlist-ovf {
 	overflow: scroll;
 	max-height: 90%;
-}
-
-
-#marigold-detail {
-	visibility: hidden;
-}
-
-#mirror-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-
-#rocket-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-#loneliest-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#sunnyulster-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-
-#summer-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#muinme-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#drunk-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#azirangyee-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-
-#mulme-detail {
-	visibility: hidden;
-}
-
-
-#takefive-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-#minju-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-#bankrob-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-#tokyojihen-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-#morning-star-detail {
-	opacity: 0;
-	visibility: hidden;
 }
 
 .notice-sec {
@@ -503,70 +452,6 @@
 	height: 150px;
 	margin-top: 20vh;
 	font-size: 24px;
-}
-
-.easter-kongal-img {
-	position: absolute;
-	background-color: white;
-	background-image: url("../sources/img/sumin.jpeg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	transform: translate3d(0,0,0);
-	background-blend-mode: none;
-	width: 100%;
-	height: 75%;
-}
-
-.easter-kongal-img:nth-child(n+2) {
-	opacity: 0;
-}
-
-.easter-kongal-img:nth-child(n+2) {
-	animation-duration: 4s;
-	animation-delay: 2s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-.easter-kongal-img:nth-child(2) {
-	background-color: transparent;
-	background-blend-mode: none;
-	animation-name: glitch-anim-1;
-}
-
-.easter-kongal-img:nth-child(3) {
-	background-color: transparent;
-	background-blend-mode: none;
-	animation-name: glitch-anim-2;
-}
-
-.easter-kongal-img:nth-child(4) {
-	background-color: transparent;
-	background-blend-mode: none;
-	animation-name: glitch-anim-3;
-}
-
-.easter-kongal-img:nth-child(5) {
-	background-color: #862a2a;
-	background-blend-mode: overlay;
-	animation-name: glitch-anim-flash;
-}
-
-
-
-.easter-kongal-desc {
-	background: white;
-	font-family: 'Changa', sans-serif;
-	position: absolute;
-	animation-name: glitch-anim-text;
-	animation-duration: 4s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	width: 100%;
-	top: 75%;
-	font-size: 1.5em;
-	text-align: right;
-	font-weight: 400;
-	animation-delay: calc(2s + 4s * 0.25);
 }
 
 
@@ -693,24 +578,43 @@
 	margin: 0 auto !important;
 }
 
-
-
 .songcell {
 	display: inline-block;
 	background-color: #d9d9d9;
 	width: 200px;
 	height: 200px;
-	margin: 16px;
-	border-radius: 35px 0 0 0;
+	margin: 8px;
+	border-radius: 55px 0 0 0;
 	vertical-align: bottom;
+	text-align: left;
 
 }
 
-.songcell > a {
-	display: block;
-	width: 100%;
+.cell-title {
+	display: inline-block;
+	padding-top: 163px;
+	padding-left: 12px;
 	height: 100%;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
 	
+	
+}
+
+.cell-artist {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 12px;
+	text-decoration: none;
+	color: grey;
+	word-spacing: -5%;
+
+}
+
+.set-list-head {
+	padding-top: 150px;
+	padding-left: 13px;
 }
 
 .nav-extend-list {
