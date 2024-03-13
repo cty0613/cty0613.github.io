@@ -231,10 +231,21 @@
 }
 
 .set-list-container {
+	position: absolute;
 	text-align: center;
+	width: 100%;
 	margin-top: 20px;
+	overflow-x: auto;
+	white-space: nowrap;
 }
 
+.cont-part1 {
+	top: 8vh;
+}
+
+.cont-part2 {
+	top: 45vh;
+}
 .set-list-container p {
 	color: black;
 	text-align: left;
@@ -243,7 +254,6 @@
 
 .set-list-part {
 	margin-bottom: 25px;
-	padding: 10px 5px 10px 0px;
 	margin-left: 10px;
 	margin-right: 10px;
 	border-bottom: 1px solid white;
@@ -251,7 +261,7 @@
 }
 
 .set-list-guide {
-    margin-top: 10px;
+    /* margin-top: 10px; */
 	text-align: center;
     font-size: 12px;
 }
@@ -687,7 +697,13 @@
 
 
 .songcell {
+	display: inline-block;
     text-align-last: center;
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 16px;
+
 }
 
 .nav-extend-list {
