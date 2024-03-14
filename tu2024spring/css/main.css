@@ -117,6 +117,7 @@
 	width: 100%;
 	height: 100%;
     opacity: 1;
+	transition: all 0.3s;
 }
 
 
@@ -261,11 +262,11 @@
 }
 
 .cont-part1 {
-	top: 11vh;
+	top: 75px;
 }
 
 .cont-part2 {
-	top: 49vh;
+	top: 325px;
 }
 .set-list-container p {
 	color: black;
@@ -306,6 +307,7 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
 	transition: opacity 0.3s;
 	visibility: hidden;
+	opacity: 0;
 }
 
 
@@ -377,24 +379,69 @@
  **/
 
 
-#flowerhorse-detail, 
-#marigold-detail, 
-#mirror-detail, 
-#rocket-detail, 
-#loneliest-detail, 
-#sunnyulster-detail,
-#summer-detail,
-#muinme-detail,
-#drunk-detail,
-#azirangyee-detail,
-#mulme-detail,
-#takefive-detail,
-#minju-detail,
-#bankrob-detail,
-#tokyojihen-detail,
-#morning-star-detail  {
-	visibility: hidden;
-	opacity: 0;
+#flowerhorse {
+	background-image: url('../sources/cellart/flowerhorse.png');
+}
+#marigold {
+	background-image: url('../sources/cellart/exclusive.png');
+}
+#mirror {
+	background-image: url('../sources/cellart/mirror.png');
+}
+#rocket {
+	background-image: url('../sources/cellart/rocket.png');
+}
+#loneliest {
+	background-image: url('../sources/cellart/loneliest.png');
+}
+#sunnyulster {
+	background-image: url('../sources/cellart/exclusive.png');
+}
+#summer {
+	background-image: url('../sources/cellart/summer.png');
+}
+#muinme {
+	background-image: url('../sources/cellart/exclusive.png');
+}
+#drunk {
+	background-image: url('../sources/cellart/drunk.png');
+}
+#azirangyee {
+	background-image: url('../sources/cellart/azi.png');
+}
+#mulme {
+	background-image: url('../sources/cellart/exclusive.png');
+}
+#takefive{
+	background-image: url('../sources/cellart/takefive.png');
+}
+#minju {
+	background-image: url('../sources/cellart/exclusive.png');
+}
+#bankrob {
+	background-image: url('../sources/cellart/bankrob.png');
+}
+#tokyojihen {
+	background-image: url('../sources/cellart/tokyojihen.png');
+}
+#morning-star {
+	background-image: url('../sources/cellart/sstar.png');
+}
+
+.songcell {
+	display: inline-block;
+	/* background-color: #d9d9d9; */
+	width: 200px;
+	height: 200px;
+	margin: 8px;
+	border-radius: 55px 0 0 0;
+	vertical-align: bottom;
+	text-align: left;
+	filter: brightness(1.1);
+	background-repeat: no-repeat;
+	background-size: 120%;
+	background-position: 50%;
+	
 }
 
 .setlist-ovf {
@@ -595,17 +642,7 @@
 	margin: 0 auto !important;
 }
 
-.songcell {
-	display: inline-block;
-	background-color: #d9d9d9;
-	width: 200px;
-	height: 200px;
-	margin: 8px;
-	border-radius: 55px 0 0 0;
-	vertical-align: bottom;
-	text-align: left;
 
-}
 
 .cell-title {
 	display: inline-block;
@@ -615,6 +652,7 @@
 	text-decoration: none;
 	color: black;
 	font-size: 18px;
+	font-weight: 600;
 	
 	
 }
@@ -624,7 +662,7 @@
 	margin-left: 10px;
 	font-size: 12px;
 	text-decoration: none;
-	color: grey;
+	color: black;
 	word-spacing: -5%;
 
 }
@@ -653,3 +691,95 @@
 .op-exclude {
 	opacity: 1 !important;
 }
+
+.cell-extend-div {
+	background-image	: url("");
+	background-color	: #d9d9d9;
+	height			: 45px;
+	width			: 90%;
+	border-radius	: 0px;
+	margin-left		: 16px;
+}
+
+.cell-extend-a {
+	padding		: 10px;
+	height		: 70%;
+}
+
+.cell-extend {
+	white-space: normal;
+	overflow-y: scroll;
+}
+.cell-extend2 {
+	white-space: normal;
+	top: 75px;
+}
+
+.cell-extend-head2 {
+	top: 45px;
+}
+
+.button-57 {
+	position: absolute;
+	overflow: hidden;
+	border: 1px solid #18181a;
+	color: #18181a;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 15px;
+	padding: 5px 5px 4px;
+	text-decoration: none;
+	cursor: pointer;
+	background: #fff;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action:auto;
+	left: 40vh;
+	top: 2px;
+  }
+  
+  .button-57 span:first-child {
+	position: relative;
+	transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+	z-index: 10;
+  }
+  
+  .button-57 span:last-child {
+	color: white;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+	z-index: 100;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	transform: translateY(225%) translateX(-50%);
+	height: 14px;
+	line-height: 13px;
+  }
+  
+  .button-57:after {
+	content: "";
+	position: absolute;
+	bottom: -50%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	transform-origin: bottom center;
+	transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+	transform: skewY(9.3deg) scaleY(0);
+	z-index: 50;
+  }
+  
+  .button-57:hover:after {
+	transform-origin: bottom center;
+	transform: skewY(9.3deg) scaleY(2);
+  }
+  
+  .button-57:hover span:last-child {
+	transform: translateX(-50%) translateY(-100%);
+	opacity: 1;
+	transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  }
