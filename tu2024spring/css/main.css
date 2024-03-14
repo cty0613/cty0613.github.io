@@ -754,9 +754,9 @@
 	opacity: 0;
 	top: 50%;
 	left: 50%;
-	transform: translateY(225%) translateX(-50%);
+	transform: translateY(200%) translateX(-50%);
 	height: 14px;
-	line-height: 13px;
+	line-height: 15px;
   }
   
   .button-57:after {
