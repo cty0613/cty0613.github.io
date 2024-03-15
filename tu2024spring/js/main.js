@@ -11,8 +11,11 @@ $('.songcell').click((e)=>{
 	console.log(currentId);
     console.log("opened")
 	$(`#${currentId}-detail`).css('opacity', '1').css("visibility", "visible");
-    
 	
+})
+
+$('.songcell').hover((e)=>{
+	$(this).css('color', '#FF6B00');
 })
 
 $('#part1-extend').click((e)=>{

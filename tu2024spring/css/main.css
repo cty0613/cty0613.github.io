@@ -548,7 +548,10 @@
 .nav-extend-list-item a {
     text-decoration: none;
     color: white;
-    
+}
+
+.nav-extend-list-item a:hover {
+    color: #FF6B00;
 }
 
 .hq {
@@ -653,8 +656,11 @@
 	color: black;
 	font-size: 18px;
 	font-weight: 600;
-	
-	
+
+}
+
+.cell-title:active {
+	color: #FF6B00;
 }
 
 .cell-artist {
