@@ -126,7 +126,7 @@
 	position: absolute;
 	display: block;
 	overflow: auto;
-	background-image: url("../sources/img/poster_temp.png");
+	background-image: url("../sources/img/poster.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -205,7 +205,7 @@
 }
 
 .poster-bgd {
-	background-image: url("../sources/img/poster_t_opb.png");
+	background-image: url("../sources/img/poster_op.jpg");
     background-size: cover;
 }
 
