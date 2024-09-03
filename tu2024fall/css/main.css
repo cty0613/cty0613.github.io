@@ -317,26 +317,8 @@
 }
 
 
-/** onepage : 한페이지
-    isitgood : 좋지 아니한가
-    power : 힘 내 !
-    takeoff : 26
-    dancewrain : 비오는 거리에서 춤을 추자
-    wac : We Are The Champions
-    shine : 찬란
-    lifelikethat :  그렇게 살아가는 것
-    ugatsa : 우리 같은 사람들
-    lukas : 루카스
-    saramsarang : 사랑은 변하고 사랑은 변하지만
-    throwaway : 다 던저벼려
-    heera : 윤희라 자작곡
-    suwon : 채수원 자작곡
-    chami : 차미
-    jrkrn : 절룩거리네 
-                                        **/
 
-
-#onepage-detail {
+#readygetsetgo-detail {
 	visibility: hidden;
 }
 
@@ -346,86 +328,86 @@
 }
 
 
-#isitgood-detail {
+#summer-detail {
 	visibility: hidden;
 }
 
-#power-detail {
+#streetlight-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
 
 
-#takeoff-detail {
+#canttakemy-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#dancewrain-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#wac-detail {
+#wave-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
 
-
-#shine-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#lifelikethat-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#ugatsa-detail {
-	opacity: 0;
-	visibility: hidden;
-}
-
-
-#lukas-detail {
+#firefly-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
 
 
-#saramsarang-detail {
-	visibility: hidden;
-}
-
-
-#throwaway-detail {
+#chchchga-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#heera-detail {
+
+#nandemo-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#suwon-detail {
+
+#whattime-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#chami-detail {
+
+#strawberry-detail {
 	opacity: 0;
 	visibility: hidden;
 }
 
-#jrkrn-detail {
+
+
+#bada-detail {
+	visibility: hidden;
+}
+
+
+#bemoment-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#crabandtap-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#myway-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#aoisangoshou-detail {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#emptyseat-detail {
 	opacity: 0;
 	visibility: hidden;
 }
@@ -614,12 +596,12 @@
 }
 
 .next {
-    top: 180px;
+    top: 210px;
 }
 
 .hq2 {
     position: absolute;
-    top: 140px;
+    top: 175px;
     height: 30px;
     width: 95%;
     left: 50%;

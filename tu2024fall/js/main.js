@@ -1,6 +1,4 @@
-var easterfactor = 0;
-var boom = './easter.html';
-var kapay = "https://qr.kakaopay.com/281006011123554622002048";
+var kapay = "https://qr.kakaopay.com/Ej9DW5wgl";
 
 $('.songcell').click((e)=>{
 	var currentId = $(e.currentTarget).attr('id');
@@ -29,13 +27,6 @@ $('.infobox').click((e)=>{
 	$('.infobox').fadeOut(300);
 })
 
-$('.sumin-easter').click(()=>{
-    console.log("easter detected");
-    window.alert("%#$!KO!$$!#?#??GA??*!@L!!");
-    location.href = boom;
-		
-	}
-)
 
 $('.navlist-item').click(()=> {
     $('.nav-extend').slideToggle('0.4');
