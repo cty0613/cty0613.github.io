@@ -155,7 +155,7 @@
     
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
+    background-color: rgba(27, 37, 26, 0.7);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -206,7 +206,10 @@
 
 .poster-bgd {
 	background-image: url("../sources/img/poster_op.jpg");
-    background-size: cover;
+    background-size: contain;
+	backdrop-filter: blur(50px) saturate(180%);
+    -webkit-backdrop-filter: blur(50px) saturate(180%);
+
 }
 
 .flw-siblings {
@@ -261,7 +264,7 @@
 	
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
+    background-color: rgba(22, 31, 21, 0.70);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.15)
 }
@@ -552,7 +555,7 @@
     
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
+    background-color: rgba(38, 53, 36, 0.742);
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
