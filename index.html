@@ -1,80 +1,351 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="TAE YOUNG CHOI">
-    <title>TAE YOUNG CHOI</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/cover/">
+<html lang="ko" class="cds--white">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tae Young Choi · 최태영 </title>
+  <meta name="description" content="Tae Young Choi — Portfolio">
 
-    
+  <!-- 시스템 다크 모드면 Carbon g100 테마로 전환 (첫 페인트 전에 적용해 깜빡임 방지) -->
+  <script>
+    (function () {
+      var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.className = dark ? 'cds--g100' : 'cds--white';
+    })();
+  </script>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/common/css/bootstrap.min.css" rel="stylesheet">
-    <link href="cover.css" rel="stylesheet">
-
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand"></h3>
-      <nav class="nav nav-masthead justify-content-center">
-        
-        <a class="nav-link" href="https://www.instagram.com/raymond_cty/">Contact</a>
-      </nav>
-    </div>
+  <!-- IBM Plex Sans KR: 한글 글리프용 (라틴 글리프는 Carbon CSS가 IBM Plex Sans를 불러옴) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@carbon/styles@1.116.0/css/styles.min.css" rel="stylesheet">
+  <link href="assets/css/home.css" rel="stylesheet">
+</head>
+<body>
+  <header class="cds--header" aria-label="Tae Young Choi">
+    <a class="cds--skip-to-content" href="#main-content" tabindex="0">본문으로 건너뛰기</a>
+    <button class="cds--header__menu-trigger cds--header__action cds--header__menu-toggle cds--header__menu-toggle__hidden"
+            type="button" aria-label="메뉴 열기" title="메뉴 열기" aria-expanded="false" aria-controls="side-nav" data-menu-toggle>
+      <svg class="icon-menu" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6H28V8H4zM4 24H28V26H4zM4 12H28V14H4zM4 18H28V20H4z"/></svg>
+      <svg class="icon-close" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M17.4141 16 24 9.4141 22.5859 8 16 14.5859 9.4143 8 8 9.4141 14.5859 16 8 22.5859 9.4143 24 16 17.4141 22.5859 24 24 22.5859 17.4141 16z"/></svg>
+    </button>
+    <a class="cds--header__name" href="./">
+      <span class="cds--header__name--prefix">Tae Young Choi</span>&nbsp;Portfolio
+    </a>
+    <nav class="cds--header__nav" aria-label="섹션 이동">
+      <ul class="cds--header__menu-bar">
+        <li><a class="cds--header__menu-item" href="#skills" data-nav-link>Skills</a></li>
+        <li><a class="cds--header__menu-item" href="#experience" data-nav-link>Experience</a></li>
+        <li><a class="cds--header__menu-item" href="#archives" data-nav-link>Archives</a></li>
+        <li><a class="cds--header__menu-item" href="#contacts" data-nav-link>Contacts</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading">TAE YOUNG CHOI</h1>
-    <p class="lead" style="margin-top: 20px;">
-      <a href="./fourthree/43index.html" class="btn btn-lg btn-secondary" style = "width: 250px;">뽀뚜리 웹 페이지</a>
-    </p>
-    <p class="lead">
-        <a href="./tu2023fall/tu2023index.html" class="btn btn-lg btn-secondary" style = "width: 250px;">뚜라미 23' 가을공연</a>
-      </p>
-      <p class="lead">
-        <a href="./tu2024spring/tu2024index.html" class ="btn btn-lg btn-secondary" style = "width: 250px;">뚜라미 24' 봄공연</a>
-      </p>
-      <p class="lead">
-        <a href="./tu2024fall/tu2024index.html" class ="btn btn-lg btn-secondary" style = "width: 250px;">뚜라미 24' 가을공연</a>
-      </p>
-        <!--a href="https://www.notion.so/b7f0ab3ff2284726be0847e3ef5b4c64" class="btn btn-lg btn-secondary size-adjust">Notion Workspace</a -->
-    </p>
+  <!-- 1056px 미만에서만 쓰이는 사이드 내비게이션 -->
+  <nav id="side-nav" class="cds--side-nav cds--side-nav__navigation cds--side-nav--ux cds--side-nav--hidden" aria-label="섹션 이동">
+    <ul class="cds--side-nav__items">
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="#skills" data-nav-link><span class="cds--side-nav__link-text">Skills</span></a></li>
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="#experience" data-nav-link><span class="cds--side-nav__link-text">Experience</span></a></li>
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="#archives" data-nav-link><span class="cds--side-nav__link-text">Archives</span></a></li>
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="#links" data-nav-link><span class="cds--side-nav__link-text">Contacts</span></a></li>
+    </ul>
+  </nav>
+  <div class="cds--side-nav__overlay" data-menu-overlay></div>
+
+  <main id="main-content" class="home">
+
+    <!-- ===== Hero ===== -->
+    <!-- 배경: 이미지 띠가 끊김 없이 가로로 흐름. 원본은 assets/img/photos/, 웹용(높이 800 WebP)은 assets/img/hero/.
+         이미지 추가/삭제는 아래 img 목록만 수정 (반복용 복제는 home.js가 처리). 항상 다크(g100) 테마로 표시 -->
+    <section class="home-section home-section--hero home-hero cds--g100" aria-label="소개">
+      <div class="home-hero__bg" aria-hidden="true">
+        <div class="home-hero__track" data-hero-track>
+          <img src="assets/img/hero/music_01.webp" width="1422" height="800" alt="">
+          <img src="assets/img/hero/hoiks_01.webp" width="534" height="800" alt="">
+          <img src="assets/img/hero/private_01.webp" width="600" height="800" alt="">
+          <img src="assets/img/hero/music_02.webp" width="1067" height="800" alt="">
+          <img src="assets/img/hero/veda_01.webp" width="1207" height="800" alt="">
+          <img src="assets/img/hero/music_03.webp" width="1207" height="800" alt="">
+          <img src="assets/img/hero/private_02.webp" width="1067" height="800" alt="">
+          <img src="assets/img/hero/music_04.webp" width="1201" height="800" alt="">
+          <img src="assets/img/hero/paws_01.webp" width="1067" height="800" alt="">
+          <img src="assets/img/hero/music_05.webp" width="1201" height="800" alt="">
+          <img src="assets/img/hero/hoiks_02.webp" width="600" height="800" alt="">
+          <img src="assets/img/hero/music_06.webp" width="1200" height="800" alt="">
+          <img src="assets/img/hero/private_03.webp" width="1200" height="800" alt="">
+        </div>
+      </div>
+      <div class="cds--css-grid home-hero__content">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-16">
+          <!-- TODO: 한 줄 소개 -->
+          <p class="home-lead">반갑습니다, 저는 최태영입니다 :)</p>
+        </div>
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
+          <!-- TODO: 자기소개 본문 (문단 추가/삭제 자유) -->
+          <p class="home-body">저의 역량과 헌신으로 언제 어디서나 없어서는 안될 사람이 되고자 노력하고 있습니다.</p>
+          <p class="home-body">소프트웨어 개발과 임베디드 비전 분야에서 경험을 쌓고 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="home-section">
+      <div class="cds--css-grid">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+          <h2 class="home-section__title">Skills</h2>
+        </div>
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-12">
+          <!-- 분류마다 home-skill-group 블록 하나 -->
+          <div class="home-skill-group">
+            <h3 class="home-skill-group__label">C/C++ Development</h3>
+            <ul class="home-tag-list">
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">C</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">C++</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">Linux</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">CMAKE</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">Nginx · FastCGI</span></span></li>
+            </ul>
+          </div>
+          <div class="home-skill-group">
+            <h3 class="home-skill-group__label">MCU F/W · Device Driver</h3>
+            <ul class="home-tag-list">
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">STM32 · ESP32 </span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">Device Driver</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">HAL</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">Board Bring-up</span></span></li>
+            </ul>
+          </div>
+          <div class="home-skill-group">
+            <h3 class="home-skill-group__label">Vision System S/W</h3>
+            <ul class="home-tag-list">
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">FFmpeg</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">Video Codec</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">ONVIF</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">On-Device AI</span></span></li>
+            </ul>
+          </div>
+          <div class="home-skill-group">
+            <h3 class="home-skill-group__label">Full-Stack Web</h3>
+            <ul class="home-tag-list">
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">React</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">Java Spring</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">Docker</span></span></li>
+              <li><span class="cds--tag cds--tag--gray"><span class="cds--tag__label">Jenkins</span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="home-section">
+      <div class="cds--css-grid">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+          <h2 class="home-section__title">Experience</h2>
+        </div>
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-12">
+          <!-- 항목마다 li.home-timeline__item 하나 (종료일 최신순). 로고는 assets/img/logos/ -->
+          <ol class="home-timeline">
+            <li class="home-timeline__item">
+              <svg class="home-timeline__arrow" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              <p class="home-timeline__period">2026.02 – 2026.08</p>
+              <span class="home-timeline__logo"><img src="assets/img/logos/hanwha-vision.svg" alt=""></span>
+              <div class="home-timeline__body">
+                <p class="home-timeline__kind">인턴</p>
+                <h3 class="home-timeline__role"><a class="home-timeline__link" href="experience/hanwha-vision-intern/">한화비전 (Hanwha Vision)</a></h3>
+                <p class="home-timeline__org">개발센터 · DeviceSW개발1팀 · 카메라BE 1파트</p>
+                <p class="home-timeline__desc">PTZ 카메라 디바이스 SW 플랫폼 개발 · 유지보수</p>
+                <ul class="home-timeline__list">
+                  <li>신규 제품 SW 상품화 · 문제점/변경점 대응</li>
+                  <li>SoC SDK 및 카메라 보드 브링업</li>
+                  <li>Pan · Tilt 모터 MCU 및 모션 제어 구현</li>
+                  <li>Inductive · Hall · PI(Photo Interrupter) 센서 제어 구현</li>
+                  <li>해외법인 고객 대상 VOC F/W 개발</li>
+                  <li>광학줌 · 디지털줌 제어 관련 사내 특허 1건 출원</li>
+                </ul>
+              </div>
+            </li>
+            <li class="home-timeline__item">
+              <svg class="home-timeline__arrow" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              <p class="home-timeline__period">2025.03 – 2025.08</p>
+              <span class="home-timeline__logo"><img src="assets/img/logos/hanwha-vision.svg" alt=""></span>
+              <div class="home-timeline__body">
+                <p class="home-timeline__kind">교육 이수</p>
+                <h3 class="home-timeline__role"><a class="home-timeline__link" href="experience/veda/">Vision's Edge Device Academy (VEDA) 2기</a></h3>
+                <p class="home-timeline__org">한화비전 (Hanwha Vision) · 700시간</p>
+                <p class="home-timeline__desc">C/C++, Qt, Embedded Linux, Device Driver, Codec, Network Programming</p>
+              </div>
+            </li>
+            <li class="home-timeline__item">
+              <svg class="home-timeline__arrow" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              <p class="home-timeline__period">2025.06 – 2025.08</p>
+              <span class="home-timeline__logo"><img src="assets/img/logos/hanwha-vision.svg" alt=""></span>
+              <div class="home-timeline__body">
+                <p class="home-timeline__kind">협업 프로젝트</p>
+                <h3 class="home-timeline__role"><a class="home-timeline__link" href="experience/bus-bom/">버스 봄</a></h3>
+                <p class="home-timeline__org">한화비전 VEDA 2기</p>
+                <p class="home-timeline__desc">스마트 버스정류장 승차위치 안내 시스템 — 비전 시스템으로 정류장에 접근하는 버스를 실시간 분석해 적절한 승차 위치를 안내하는 임베디드 시스템</p>
+                <ul class="home-timeline__list">
+                  <li>디바이스 제어용 서버 &amp; CGI 애플리케이션 구현</li>
+                  <li>RTSP 스트림 + 메타데이터 동기처리 및 영상 디코딩 &amp; 렌더링 멀티스레드 구현</li>
+                  <li>디바이스 아키텍처 &amp; 인터페이스 설계 (HTTPS, IPC)</li>
+                </ul>
+                <span class="cds--tag cds--tag--blue home-timeline__award"><span class="cds--tag__label">최종 프로젝트 우수팀</span></span>
+              </div>
+            </li>
+            <li class="home-timeline__item">
+              <svg class="home-timeline__arrow" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              <p class="home-timeline__period">2024.03 – 2024.11</p>
+              <span class="home-timeline__logo"><img src="assets/img/logos/hongik.svg" alt=""></span>
+              <div class="home-timeline__body">
+                <p class="home-timeline__kind">협업 프로젝트</p>
+                <h3 class="home-timeline__role"><a class="home-timeline__link" href="experience/hoiks/">HOIKS</a></h3>
+                <p class="home-timeline__org">홍익대학교 컴퓨터공학과 졸업프로젝트</p>
+                <p class="home-timeline__desc">인간 상호작용 지향 지능형 키오스크 시스템 — 키오스크 사용 고객을 AI 비전으로 분석해 맞춤형 UX와 비즈니스 서비스를 제공하는 SaaS 시스템</p>
+                <ul class="home-timeline__list">
+                  <li>객체탐지 &amp; 안면인식 AI 모델 개발 &amp; 서빙</li>
+                  <li>임베디드 환경 온디바이스 AI 모델 경량화 &amp; 최적화</li>
+                  <li>임베디드 디바이스 구현 총괄</li>
+                </ul>
+                <span class="cds--tag cds--tag--blue home-timeline__award"><span class="cds--tag__label">졸업프로젝트 전시회 장려상</span></span>
+              </div>
+            </li>
+            <li class="home-timeline__item">
+              <svg class="home-timeline__arrow" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              <p class="home-timeline__period">2024.03 – 2024.10</p>
+              <span class="home-timeline__logo"><img src="assets/img/logos/hongik.svg" alt=""></span>
+              <div class="home-timeline__body">
+                <p class="home-timeline__kind">협업 프로젝트</p>
+                <h3 class="home-timeline__role"><a class="home-timeline__link" href="experience/paws/">PAWS</a></h3>
+                <p class="home-timeline__org">창의적종합설계경진대회</p>
+                <p class="home-timeline__desc">비가청 주파수 활용 보행자 안전 경고 시스템 — 스마트폰 마이크와 스피커만으로 차량 접근 신호를 보행자에게 전달하는 E2E 안전 시스템</p>
+                <ul class="home-timeline__list">
+                  <li>비가청 주파수 신호 물리계층 설계 (BPSK, 8bit frame, 128bps)</li>
+                  <li>신호 수신용 안드로이드 모바일 애플리케이션 개발 (Kotlin, Flutter)</li>
+                  <li>신호 송신 제어용 ESP32 펌웨어 구현</li>
+                </ul>
+                <span class="cds--tag cds--tag--blue home-timeline__award"><span class="cds--tag__label">창의적종합설계경진대회 은상</span></span>
+              </div>
+            </li>
+            <li class="home-timeline__item">
+              <svg class="home-timeline__arrow" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              <p class="home-timeline__period">2022.03 – 2024.09</p>
+              <span class="home-timeline__logo"><img src="assets/img/logos/hongik.svg" alt=""></span>
+              <div class="home-timeline__body">
+                <p class="home-timeline__kind">교내 근로</p>
+                <h3 class="home-timeline__role"><a class="home-timeline__link" href="experience/hongik-reserve-forces/">학생예비군연대본부</a></h3>
+                <p class="home-timeline__org">홍익대학교 서울캠퍼스</p>
+                <p class="home-timeline__desc">국방동원정보체계 예비군 자원관리(전·출입, 보류, 교육훈련), 예비군 훈련 및 행정 보조 · 민원 응대</p>
+              </div>
+            </li>
+            <li class="home-timeline__item">
+              <svg class="home-timeline__arrow" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              <p class="home-timeline__period">2018.09 – 2024.09</p>
+              <span class="home-timeline__logo"><img src="assets/img/logos/turami.png" alt=""></span>
+              <div class="home-timeline__body">
+                <p class="home-timeline__kind">교내 동아리</p>
+                <h3 class="home-timeline__role"><a class="home-timeline__link" href="experience/turami/">뚜라미</a></h3>
+                <p class="home-timeline__org">홍익대학교 중앙창작곡밴드동아리</p>
+                <ul class="home-timeline__list">
+                  <li>6년간 약 22회 동아리 공연 참여</li>
+                  <li>임원단 · 정기공연 총연출(총책임자) · 운영위원장</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Archives ===== -->
+    <section id="archives" class="home-section">
+      <div class="cds--css-grid">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+          <h2 class="home-section__title">Archives</h2>
+          <p class="home-section__desc">이전에 만든 웹 페이지 모음</p>
+        </div>
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-12">
+          <!-- 새 아카이브: archive/<이름>/index.html 을 추가하고 li 블록을 복제 (최신순) -->
+          <ul class="home-archive-grid">
+            <li>
+              <a class="cds--tile cds--tile--clickable home-archive-tile" href="archive/tu2024fall/">
+                <p class="home-archive-tile__meta">2024 · 공연 웹 페이지</p>
+                <h3 class="home-archive-tile__title">뚜라미 24' 가을공연</h3>
+                <p class="home-archive-tile__desc">홍익대학교 중앙 창작곡 밴드 동아리 뚜라미 2024년도 정기 가을공연 "TIME TU TIME"</p>
+                <svg class="home-archive-tile__icon" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="cds--tile cds--tile--clickable home-archive-tile" href="archive/tu2024spring/">
+                <p class="home-archive-tile__meta">2024 · 공연 웹 페이지</p>
+                <h3 class="home-archive-tile__title">뚜라미 24' 봄공연</h3>
+                <p class="home-archive-tile__desc">홍익대학교 중앙 창작곡 밴드 동아리 뚜라미 2024년도 정기 봄공연 "TU OR DIE"</p>
+                <svg class="home-archive-tile__icon" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="cds--tile cds--tile--clickable home-archive-tile" href="archive/tu2023fall/">
+                <p class="home-archive-tile__meta">2023 · 공연 웹 페이지</p>
+                <h3 class="home-archive-tile__title">뚜라미 23' 가을공연</h3>
+                <p class="home-archive-tile__desc">홍익대학교 중앙 창작곡 밴드 동아리 뚜라미 2023년도 정기 가을공연 "지상樂원"</p>
+                <svg class="home-archive-tile__icon" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="cds--tile cds--tile--clickable home-archive-tile" href="archive/fourthree/">
+                <p class="home-archive-tile__meta">2022 · 기수 웹 페이지</p>
+                <h3 class="home-archive-tile__title">Four Three (뽀뚜리)</h3>
+                <p class="home-archive-tile__desc">뚜라미 43기 뽀뚜리 소개 페이지</p>
+                <svg class="home-archive-tile__icon" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== Contacts ===== -->
+    <section id="contacts" class="home-section">
+      <div class="cds--css-grid">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+          <h2 class="home-section__title">Contacts</h2>
+        </div>
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
+          <!-- TODO: 링크 추가/수정. 외부 링크는 target="_blank" rel="noopener" 유지 -->
+          <ul class="home-link-list">
+            <li>
+              <a class="home-link-row" href="https://github.com/cty0613" target="_blank" rel="noopener">
+                <svg class="home-link-row__icon" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path fill-rule="evenodd" d="M16,2a14,14,0,0,0-4.43,27.28c.7.13,1-.3,1-.67s0-1.21,0-2.38c-3.89.84-4.71-1.88-4.71-1.88A3.71,3.71,0,0,0,6.24,22.3c-1.27-.86.1-.85.1-.85A2.94,2.94,0,0,1,8.48,22.9a3,3,0,0,0,4.08,1.16,2.93,2.93,0,0,1,.88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4,5.4,0,0,1,1.44-3.76,5,5,0,0,1,.14-3.7s1.17-.38,3.85,1.43a13.3,13.3,0,0,1,7,0c2.67-1.81,3.84-1.43,3.84-1.43a5,5,0,0,1,.14,3.7,5.4,5.4,0,0,1,1.44,3.76c0,5.38-3.27,6.56-6.39,6.91a3.33,3.33,0,0,1,.95,2.59c0,1.87,0,3.38,0,3.84s.25.81,1,.67A14,14,0,0,0,16,2Z"/></svg>
+                <span class="home-link-row__label">GitHub</span>
+                <span class="home-link-row__value">github.com/cty0613</span>
+                <svg class="home-link-row__arrow" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 6 10 8 22.59 8 6 24.59 7.41 26 24 9.41 24 22 26 22 26 6 10 6z"/></svg>
+              </a>
+            </li>
+            <li>
+              <!-- TODO: 공개할 이메일 주소로 href와 표시 값을 바꾸기 -->
+              <a class="home-link-row" href="mailto:">
+                <svg class="home-link-row__icon" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M28,6H4A2,2,0,0,0,2,8V24a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V8A2,2,0,0,0,28,6ZM25.8,8,16,14.78,6.2,8ZM4,24V8.91l11.43,7.91a1,1,0,0,0,1.14,0L28,8.91V24Z"/></svg>
+                <span class="home-link-row__label">Email</span>
+                <span class="home-link-row__value">cty0613@hanmail.net</span>
+                <svg class="home-link-row__arrow" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 6 10 8 22.59 8 6 24.59 7.41 26 24 9.41 24 22 26 22 26 6 10 6z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p> Copyright(c) TAE YOUNG CHOI, Hongik University, ALL RIGHT RESERVED</p>
+  <footer class="home-footer">
+    <div class="cds--css-grid">
+      <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-16">
+        <p>© Tae Young Choi</p>
+      </div>
     </div>
   </footer>
-</div>
 
-
-    
-  </body>
+  <script src="assets/js/home.js"></script>
+</body>
 </html>

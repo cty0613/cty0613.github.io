@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko" class="cds--white">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>페이지를 찾을 수 없습니다 · Tae Young Choi</title>
+
+  <script>
+    (function () {
+      // 아카이브 이전(루트 → /archive/) 전의 주소를 새 위치로 넘긴다.
+      // 예) /tu2024fall/tu2024index.html → /archive/tu2024fall/
+      //     /tu2024fall/pages/setlist.html → /archive/tu2024fall/pages/setlist.html
+      var path = location.pathname;
+      var target = null;
+      var m = path.match(/^\/(?:archive\/)?(fourthree|tu2023fall|tu2024spring|tu2024fall)(\/.*)?$/);
+      if (m) {
+        var rest = (m[2] || '/').replace(/^\/(?:43index|tu20\d\dindex)\.html$/, '/');
+        target = '/archive/' + m[1] + rest;
+      }
+      if (target && target !== path) {
+        location.replace(target + location.search + location.hash);
+        return;
+      }
+
+      var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.className = dark ? 'cds--g100' : 'cds--white';
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@carbon/styles@1.116.0/css/styles.min.css" rel="stylesheet">
+  <!-- 404.html은 임의 경로에서 서빙되므로 루트 기준 절대 경로를 사용 -->
+  <link href="/assets/css/home.css" rel="stylesheet">
+</head>
+<body>
+  <header class="cds--header" aria-label="Tae Young Choi">
+    <a class="cds--header__name" href="/">
+      <span class="cds--header__name--prefix">Tae Young Choi</span>&nbsp;Portfolio
+    </a>
+  </header>
+
+  <main class="home">
+    <section class="home-section home-section--hero">
+      <div class="cds--css-grid">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-16">
+          <p class="home-section__desc">404</p>
+          <h1 class="home-display">페이지를 찾을 수 없습니다</h1>
+          <p class="home-lead">주소가 바뀌었거나 삭제된 페이지입니다.</p>
+          <div class="home-actions">
+            <a class="cds--btn cds--btn--primary" href="/">
+              홈으로
+              <svg class="cds--btn__icon" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+            </a>
+            <a class="cds--btn cds--btn--tertiary" href="/#archives">Archives</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
