@@ -34,6 +34,7 @@
   --cds-body-02-letter-spacing: 0;
   --cds-body-compact-01-font-size: 0.875rem;
   --cds-body-compact-01-line-height: 1.28572;
+  --cds-body-compact-01-letter-spacing: 0.16px;
   --cds-code-02-font-size: 0.875rem;
   --cds-code-02-line-height: 1.42857;
   --cds-heading-compact-02-font-size: 1rem;
@@ -140,9 +141,71 @@ body {
   margin-block-start: var(--cds-spacing-07);
 }
 
+/* ---------- About Me · Skills ---------- */
+
+/* 1056px 미만에서는 두 열이 세로로 쌓이므로 열 사이 간격 */
+.home-about__col + .home-about__col { margin-block-start: var(--cds-spacing-09); }
+
+@media (min-width: 66rem) {
+  .home-about__col + .home-about__col { margin-block-start: 0; }
+}
+
+/* 증명사진 + 신상 표: 좁은 화면에서는 사진이 위로 */
+.home-about__profile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cds-spacing-06);
+}
+
+.home-photo {
+  inline-size: 13rem;
+  block-size: auto; /* img의 height 속성 무시하고 비율로 */
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* 나란히 놓일 때 사진 높이 = 표 높이: height 0으로 행 높이에 기여하지 않고 min-height로 늘어남 */
+@media (min-width: 42rem) {
+  .home-about__profile {
+    display: grid;
+    grid-template-columns: 13rem minmax(0, 1fr);
+  }
+
+  .home-photo {
+    inline-size: 100%;
+    block-size: 0;
+    min-block-size: 100%;
+    aspect-ratio: auto;
+  }
+}
+
+.home-profile { border-top: 1px solid var(--cds-border-subtle-01); }
+
+.home-profile__row {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: var(--cds-spacing-05);
+  padding-block: var(--cds-spacing-04);
+  border-bottom: 1px solid var(--cds-border-subtle-01);
+  font-size: var(--cds-body-compact-01-font-size);
+  line-height: var(--cds-body-compact-01-line-height);
+  letter-spacing: var(--cds-body-compact-01-letter-spacing);
+}
+
+.home-profile__row dt {
+  display: flex;
+  align-items: center;
+  gap: var(--cds-spacing-03);
+  color: var(--cds-text-secondary);
+}
+
+.home-profile__icon { flex: none; fill: var(--cds-icon-secondary); }
+
+.home-profile__row dd { min-inline-size: 0; overflow-wrap: anywhere; }
+
 /* ---------- Skills / Experience ---------- */
 
-.home-skill-group + .home-skill-group { margin-block-start: var(--cds-spacing-06); }
+.home-skill-group + .home-skill-group { margin-block-start: var(--cds-spacing-05); }
 
 .home-skill-group__label {
   font-size: var(--cds-label-01-font-size);
@@ -254,35 +317,96 @@ body {
   margin-block-start: var(--cds-spacing-03);
 }
 
-/* ---------- Archives ---------- */
+/* ---------- Projects · Archives 카드 캐러셀 ---------- */
 
-.home-archive-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+/* 가로 스크롤 트랙: 넓은 화면에서 3장, 좁으면 최소 18rem으로 다음 카드가 살짝 보임 */
+.home-card-track {
+  display: flex;
   gap: 1px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
 }
 
-.home-archive-tile {
+.home-card-track::-webkit-scrollbar { display: none; }
+
+.home-card-track > li {
+  flex: 0 0 max(18rem, calc((100% - 2px) / 3));
+  scroll-snap-align: start;
+}
+
+.home-carousel__controls {
+  display: flex;
+  margin-block-start: var(--cds-spacing-05);
+}
+
+.home-carousel__controls[hidden] { display: none; }
+
+.home-card {
   position: relative;
   display: flex;
   flex-direction: column;
   block-size: 100%;
-  min-block-size: 10rem;
   padding: var(--cds-spacing-05) var(--cds-spacing-05) var(--cds-spacing-10);
 }
 
-@media (min-width: 42rem) {
-  .home-archive-tile { min-block-size: 13rem; }
+/* 썸네일: 카드 위쪽 가장자리까지 꽉 차게. img가 없으면 아이콘 자리표시 */
+.home-card__thumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  margin: calc(-1 * var(--cds-spacing-05)) calc(-1 * var(--cds-spacing-05)) var(--cds-spacing-05);
+  background-color: var(--cds-layer-accent-01);
+  fill: var(--cds-icon-secondary);
+  overflow: hidden;
 }
 
-.home-archive-tile__meta {
+.home-card__thumb img {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.home-card__head {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--cds-spacing-04);
+  margin-block-end: var(--cds-spacing-05);
+}
+
+.home-card__head .home-card__title { margin-block: 0 var(--cds-spacing-02); }
+
+.home-card__logo {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 3rem;
+  block-size: 3rem;
+  padding: var(--cds-spacing-02);
+  background-color: #fff; /* 로고 잉크가 검정/컬러라 테마와 무관하게 흰 바탕 */
+  border: 1px solid var(--cds-border-subtle-01);
+}
+
+.home-card__logo img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+  object-fit: contain;
+}
+
+.home-card__meta {
   font-size: var(--cds-label-01-font-size);
   line-height: var(--cds-label-01-line-height);
   letter-spacing: var(--cds-label-01-letter-spacing);
   color: var(--cds-text-secondary);
 }
 
-.home-archive-tile__title {
+.home-card__title {
   font-size: var(--cds-heading-03-font-size);
   font-weight: var(--cds-heading-03-font-weight);
   line-height: var(--cds-heading-03-line-height);
@@ -290,14 +414,20 @@ body {
   margin-block: var(--cds-spacing-03);
 }
 
-.home-archive-tile__desc {
+.home-card__desc {
   font-size: var(--cds-body-01-font-size);
   line-height: var(--cds-body-01-line-height);
   letter-spacing: var(--cds-body-01-letter-spacing);
   color: var(--cds-text-secondary);
+  margin-block-end: var(--cds-spacing-05);
 }
 
-.home-archive-tile__icon {
+.home-card__award {
+  align-self: flex-start;
+  margin: auto 0 0;
+}
+
+.home-card__icon {
   position: absolute;
   inset-block-end: var(--cds-spacing-05);
   inset-inline-end: var(--cds-spacing-05);
@@ -305,51 +435,24 @@ body {
   transition: transform 110ms cubic-bezier(0.2, 0, 0.38, 0.9);
 }
 
-.home-archive-tile:hover .home-archive-tile__icon { transform: translateX(var(--cds-spacing-02)); }
+/* Carbon의 :focus outline은 안쪽(-2px)에 그려져 썸네일에 가려지고, 마우스 클릭 후 뒤로가기로 돌아오면
+   포커스가 남아 일부만 보인다 → 키보드 포커스(:focus-visible)일 때만 썸네일 위에 테두리를 덮어 그림 */
+.home-card:focus { outline: none; }
 
-/* ---------- Links ---------- */
-
-.home-link-list { border-top: 1px solid var(--cds-border-subtle-01); }
-
-.home-link-row {
-  display: grid;
-  grid-template-columns: 20px auto 1fr 16px;
-  align-items: center;
-  gap: var(--cds-spacing-05);
-  padding: var(--cds-spacing-05);
-  border-bottom: 1px solid var(--cds-border-subtle-01);
-  color: var(--cds-text-primary);
-  text-decoration: none;
-  transition: background-color 110ms cubic-bezier(0.2, 0, 0.38, 0.9);
+.home-card:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border: 2px solid var(--cds-focus);
+  pointer-events: none;
 }
 
-.home-link-row:hover { background-color: var(--cds-layer-hover-01); }
-
-.home-link-row:focus {
-  outline: 2px solid var(--cds-focus);
-  outline-offset: -2px;
+@media screen and (prefers-contrast) {
+  .home-card:focus-visible::after { border-style: dotted; }
 }
 
-.home-link-row__icon { fill: var(--cds-icon-primary); }
-
-.home-link-row__label {
-  font-size: var(--cds-heading-compact-02-font-size);
-  font-weight: var(--cds-heading-compact-02-font-weight);
-  line-height: var(--cds-heading-compact-02-line-height);
-}
-
-.home-link-row__value {
-  font-size: var(--cds-body-compact-01-font-size);
-  line-height: var(--cds-body-compact-01-line-height);
-  color: var(--cds-text-secondary);
-  text-align: end;
-  min-inline-size: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.home-link-row__arrow { fill: var(--cds-icon-interactive); }
+.home-card:hover .home-card__icon { transform: translateX(var(--cds-spacing-02)); }
 
 /* ---------- Footer ---------- */
 

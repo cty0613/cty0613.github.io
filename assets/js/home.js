@@ -25,6 +25,34 @@
     window.addEventListener('resize', setHeroSpeed);
   }
 
+  // ---------- Projects · Archives 캐러셀: 넘칠 때만 이전/다음 버튼 표시, 한 번에 보이는 장수만큼 이동 ----------
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  Array.prototype.slice.call(document.querySelectorAll('[data-carousel]')).forEach(function (track) {
+    var prev = document.querySelector('[data-carousel-prev][aria-controls="' + track.id + '"]');
+    var next = document.querySelector('[data-carousel-next][aria-controls="' + track.id + '"]');
+    if (!prev || !next) return;
+    var controls = prev.parentElement;
+
+    var update = function () {
+      var max = track.scrollWidth - track.clientWidth;
+      controls.hidden = max <= 1;
+      prev.disabled = track.scrollLeft <= 1;
+      next.disabled = track.scrollLeft >= max - 1;
+    };
+    var page = function (dir) {
+      var item = track.firstElementChild;
+      var step = item ? item.getBoundingClientRect().width + 1 : track.clientWidth; // 1 = gap
+      var count = Math.max(1, Math.floor((track.clientWidth + 1) / step));
+      track.scrollBy({ left: dir * step * count, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+    };
+
+    prev.addEventListener('click', function () { page(-1); });
+    next.addEventListener('click', function () { page(1); });
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  });
+
   // ---------- 모바일 사이드 내비게이션 (Carbon UI shell, 1056px 미만) ----------
   var toggle = document.querySelector('[data-menu-toggle]');
   var sideNav = document.getElementById('side-nav');

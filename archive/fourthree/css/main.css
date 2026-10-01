@@ -121,6 +121,15 @@
 	
 }
 
+#footer a.portfolio-link,
+#main-footer a.portfolio-link {
+	color: #909090;
+	text-decoration: underline;
+}
+
+#footer a.portfolio-link:hover,
+#main-footer a.portfolio-link:hover { color: white; }
+
 #csl-box2 {
 	background-image: url(../files/image/4321.jpg);
 	background-size: cover;

@@ -43,5 +43,5 @@ $('.navlist-item').click(()=> {
 
 $('.nav-donate').click(()=>{
     window.alert("뚜라미에 도움 주셔서 매우 감사드립니다 :) 확인을 누르시면 카카오페이 송금으로 이동합니다.");
-    location.href = kapay;
+    window.top.location.href = kapay;
 })

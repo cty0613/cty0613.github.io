@@ -122,6 +122,13 @@
     color: white;
 }
 
+.footer a.portfolio-link {
+	color: #aaa;
+	text-decoration: underline;
+}
+
+.footer a.portfolio-link:hover { color: white; }
+
 .poster {
 	position: absolute;
 	display: block;
