@@ -444,9 +444,9 @@ body {
 }
 
 .detail-meta {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  gap: var(--cds-spacing-05) var(--cds-spacing-07);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cds-spacing-05) var(--cds-spacing-11);
   padding-block-start: var(--cds-spacing-05);
   border-top: 1px solid var(--cds-border-subtle-01);
 }
@@ -465,7 +465,7 @@ body {
   letter-spacing: var(--cds-body-01-letter-spacing);
 }
 
-.detail-award { margin: var(--cds-spacing-06) 0 0; }
+.detail-award { margin: 0; }
 
 .detail-text {
   font-size: var(--cds-body-02-font-size);
