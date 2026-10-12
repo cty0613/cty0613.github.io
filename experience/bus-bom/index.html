@@ -74,7 +74,6 @@
             <div><dt>기간</dt><dd>2025.06 – 2025.08</dd></div>
             <div><dt>소속</dt><dd>한화비전 VEDA 2기</dd></div>
             <div><dt>구분</dt><dd>협업 프로젝트</dd></div>
-            <div><dt>성과</dt><dd><span class="cds--tag cds--tag--blue detail-award"><span class="cds--tag__label">최종 프로젝트 우수팀</span></span></dd></div>
           </dl>
         </div>
       </div>
@@ -86,7 +85,61 @@
           <h2 class="home-section__title">개요</h2>
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
-          <p class="detail-text">스마트 버스정류장 승차위치 안내 시스템 — 비전 시스템으로 정류장에 접근하는 버스를 실시간 분석해 적절한 승차 위치를 안내하는 임베디드 시스템</p>
+          <dl class="detail-table">
+            <div>
+              <dt>프로젝트 기간</dt>
+              <dd>2025.06 – 2025.08</dd>
+            </div>
+            <div>
+              <dt>개발 인원</dt>
+              <dd>4명</dd>
+            </div>
+            <div>
+              <dt>프로젝트 목적</dt>
+              <dd>비전 시스템을 통해 정류장으로 접근하는 버스를 실시간 감지하고, 이를 통해 승객들을 적절한 승차 위치로 안내하는 스마트 정류장 임베디드 시스템 개발</dd>
+            </div>
+            <div>
+              <dt>프로젝트 내용</dt>
+              <dd>
+                <ul class="detail-list">
+                  <li>정류장 접근 버스 실시간 탐지 &amp; 승차 위치 예측
+                    <ul class="detail-list">
+                      <li>정류장 접근 버스 객체 탐지 및 번호판 OCR 수행</li>
+                      <li>정류장 점유 상태 모니터링 및 정차 위치 예측</li>
+                    </ul>
+                  </li>
+                  <li>전용 관제 애플리케이션 &amp; 전광판 승객 안내
+                    <ul class="detail-list">
+                      <li>원격 라이브 스트리밍 및 CCTV 카메라 설정</li>
+                      <li>LED 전광판 안내 + 스피커 음성 안내</li>
+                    </ul>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>상세 역할</dt>
+              <dd>
+                <ul class="detail-list">
+                  <li>디바이스 제어용 서버 &amp; CGI 애플리케이션 구현</li>
+                  <li>RTSP 스트림 + 메타데이터 동기처리 및 영상 디코딩 &amp; 렌더링 구현</li>
+                  <li>디바이스 아키텍처 &amp; 인터페이스 설계 (HTTPS, IPC)</li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+          <dl class="detail-extra">
+            <div>
+              <dt>성과</dt>
+              <dd><span class="cds--tag cds--tag--blue detail-award"><span class="cds--tag__label">최종 프로젝트 우수팀</span></span></dd>
+              <dd>한화비전 VEDA 2기 최종 프로젝트 발표회 우수팀 선정</dd>
+            </div>
+            <div>
+              <dt>링크</dt>
+              <dd><a class="cds--link detail-extra__link" href="https://github.com/orgs/BusBom/repositories" target="_blank" rel="noopener"><span class="detail-extra__icon" style="-webkit-mask-image: url(../../assets/img/icons/github.svg); mask-image: url(../../assets/img/icons/github.svg)" aria-hidden="true"></span>GitHub</a></dd>
+              <dd><a class="cds--link detail-extra__link" href="https://youtu.be/7-66zhigkUE" target="_blank" rel="noopener"><span class="detail-extra__icon" style="-webkit-mask-image: url(../../assets/img/icons/youtube.svg); mask-image: url(../../assets/img/icons/youtube.svg)" aria-hidden="true"></span>Demo</a></dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
@@ -94,13 +147,50 @@
     <section class="home-section detail-section">
       <div class="cds--css-grid">
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
-          <h2 class="home-section__title">주요 내용</h2>
+          <h2 class="home-section__title">기술 스택</h2>
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
-          <ul class="detail-list">
-            <li>디바이스 제어용 서버 &amp; CGI 애플리케이션 구현</li>
-            <li>RTSP 스트림 + 메타데이터 동기처리 및 영상 디코딩 &amp; 렌더링 멀티스레드 구현</li>
-            <li>디바이스 아키텍처 &amp; 인터페이스 설계 (HTTPS, IPC)</li>
+          <ul class="detail-stack">
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/cplusplus.svg); mask-image: url(../../assets/img/icons/cplusplus.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">C/C++</span>
+              <span class="detail-stack__use">디바이스 SW 전반</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/qt.svg); mask-image: url(../../assets/img/icons/qt.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">Qt</span>
+              <span class="detail-stack__use">관제 클라이언트</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/ffmpeg.svg); mask-image: url(../../assets/img/icons/ffmpeg.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">FFmpeg</span>
+              <span class="detail-stack__use">RTSP 수신 · 디코딩</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/opencv.svg); mask-image: url(../../assets/img/icons/opencv.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">OpenCV</span>
+              <span class="detail-stack__use">OCR 이미지 전처리</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/screen.svg); mask-image: url(../../assets/img/icons/screen.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">SDL2</span>
+              <span class="detail-stack__use">영상 렌더링</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/nginx.svg); mask-image: url(../../assets/img/icons/nginx.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">Nginx + FastCGI</span>
+              <span class="detail-stack__use">HTTPS 웹 서버 · 디바이스 제어 CGI</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/tensorflow.svg); mask-image: url(../../assets/img/icons/tensorflow.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">TFLite</span>
+              <span class="detail-stack__use">번호판 OCR 추론</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/raspberrypi.svg); mask-image: url(../../assets/img/icons/raspberrypi.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">RPi4</span>
+              <span class="detail-stack__use">디바이스 하드웨어</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -109,10 +199,56 @@
     <section class="home-section detail-section">
       <div class="cds--css-grid">
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
-          <h2 class="home-section__title">성과</h2>
+          <h2 class="home-section__title">주요 기능</h2>
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
-          <p class="detail-text">최종 프로젝트 우수팀</p>
+          <ol class="detail-flow">
+            <li class="detail-flow__row">
+              <div class="detail-flow__req">
+                <p class="detail-flow__title">정류장 접근 버스 실시간 탐지 &amp; 승차 위치 예측</p>
+                <ul class="detail-list">
+                  <li>접근 버스 객체 탐지 및 번호판 OCR 수행</li>
+                  <li>정류장 점유 상태 모니터링 및 정차 위치 예측</li>
+                </ul>
+              </div>
+              <div class="detail-flow__task">
+                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                <ul class="detail-list">
+                  <li>임베디드 환경에서 실시간성과 정확성 동시 확보</li>
+                  <li>영상 처리 · 분석 및 정차 위치 예측 로직 구현</li>
+                </ul>
+              </div>
+            </li>
+            <li class="detail-flow__row">
+              <div class="detail-flow__req">
+                <p class="detail-flow__title">전용 관제 애플리케이션</p>
+                <ul class="detail-list">
+                  <li>원격 라이브 스트리밍 및 CCTV 카메라 설정</li>
+                  <li>주 · 보조 카메라 화면, 시스템 설정</li>
+                </ul>
+              </div>
+              <div class="detail-flow__task">
+                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                <ul class="detail-list">
+                  <li>디바이스 제어용 네트워크 요청 처리 구현</li>
+                </ul>
+              </div>
+            </li>
+            <li class="detail-flow__row">
+              <div class="detail-flow__req">
+                <p class="detail-flow__title">LED 전광판 · 스피커를 통한 승객 안내</p>
+                <ul class="detail-list">
+                  <li>플랫폼 내 도착 예정 또는 도착 버스 안내, 현재 시각 안내</li>
+                </ul>
+              </div>
+              <div class="detail-flow__task">
+                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                <ul class="detail-list">
+                  <li>관련 하드웨어 제어(드라이버 · 펌웨어) 구현</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
@@ -120,12 +256,138 @@
     <section class="home-section detail-section">
       <div class="cds--css-grid">
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
-          <h2 class="home-section__title">상세 내용</h2>
+          <h2 class="home-section__title">구현 과정</h2>
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
-          <!-- TODO: 상세 내용 작성. 예) 배경/문제 정의, 시스템 구조, 구현 내용, 트러블슈팅, 회고.
-               이미지는 assets/img/ 아래에 두고 <img src="../../assets/img/..."> 로 참조 -->
-          <p class="detail-text">상세 내용을 입력하세요.</p>
+          <details class="detail-accordion" id="impl-rtsp">
+            <summary class="detail-accordion__head">
+              <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/video.svg); mask-image: url(../../assets/img/icons/video.svg)" aria-hidden="true"></span>
+              <h3 class="detail-accordion__heading">
+                <span class="detail-accordion__title">RTSP 스트림 멀티스레드 디코딩</span>
+                <span class="detail-accordion__summary">단일 스레드 → 4단계 파이프라인, 5–6fps → 11–15fps</span>
+              </h3>
+              <svg class="detail-accordion__chevron" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 22 6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"/></svg>
+            </summary>
+            <div class="detail-accordion__body">
+              <p class="detail-text">PC 환경처럼 고수준 FFmpeg API를 쓰는 방식으로는 임베디드 환경에서 충분한 영상 품질과 실시간성을 함께 확보하기 어려웠습니다. 멀티스레드와 저수준 FFmpeg API를 활용한 최적화로 성능 제약 환경에서도 최선의 영상 처리 성능을 끌어내는 것이 목표였습니다.</p>
+              <h4 class="detail-label">확인된 문제</h4>
+              <ul class="detail-list">
+                <li>임베디드 환경(Raspberry Pi 4 SoC)의 성능 제약 — PC 환경에서는 없던 디코딩 &amp; 렌더링 지연</li>
+                <li>특정 연산 단계의 병목 — I/O, OCR 등 다른 태스크와의 실행 시간 불균형으로 패킷 유실, 키프레임 누락, 렌더링 지연 발생</li>
+                <li>결과적으로 렌더링된 영상에 블록 노이즈 · 프레임 드랍, 최대 1초 수준의 지연(latency) 발생</li>
+              </ul>
+              <h4 class="detail-label">해결 · 개선</h4>
+              <ul class="detail-list">
+                <li>단일 스레드 → 4개 스레드 파이프라인(<code>stream</code> · <code>decode</code> · <code>render</code> · <code>ocr</code>)
+                  <ul class="detail-list">
+                    <li>파이프라인 병렬성으로 CPU 연산 극대화, 네트워크 I/O 블로킹 격리</li>
+                  </ul>
+                </li>
+                <li><code>ThreadSafeQueue</code> 도입으로 스레드 간 안전한 데이터 전달
+                  <ul class="detail-list">
+                    <li>패킷 → 디코드 → 렌더링 → OCR 단계마다 큐를 두어 동적 버퍼 역할(스레드 간 지연 · 장애 격리)</li>
+                    <li>생산 → 소비 속도를 조절하는 백프레셔(backpressure) 제어</li>
+                  </ul>
+                </li>
+                <li>프레임 드롭 · 지연 보상 메커니즘
+                  <ul class="detail-list">
+                    <li><code>Clock</code> 구조체로 프레임 타임을 실시간 계산해 너무 늦은 프레임은 드롭, 이른 프레임은 지연 보상</li>
+                    <li>I-Frame 참조, 메타데이터 동기화, PTS 계산에도 활용</li>
+                  </ul>
+                </li>
+                <li>렌더링 · 색공간 변환 최적화
+                  <ul class="detail-list">
+                    <li>OpenCV보다 렌더링 오버헤드가 적은 SDL2 도입, YUV420P 텍스처로 AVFrame을 Zero-Copy 렌더링</li>
+                    <li>메타데이터에서 얻은 크롭 영역만 선택적으로 렌더링 · 색변환해 비용 절감</li>
+                  </ul>
+                </li>
+              </ul>
+              <h4 class="detail-label">결과</h4>
+              <p class="detail-text">하드웨어 가속 없이 FHD H.264 ALL-I 스트림에서 OCR까지 수행하며 최소 11fps 확보 (L-GOP · 저비트레이트에서는 최대 15fps). 기존 5–6fps 대비 100% 이상 개선.</p>
+              <!-- TODO: 이미지 — <img src="../../assets/img/..."> -->
+            </div>
+          </details>
+          <details class="detail-accordion" id="impl-ocr">
+            <summary class="detail-accordion__head">
+              <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/image--search.svg); mask-image: url(../../assets/img/icons/image--search.svg)" aria-hidden="true"></span>
+              <h3 class="detail-accordion__heading">
+                <span class="detail-accordion__title">ONVIF-M 메타데이터 활용 차량번호판 OCR</span>
+                <span class="detail-accordion__summary">분할된 메타데이터 파싱 · PTS 동기화로 번호판 영역 획득</span>
+              </h3>
+              <svg class="detail-accordion__chevron" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 22 6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"/></svg>
+            </summary>
+            <div class="detail-accordion__body">
+              <p class="detail-text">버스 노선번호를 얻으려면 영상 프레임에 정확히 맞는 메타데이터가 있어야 OCR 모델에 넣을 번호판 이미지를 얻을 수 있습니다. IP 카메라의 ONVIF-M 메타데이터를 직접 파싱하고 영상 프레임에 동기화하는 작업을 구현했습니다.</p>
+              <h4 class="detail-label">문제</h4>
+              <ul class="detail-list">
+                <li>RTSP 스트림에서 비디오 패킷과 메타데이터 패킷의 도착 순서가 보장되지 않음 — 메타데이터가 프레임보다 먼저 도착하면 정확한 번호판 영역을 얻기 어려움</li>
+                <li>프레임별 객체 탐지 메타데이터(XML)가 여러 패킷에 걸쳐 나뉘어 전송됨</li>
+              </ul>
+              <h4 class="detail-label">해결</h4>
+              <ul class="detail-list">
+                <li>수신 단계에서 패킷을 식별해 비디오 · 메타데이터를 별도 큐로 전달하고, 렌더 스레드에서 PTS 기반으로 동기화</li>
+                <li><code>MetadataParser</code> 클래스를 직접 구현 — 분할된 AVPacket을 점진적으로 파싱하고, 태그가 완성되면 PTS와 함께 구조체로 반환</li>
+              </ul>
+              <h4 class="detail-label">OCR 파이프라인</h4>
+              <ul class="detail-list">
+                <li>메타데이터의 <code>LicensePlate</code> 객체 영역으로 번호판 크롭 → YUV → BGR 변환</li>
+                <li>HSV 마스크, 원근 보정(warp) 등 OCR 품질 개선용 전처리 후 C++로 포팅한 TFLite OCR 클래스에 입력</li>
+                <li>추론 결과를 Shared Memory에 기록하고, 예측 로직에서 버스노선 DB로 차량번호 → 노선번호 변환</li>
+              </ul>
+              <!-- TODO: 이미지 — <img src="../../assets/img/..."> -->
+            </div>
+          </details>
+          <details class="detail-accordion" id="impl-cgi">
+            <summary class="detail-accordion__head">
+              <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/api.svg); mask-image: url(../../assets/img/icons/api.svg)" aria-hidden="true"></span>
+              <h3 class="detail-accordion__heading">
+                <span class="detail-accordion__title">디바이스 제어 · 통신용 CGI</span>
+                <span class="detail-accordion__summary">Nginx + FastCGI 기반 디바이스 제어 REST API</span>
+              </h3>
+              <svg class="detail-accordion__chevron" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 22 6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"/></svg>
+            </summary>
+            <div class="detail-accordion__body">
+              <p class="detail-text">시스템에 연결된 카메라와 LED 매트릭스의 설정을 제어하고 필요한 정보를 받아오기 위한 REST API를 구현했습니다. Nginx와 FastCGI로 메인 로직과 OS에 손쉽게 접근해 기기 설정 · 제어를 수행하는 웹 서버 + CGI 구조입니다.</p>
+              <ul class="detail-list">
+                <li>Nginx가 전용 Windows 관제 애플리케이션 및 외부 클라이언트의 HTTPS 요청 처리</li>
+                <li>도메인별 모듈형 CGI — 카메라 · 디바이스의 장치 제어 / 상태 조회를 수행하는 얇은 API 제공</li>
+                <li>디바이스 제어 + 상태 조회라는 목적이 같아 한화비전 SUNAPI 프로토콜을 레퍼런스로 설계</li>
+              </ul>
+            </div>
+          </details>
+          <details class="detail-accordion" id="impl-ipc">
+            <summary class="detail-accordion__head">
+              <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/data--connected.svg); mask-image: url(../../assets/img/icons/data--connected.svg)" aria-hidden="true"></span>
+              <h3 class="detail-accordion__heading">
+                <span class="detail-accordion__title">IPC 설계</span>
+                <span class="detail-accordion__summary">Shared Memory · Unix Domain Socket 기반 프로세스 간 통신</span>
+              </h3>
+              <svg class="detail-accordion__chevron" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 22 6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"/></svg>
+            </summary>
+            <div class="detail-accordion__body">
+              <p class="detail-text">기능별로 분할된 프로세스 간 데이터 전달 방법 · 내용 · 시점(명세)을 먼저 설계하고 팀원들과 공유해, 빠른 협업과 쉬운 유지보수가 가능하도록 관련 개발을 주도했습니다.</p>
+              <h4 class="detail-label">프로세스 모듈화</h4>
+              <ul class="detail-list">
+                <li>기능별 프로세스 분리로 장애 · 리소스 · 개발 단위 격리</li>
+                <li>서브 기능 개발 → 상위 기능 통합을 반복</li>
+              </ul>
+              <h4 class="detail-label">고대역폭 IPC (Data Plane) — Shared Memory</h4>
+              <p class="detail-text">영상 프레임, OCR 결과처럼 크고 연속적인 데이터</p>
+              <ul class="detail-list">
+                <li><code>/dev/shm/busbom_frame</code> — PiCam 영상 프레임</li>
+                <li><code>/dev/shm/busbom_sequence</code> — 버스 배차 / 플랫폼 시퀀스</li>
+                <li><code>/dev/shm/bus_approach</code> — OCR 결과</li>
+                <li><code>/dev/shm/busbom_status</code> — 플랫폼 상태</li>
+              </ul>
+              <h4 class="detail-label">저대역폭 IPC (Control Plane) — Unix Domain Socket + CGI</h4>
+              <p class="detail-text">설정 변경, 프리뷰 스냅샷처럼 제어 신호 · 단발성 데이터</p>
+              <ul class="detail-list">
+                <li><code>/tmp/camera_socket</code> — 카메라 설정 변경 제어</li>
+                <li><code>/tmp/roi_socket</code> — 플랫폼 관심영역(ROI) 설정 변경</li>
+              </ul>
+              <!-- TODO: 이미지 — <img src="../../assets/img/..."> -->
+            </div>
+          </details>
         </div>
       </div>
     </section>

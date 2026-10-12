@@ -71,10 +71,9 @@
           </div>
 
           <dl class="detail-meta">
-            <div><dt>기간</dt><dd>2024.03 – 2024.10</dd></div>
+            <div><dt>기간</dt><dd>2024.03 – 2024.11</dd></div>
             <div><dt>소속</dt><dd>창의적종합설계경진대회</dd></div>
             <div><dt>구분</dt><dd>협업 프로젝트</dd></div>
-            <div><dt>성과</dt><dd><span class="cds--tag cds--tag--blue detail-award"><span class="cds--tag__label">창의적종합설계경진대회 은상</span></span></dd></div>
           </dl>
         </div>
       </div>
@@ -86,7 +85,62 @@
           <h2 class="home-section__title">개요</h2>
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
-          <p class="detail-text">비가청 주파수 활용 보행자 안전 경고 시스템 — 스마트폰 마이크와 스피커만으로 차량 접근 신호를 보행자에게 전달하는 E2E 안전 시스템</p>
+          <dl class="detail-table">
+            <div>
+              <dt>프로젝트 기간</dt>
+              <dd>2024.03 – 2024.11</dd>
+            </div>
+            <div>
+              <dt>개발 인원</dt>
+              <dd>6명</dd>
+            </div>
+            <div>
+              <dt>프로젝트 목적</dt>
+              <dd>비가청 주파수 대역의 음향 물리계층을 활용하여, 단순 스마트폰 마이크와 스피커만으로 보행자에게 차량이 접근하고 있다는 경고 신호를 전달하는 E2E 안전 시스템 개발</dd>
+            </div>
+            <div>
+              <dt>프로젝트 내용</dt>
+              <dd>
+                <ul class="detail-list">
+                  <li>비가청 주파수 대역 활용 보행자-차량 간 통신
+                    <ul class="detail-list">
+                      <li>PSK 변조, 19kHz 주파수 대역 활용</li>
+                      <li>송신 모듈 (Arduino + ESP32), 수신 모듈 (모바일 앱)</li>
+                    </ul>
+                  </li>
+                  <li>모바일 앱을 통한 보행자 직접 위험 경고
+                    <ul class="detail-list">
+                      <li>휴대폰 마이크를 통한 경고 신호 수신 및 복조</li>
+                      <li>경고 시 미디어 재생 강제 중지, 음성 알림</li>
+                    </ul>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>상세 역할</dt>
+              <dd>
+                <ul class="detail-list">
+                  <li>비가청 주파수 신호 물리계층 설계 (BPSK, 8bit frame, 128bps)</li>
+                  <li>비가청 신호 수신용 안드로이드 앱 구현</li>
+                  <li>비가청 신호 송신 제어용 ESP32 펌웨어 구현</li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+          <dl class="detail-extra">
+            <div>
+              <dt>성과</dt>
+              <dd><span class="cds--tag cds--tag--blue detail-award"><span class="cds--tag__label">창의적종합설계경진대회 은상</span></span></dd>
+              <dd>2024 공과대학 창의적종합설계경진대회 은상 수상</dd>
+              <dd>최대 상대속도 30km/h · 최대 도달거리 21.3m · 도달 각도 전방 141°</dd>
+            </div>
+            <div>
+              <dt>링크</dt>
+              <dd><a class="cds--link detail-extra__link" href="https://github.com/orgs/CAPSTONE-PAWS/repositories" target="_blank" rel="noopener"><span class="detail-extra__icon" style="-webkit-mask-image: url(../../assets/img/icons/github.svg); mask-image: url(../../assets/img/icons/github.svg)" aria-hidden="true"></span>GitHub</a></dd>
+              <dd><a class="cds--link detail-extra__link" href="https://youtu.be/ifX1Q_T2w4s" target="_blank" rel="noopener"><span class="detail-extra__icon" style="-webkit-mask-image: url(../../assets/img/icons/youtube.svg); mask-image: url(../../assets/img/icons/youtube.svg)" aria-hidden="true"></span>Demo</a></dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
@@ -94,13 +148,40 @@
     <section class="home-section detail-section">
       <div class="cds--css-grid">
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
-          <h2 class="home-section__title">주요 내용</h2>
+          <h2 class="home-section__title">기술 스택</h2>
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
-          <ul class="detail-list">
-            <li>비가청 주파수 신호 물리계층 설계 (BPSK, 8bit frame, 128bps)</li>
-            <li>신호 수신용 안드로이드 모바일 애플리케이션 개발 (Kotlin, Flutter)</li>
-            <li>신호 송신 제어용 ESP32 펌웨어 구현</li>
+          <ul class="detail-stack">
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/cplusplus.svg); mask-image: url(../../assets/img/icons/cplusplus.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">C/C++</span>
+              <span class="detail-stack__use">송신 모듈 펌웨어</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/arduino.svg); mask-image: url(../../assets/img/icons/arduino.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">Arduino</span>
+              <span class="detail-stack__use">송신 모듈 제어</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/espressif.svg); mask-image: url(../../assets/img/icons/espressif.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">ESP32</span>
+              <span class="detail-stack__use">BPSK 신호 생성</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/android.svg); mask-image: url(../../assets/img/icons/android.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">Android</span>
+              <span class="detail-stack__use">마이크 입력 (AudioRecord)</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/kotlin.svg); mask-image: url(../../assets/img/icons/kotlin.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">Kotlin</span>
+              <span class="detail-stack__use">실시간 신호 처리 · 복조</span>
+            </li>
+            <li class="detail-stack__item">
+              <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/flutter.svg); mask-image: url(../../assets/img/icons/flutter.svg)" aria-hidden="true"></span>
+              <span class="detail-stack__name">Flutter</span>
+              <span class="detail-stack__use">보행자 경고 UI</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -109,10 +190,57 @@
     <section class="home-section detail-section">
       <div class="cds--css-grid">
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
-          <h2 class="home-section__title">성과</h2>
+          <h2 class="home-section__title">주요 기능</h2>
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
-          <p class="detail-text">창의적종합설계경진대회 은상</p>
+          <ol class="detail-flow">
+            <li class="detail-flow__row">
+              <div class="detail-flow__req">
+                <p class="detail-flow__title">운전자가 보행자에게 경고 신호 발생</p>
+                <ul class="detail-list">
+                  <li>경적 사용이 제한되는 상황에서도 경고 가능</li>
+                  <li>차량 속도와 연동된 신호 송신</li>
+                </ul>
+              </div>
+              <div class="detail-flow__task">
+                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                <ul class="detail-list">
+                  <li>차량용 송신 디바이스 개발</li>
+                </ul>
+              </div>
+            </li>
+            <li class="detail-flow__row">
+              <div class="detail-flow__req">
+                <p class="detail-flow__title">비가청 주파수를 통한 차량-보행자 통신</p>
+                <ul class="detail-list">
+                  <li>마이크 · 스피커만으로 통신, 별도 인프라 불필요</li>
+                  <li>19kHz 대역 BPSK 변조</li>
+                </ul>
+              </div>
+              <div class="detail-flow__task">
+                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                <ul class="detail-list">
+                  <li>비가청 주파수를 활용한 신호 물리계층 설계</li>
+                  <li>고신뢰성 · 저지연 신호 전달</li>
+                </ul>
+              </div>
+            </li>
+            <li class="detail-flow__row">
+              <div class="detail-flow__req">
+                <p class="detail-flow__title">스마트폰 앱을 통한 보행자 위험 인지</p>
+                <ul class="detail-list">
+                  <li>휴대폰 마이크로 경고 신호 수신 및 복조</li>
+                  <li>경고 시 미디어 재생 강제 중지, 음성 알림</li>
+                </ul>
+              </div>
+              <div class="detail-flow__task">
+                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                <ul class="detail-list">
+                  <li>보행자용 전용 모바일 앱 개발</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
@@ -120,12 +248,72 @@
     <section class="home-section detail-section">
       <div class="cds--css-grid">
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
-          <h2 class="home-section__title">상세 내용</h2>
+          <h2 class="home-section__title">구현 과정</h2>
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
-          <!-- TODO: 상세 내용 작성. 예) 배경/문제 정의, 시스템 구조, 구현 내용, 트러블슈팅, 회고.
-               이미지는 assets/img/ 아래에 두고 <img src="../../assets/img/..."> 로 참조 -->
-          <p class="detail-text">상세 내용을 입력하세요.</p>
+          <details class="detail-accordion" id="impl-phy">
+            <summary class="detail-accordion__head">
+              <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/waveform.svg); mask-image: url(../../assets/img/icons/waveform.svg)" aria-hidden="true"></span>
+              <h3 class="detail-accordion__heading">
+                <span class="detail-accordion__title">비가청 주파수 신호 물리계층 설계</span>
+                <span class="detail-accordion__summary">BPSK · 19kHz 반송파 · 8bit/128bps 프레임, 차속 연동 도플러 보정</span>
+              </h3>
+              <svg class="detail-accordion__chevron" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 22 6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"/></svg>
+            </summary>
+            <div class="detail-accordion__body">
+              <h4 class="detail-label">설계 시 고려한 점</h4>
+              <ul class="detail-list">
+                <li>적절한 전파 직진성 — 너무 강하면 차량 전방에만 도달하고, 너무 약하면 차량 후측방으로 의도치 않게 도달</li>
+                <li>강한 노이즈 저항성 — 휴대폰 마이크가 가청 대역 신호도 함께 받으므로, 실생활에서 노출되기 어려운 대역을 반송파로 선정</li>
+                <li>데이터 프레임 크기 — 너무 길면 송수신 응답이 길어지고, 너무 짧으면 전달 정확성을 확보하기 어려움</li>
+              </ul>
+              <h4 class="detail-label">최종 설계</h4>
+              <ul class="detail-list">
+                <li>변 · 복조 — BPSK(Binary Phase Shift Keying)
+                  <ul class="detail-list">
+                    <li>변복조 구현이 단순해 하드웨어 · 펌웨어 친화적</li>
+                    <li>두 심볼 간 거리가 멀어 낮은 비트 오류율(BER)</li>
+                  </ul>
+                </li>
+                <li>반송 주파수 — 19kHz
+                  <ul class="detail-list">
+                    <li>적절한 직진성과 송신 대역폭 확보, 18kHz 이상 비가청 대역은 실생활에서 노출되기 어려움</li>
+                  </ul>
+                </li>
+                <li>데이터 프레임 — 8bit, 128bps
+                  <ul class="detail-list">
+                    <li>1초에 128bit의 적절한 처리량, 오류 데이터를 검출하기 위한 최소한의 크기</li>
+                  </ul>
+                </li>
+                <li>도플러 보정 — 보행자와의 상대속도로 생기는 신호 왜곡을 줄이기 위해 차속에 연동해 반송 주파수를 편이</li>
+              </ul>
+              <!-- TODO: 이미지 — <img src="../../assets/img/..."> -->
+            </div>
+          </details>
+          <details class="detail-accordion" id="impl-app">
+            <summary class="detail-accordion__head">
+              <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/mobile--audio.svg); mask-image: url(../../assets/img/icons/mobile--audio.svg)" aria-hidden="true"></span>
+              <h3 class="detail-accordion__heading">
+                <span class="detail-accordion__title">신호 송수신용 펌웨어 &amp; 모바일 앱 개발</span>
+                <span class="detail-accordion__summary">ESP32 BPSK 송신 펌웨어, Android FFT 기반 실시간 복조 앱</span>
+              </h3>
+              <svg class="detail-accordion__chevron" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 22 6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"/></svg>
+            </summary>
+            <div class="detail-accordion__body">
+              <h4 class="detail-label">전용 모바일 애플리케이션 (Kotlin + Flutter)</h4>
+              <ul class="detail-list">
+                <li>Android 오디오 입력 및 버퍼링 — <code>AudioRecord</code> API로 마이크 입력을 직접 제어하고, 샘플레이트 · 프레임 크기 · 버퍼 크기를 고정해 지연과 프레임 드랍 최소화</li>
+                <li>실시간 신호 처리 파이프라인 — AudioBuffer → FFT → 위상 비교기 → bitString → Decoder</li>
+                <li>Flutter UI 연동 — 신호 처리 결과를 Platform Channel로 전달해 보행자 경고 UI, 상태 표시, 디버깅 뷰로 시각화</li>
+              </ul>
+              <h4 class="detail-label">비가청 신호 생성 모듈 펌웨어 (ESP32)</h4>
+              <ul class="detail-list">
+                <li>CAN 모듈로 받아온 차량 속도를 기반으로 반송 주파수 편이량 결정</li>
+                <li>18,500Hz ≤ f ≤ 19,500Hz 대역 내 BPSK 신호 생성 제어 (별도 오디오 DAC 하드웨어 사용)</li>
+              </ul>
+              <!-- TODO: 이미지 — <img src="../../assets/img/..."> -->
+            </div>
+          </details>
         </div>
       </div>
     </section>
