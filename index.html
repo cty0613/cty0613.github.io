@@ -38,6 +38,7 @@
         <li><a class="cds--header__menu-item" href="#experience" data-nav-link>Experience</a></li>
         <li><a class="cds--header__menu-item" href="#projects" data-nav-link>Projects</a></li>
         <li><a class="cds--header__menu-item" href="#archives" data-nav-link>Archives</a></li>
+        <li><a class="cds--header__menu-item" href="#others" data-nav-link>Others</a></li>
       </ul>
     </nav>
   </header>
@@ -49,6 +50,7 @@
       <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="#experience" data-nav-link><span class="cds--side-nav__link-text">Experience</span></a></li>
       <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="#projects" data-nav-link><span class="cds--side-nav__link-text">Projects</span></a></li>
       <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="#archives" data-nav-link><span class="cds--side-nav__link-text">Archives</span></a></li>
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="#others" data-nav-link><span class="cds--side-nav__link-text">Others</span></a></li>
     </ul>
   </nav>
   <div class="cds--side-nav__overlay" data-menu-overlay></div>
@@ -81,8 +83,8 @@
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
           <!-- TODO: 자기소개 본문 (문단 추가/삭제 자유) -->
-          <p class="home-body">저만의 역량과 헌신으로 언제 어디서나 없어서는 안될 사람이 되고자 노력하고 있습니다.</p>
-          <p class="home-body">소프트웨어 개발과 임베디드 비전 분야에서 경험을 쌓고 있습니다.</p>
+          <p class="home-body">저만의 역량과 헌신으로 언제 어디서나 없어서는 안될 사람이 되고자 노력하고 있습니다. <br> 임베디드 소프트웨어 개발 분야에서 경험을 쌓고 있습니다</p>
+          <p class="home-body">취미로는 밴드활동과 악기연주, 사진촬영을 즐기고 있습니다.</p>
         </div>
       </div>
     </section>
@@ -334,8 +336,59 @@
         </div>
       </div>
     </section>
-  </main>
 
+    <!-- ===== Others ===== -->
+    <section id="others" class="home-section">
+      <div class="cds--css-grid">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+          <h2 class="home-section__title">Others</h2>
+          <p class="home-section__desc">일 밖에서 즐기는 취미 활동을 소개합니다.</p>
+          <div class="home-carousel__controls" hidden>
+            <button class="cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--md" type="button" aria-label="이전 항목" aria-controls="others-track" data-carousel-prev>
+              <svg class="cds--btn__icon" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 16 20 6 21.4 7.4 12.8 16 21.4 24.6 20 26z"/></svg>
+            </button>
+            <button class="cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--md" type="button" aria-label="다음 항목" aria-controls="others-track" data-carousel-next>
+              <svg class="cds--btn__icon" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M22 16 12 26 10.6 24.6 19.2 16 10.6 7.4 12 6z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-12">
+          <!-- 취미마다 li 블록 하나 (복제 · 삭제 자유). 세부 페이지는 others/<slug>/ (외부 링크 카드는 target="_blank" + 화살표 아이콘을 arrow--up-right로).
+               썸네일은 Projects와 같은 방식 (assets/img/thumbs/<이름>.webp, 16:9로 잘림). 없으면 .home-card__thumb 안에 48px 아이콘 svg 자리표시 -->
+          <ul id="others-track" class="home-card-track" data-carousel>
+            <li>
+              <a class="cds--tile cds--tile--clickable home-card" href="https://cty99e.notion.site/49dbec6ccc424a2bbaa3a7045239bf10" target="_blank" rel="noopener">
+                <span class="home-card__thumb"><img src="assets/img/thumbs/band.webp" alt="" width="800" height="450" loading="lazy"></span>
+                <p class="home-card__meta">Band · Notion</p>
+                <h3 class="home-card__title">밴드</h3>
+                <p class="home-card__desc"> 밴드 활동 아카이브로 이동합니다.</p>
+                <svg class="home-card__icon" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 6V8H22.59L6 24.59 7.41 26 24 9.41V22H26V6z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="cds--tile cds--tile--clickable home-card" href="others/composition/">
+                <span class="home-card__thumb"><img src="assets/img/thumbs/composition.webp" alt="" width="800" height="446" loading="lazy"></span>
+                <p class="home-card__meta">Composition</p>
+                <h3 class="home-card__title">작곡</h3>
+                <p class="home-card__desc">작곡 및 편곡 활동 아카이브로 이동합니다.</p>
+                <svg class="home-card__icon" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>
+              </a>
+            </li>
+            <li>
+              <!-- TODO: href를 인스타그램 계정 주소로 교체 -->
+              <a class="cds--tile cds--tile--clickable home-card" href="https://www.instagram.com/raymond_storage" target="_blank" rel="noopener">
+                <span class="home-card__thumb"><img src="assets/img/thumbs/photography.webp" alt="" width="800" height="533" loading="lazy"></span>
+                <p class="home-card__meta">Photography · Instagram</p>
+                <h3 class="home-card__title">사진</h3>
+                <p class="home-card__desc">순간을 담은 사진 아카이브로 이동합니다.</p>
+                <svg class="home-card__icon" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 6V8H22.59L6 24.59 7.41 26 24 9.41V22H26V6z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="home-footer">
     <div class="cds--css-grid">
       <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-16">

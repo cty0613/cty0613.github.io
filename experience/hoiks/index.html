@@ -36,6 +36,7 @@
         <li><a class="cds--header__menu-item" href="../../#experience">Experience</a></li>
         <li><a class="cds--header__menu-item" href="../../#projects">Projects</a></li>
         <li><a class="cds--header__menu-item" href="../../#archives">Archives</a></li>
+        <li><a class="cds--header__menu-item" href="../../#others">Others</a></li>
       </ul>
     </nav>
   </header>
@@ -46,6 +47,7 @@
       <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#experience"><span class="cds--side-nav__link-text">Experience</span></a></li>
       <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#projects"><span class="cds--side-nav__link-text">Projects</span></a></li>
       <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#archives"><span class="cds--side-nav__link-text">Archives</span></a></li>
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#others"><span class="cds--side-nav__link-text">Others</span></a></li>
     </ul>
   </nav>
   <div class="cds--side-nav__overlay" data-menu-overlay></div>
@@ -81,10 +83,10 @@
 
     <section class="home-section detail-section">
       <div class="cds--css-grid">
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-3">
           <h2 class="home-section__title">개요</h2>
         </div>
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
           <dl class="detail-table">
             <div>
               <dt>프로젝트 기간</dt>
@@ -147,10 +149,10 @@
 
     <section class="home-section detail-section">
       <div class="cds--css-grid">
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-3">
           <h2 class="home-section__title">기술 스택</h2>
         </div>
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
           <ul class="detail-stack">
             <li class="detail-stack__item">
               <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/pytorch.svg); mask-image: url(../../assets/img/icons/pytorch.svg)" aria-hidden="true"></span>
@@ -209,42 +211,48 @@
 
     <section class="home-section detail-section">
       <div class="cds--css-grid">
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-3">
           <h2 class="home-section__title">주요 기능</h2>
         </div>
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
           <ol class="detail-flow">
             <li class="detail-flow__row">
-              <div class="detail-flow__req">
-                <p class="detail-flow__title">AI 비전 기반 사용자 분석 &amp; 맞춤형 UI</p>
-                <ul class="detail-list">
-                  <li>키오스크 카메라로 사용자 성별 · 연령 분석</li>
-                  <li>분석 결과에 따른 UI 자동 전환</li>
-                </ul>
+              <div class="detail-flow__body">
+                <div class="detail-flow__req">
+                  <p class="detail-flow__title">AI 비전 기반 사용자 분석 &amp; 맞춤형 UI</p>
+                  <ul class="detail-list">
+                    <li>키오스크 카메라로 사용자 성별 · 연령 분석</li>
+                    <li>분석 결과에 따른 UI 자동 전환</li>
+                  </ul>
+                </div>
+                <div class="detail-flow__task">
+                  <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                  <ul class="detail-list">
+                    <li>객체탐지 &amp; 안면분석 AI 모델 개발</li>
+                    <li>임베디드 온디바이스 최적화 &amp; 경량화</li>
+                  </ul>
+                </div>
               </div>
-              <div class="detail-flow__task">
-                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
-                <ul class="detail-list">
-                  <li>객체탐지 &amp; 안면분석 AI 모델 개발</li>
-                  <li>임베디드 온디바이스 최적화 &amp; 경량화</li>
-                </ul>
-              </div>
+              <figure class="detail-flow__media"><img src="../../assets/img/projects/hoiks/hoiks_func_1.webp" width="800" height="490" alt="사용자 분석 결과에 따라 전환되는 키오스크 주문 UI 화면" loading="lazy"></figure>
             </li>
             <li class="detail-flow__row">
-              <div class="detail-flow__req">
-                <p class="detail-flow__title">SaaS 서비스를 포함한 실제 키오스크 디바이스</p>
-                <ul class="detail-list">
-                  <li>주문 및 영수증 출력</li>
-                  <li>관리자용 운영 · 정산 SaaS</li>
-                </ul>
+              <div class="detail-flow__body">
+                <div class="detail-flow__req">
+                  <p class="detail-flow__title">SaaS 서비스를 포함한 실제 키오스크 디바이스</p>
+                  <ul class="detail-list">
+                    <li>주문 및 영수증 출력</li>
+                    <li>관리자용 운영 · 정산 SaaS</li>
+                  </ul>
+                </div>
+                <div class="detail-flow__task">
+                  <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                  <ul class="detail-list">
+                    <li>열전사 프린터 제어 (UART)</li>
+                    <li>키오스크 내부 네트워크 구성</li>
+                  </ul>
+                </div>
               </div>
-              <div class="detail-flow__task">
-                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
-                <ul class="detail-list">
-                  <li>열전사 프린터 제어 (UART)</li>
-                  <li>키오스크 내부 네트워크 구성</li>
-                </ul>
-              </div>
+              <figure class="detail-flow__media"><img src="../../assets/img/projects/hoiks/hoiks_func_2.webp" width="666" height="435" alt="관리자용 SaaS 화면과 실제 키오스크 디바이스" loading="lazy"></figure>
             </li>
           </ol>
         </div>
@@ -253,10 +261,10 @@
 
     <section class="home-section detail-section">
       <div class="cds--css-grid">
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-3">
           <h2 class="home-section__title">구현 과정</h2>
         </div>
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
           <details class="detail-accordion" id="impl-vision">
             <summary class="detail-accordion__head">
               <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/face--activated.svg); mask-image: url(../../assets/img/icons/face--activated.svg)" aria-hidden="true"></span>
@@ -268,12 +276,71 @@
             </summary>
             <div class="detail-accordion__body">
               <p class="detail-text">키오스크에 탑재된 카메라로 사용 고객의 얼굴 영역을 탐지 · 추출하고, 이를 바탕으로 성별과 연령을 추론하는 AI 모델을 개발했습니다.</p>
+              <div class="detail-figure-row">
+                <figure class="detail-figure detail-figure--wide">
+                  <div class="detail-figure__canvas">
+                    <svg viewBox="0 0 720 194" role="img" aria-labelledby="hk-vision-flow-title">
+                      <title id="hk-vision-flow-title">요청 기반 추론 흐름: 키오스크가 FastAPI 추론 서버에 GET 요청을 보내면 PiCam으로 프레임을 캡처하고, YOLOv8(yolov8n-face)이 얼굴을 탐지해 224×224 얼굴 영역을 잘라낸 뒤, VGG-16을 파인튜닝한 성별 모델과 연령 모델이 병렬로 추론해 age와 gender 결과를 JSON으로 키오스크에 돌려준다.</title>
+                      <defs><marker id="hk-vision-arrow" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path class="dg-head" d="M0 0 8 4 0 8z"/></marker></defs>
+                      <rect class="dg-group" x="124.5" y="20.5" width="595" height="135"/>
+                      <text class="dg-sub dg-faint" x="136" y="36" text-anchor="start">FastAPI 추론 서버 · Raspberry Pi 5</text>
+                      <rect class="dg-ext" x="0.5" y="60.5" width="91" height="55"/>
+                      <text class="dg-name" x="46" y="84" text-anchor="middle">키오스크</text>
+                      <text class="dg-sub" x="46" y="100" text-anchor="middle">UI 자동 전환</text>
+                      <path class="dg-flow" d="M92 76H140" marker-end="url(#hk-vision-arrow)"/>
+                      <text class="dg-sub dg-mono" x="108" y="70" text-anchor="middle">GET</text>
+                      <rect class="dg-thread" x="140.5" y="56.5" width="83" height="63"/>
+                      <rect class="dg-accent" x="140" y="56" width="4" height="64"/>
+                      <text class="dg-name" x="154" y="75" text-anchor="start">PiCam</text>
+                      <text class="dg-text" x="154" y="93" text-anchor="start">프레임 캡처</text>
+                      <text class="dg-sub" x="154" y="109" text-anchor="start">요청 시에만</text>
+                      <path class="dg-flow" d="M224 88H244" marker-end="url(#hk-vision-arrow)"/>
+                      <rect class="dg-thread" x="244.5" y="56.5" width="103" height="63"/>
+                      <rect class="dg-accent" x="244" y="56" width="4" height="64"/>
+                      <text class="dg-name" x="258" y="75" text-anchor="start">YOLOv8</text>
+                      <text class="dg-text" x="258" y="93" text-anchor="start">얼굴 탐지</text>
+                      <text class="dg-sub dg-mono" x="258" y="109" text-anchor="start">yolov8n-face</text>
+                      <path class="dg-flow" d="M348 88H368" marker-end="url(#hk-vision-arrow)"/>
+                      <text class="dg-sub dg-mono" x="390" y="58" text-anchor="middle">224×224</text>
+                      <rect class="dg-slot dg-frame" x="368.5" y="66.5" width="43" height="43"/>
+                      <circle class="dg-slot dg-frame" cx="390" cy="83" r="8"/>
+                      <path class="dg-slot dg-frame" d="M377 109.5C377 99 403 99 403 109.5"/>
+                      <text class="dg-sub" x="390" y="128" text-anchor="middle">얼굴 크롭</text>
+                      <path class="dg-flow" d="M412 88H420V68H432" marker-end="url(#hk-vision-arrow)"/>
+                      <path class="dg-flow" d="M420 88V112H432" marker-end="url(#hk-vision-arrow)"/>
+                      <rect class="dg-thread" x="432.5" y="48.5" width="103" height="39"/>
+                      <rect class="dg-accent" x="432" y="48" width="4" height="40"/>
+                      <text class="dg-name" x="446" y="64" text-anchor="start">성별 모델</text>
+                      <text class="dg-sub" x="446" y="80" text-anchor="start">VGG-16 파인튜닝</text>
+                      <rect class="dg-thread" x="432.5" y="92.5" width="103" height="39"/>
+                      <rect class="dg-accent" x="432" y="92" width="4" height="40"/>
+                      <text class="dg-name" x="446" y="108" text-anchor="start">연령 모델</text>
+                      <text class="dg-sub" x="446" y="124" text-anchor="start">VGG-16 파인튜닝</text>
+                      <text class="dg-sub dg-faint" x="484" y="146" text-anchor="middle">병렬 추론</text>
+                      <path class="dg-flow" d="M536 68H548V88"/>
+                      <path class="dg-flow" d="M536 112H548V88H564" marker-end="url(#hk-vision-arrow)"/>
+                      <rect class="dg-thread" x="564.5" y="56.5" width="143" height="63"/>
+                      <text class="dg-sub" x="578" y="75" text-anchor="start">추론 결과</text>
+                      <text class="dg-text dg-mono" x="578" y="93" text-anchor="start">age: 26</text>
+                      <text class="dg-text dg-mono" x="578" y="109" text-anchor="start">gender: "Male"</text>
+                      <path class="dg-flow" d="M636 120V172H46V116" marker-end="url(#hk-vision-arrow)"/>
+                      <text class="dg-sub" x="340" y="188" text-anchor="middle">200 OK · JSON 응답</text>
+                    </svg>
+                  </div>
+                  <figcaption>요청 기반 추론 흐름 — 키오스크가 요청할 때만 프레임을 캡처해 얼굴을 탐지하고, 잘라낸 얼굴 영역으로 성별 · 연령 모델을 병렬 추론해 JSON으로 돌려줍니다.</figcaption>
+                </figure>
+                <figure class="detail-figure detail-figure--compact">
+                  <div class="detail-figure__canvas">
+                    <img src="../../assets/img/projects/hoiks/hoiks_impl_detect.webp" width="960" height="540" alt="여러 사람의 얼굴마다 face 라벨과 신뢰도가 붙은 바운딩 박스가 그려진 얼굴 탐지 결과" loading="lazy">
+                  </div>
+                  <figcaption>얼굴 탐지 모델 테스트 결과 — 한 프레임 안의 여러 얼굴을 신뢰도와 함께 탐지합니다.</figcaption>
+                </figure>
+              </div>
               <ul class="detail-list">
                 <li>얼굴 탐지 — YOLOv8: 사전학습된 <code>yolov8n-face</code> 모델로 얼굴 영역만 추출해 안면 분석 모델에 전달</li>
                 <li>안면 분석 — VGG-16: 성별 모델과 연령 모델을 병렬 추론, 사전학습 모델을 한국인 안면 데이터로 파인튜닝</li>
                 <li>FastAPI 엔드포인트 제공 — 키오스크 내부에서 추론 결과에 접근, 요청 시에만 추론하도록 서버 구성</li>
               </ul>
-              <!-- TODO: 이미지 — <img src="../../assets/img/..."> -->
             </div>
           </details>
           <details class="detail-accordion" id="impl-ondevice">
@@ -293,13 +360,95 @@
                 <li>클라우드 추론 서비스 사용과 모델 최적화 사이의 선택</li>
               </ul>
               <h4 class="detail-label">해결</h4>
+              <div class="detail-figure-row">
+                <figure class="detail-figure detail-figure--wide">
+                  <div class="detail-figure__canvas">
+                    <svg viewBox="0 0 720 168" role="img" aria-labelledby="hk-runtime-title">
+                      <title id="hk-runtime-title">모델 변환 구조: 얼굴 탐지 모델(yolov8n-face.pt)은 NCNN 포맷(model.ncnn.param, .bin)으로, 성별·연령 VGG-16 모델 두 개는 ONNX 포맷(age_model.onnx, gender_model.onnx)으로 변환하고, Raspberry Pi 5의 Cortex-A76 CPU에서 FastAPI 추론 서버가 각각 ncnn.Net()과 ort.InferenceSession()으로 불러와 0.3초 이내에 응답한다.</title>
+                      <defs><marker id="hk-runtime-arrow" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path class="dg-head" d="M0 0 8 4 0 8z"/></marker></defs>
+                      <text class="dg-sub dg-faint" x="0" y="12" text-anchor="start">학습 모델 (PyTorch)</text>
+                      <text class="dg-sub dg-faint" x="212" y="12" text-anchor="start">CPU 추론 런타임</text>
+                      <text class="dg-sub dg-faint" x="560" y="12" text-anchor="start">서빙</text>
+                      <rect class="dg-group" x="196.5" y="20.5" width="523" height="143"/>
+                      <text class="dg-sub dg-faint" x="208" y="156" text-anchor="start">Raspberry Pi 5 · ARM Cortex-A76 CPU (온디바이스)</text>
+                      <rect class="dg-thread" x="0.5" y="28.5" width="151" height="47"/>
+                      <text class="dg-name" x="12" y="48" text-anchor="start">얼굴 탐지</text>
+                      <text class="dg-sub dg-mono" x="12" y="64" text-anchor="start">yolov8n-face.pt</text>
+                      <path class="dg-flow" d="M152 52H212" marker-end="url(#hk-runtime-arrow)"/>
+                      <text class="dg-sub dg-mono" x="174" y="46" text-anchor="middle">export</text>
+                      <rect class="dg-thread" x="212.5" y="28.5" width="175" height="47"/>
+                      <rect class="dg-accent" x="212" y="28" width="4" height="48"/>
+                      <text class="dg-name" x="226" y="48" text-anchor="start">NCNN</text>
+                      <text class="dg-sub dg-mono" x="226" y="64" text-anchor="start">model.ncnn.param · .bin</text>
+                      <path class="dg-flow" d="M388 52H560" marker-end="url(#hk-runtime-arrow)"/>
+                      <text class="dg-sub dg-mono" x="474" y="46" text-anchor="middle">ncnn.Net()</text>
+                      <rect class="dg-thread" x="0.5" y="92.5" width="151" height="47"/>
+                      <text class="dg-name" x="12" y="112" text-anchor="start">성별 · 연령</text>
+                      <text class="dg-sub dg-mono" x="12" y="128" text-anchor="start">VGG-16 ×2 (.pt)</text>
+                      <path class="dg-flow" d="M152 116H212" marker-end="url(#hk-runtime-arrow)"/>
+                      <text class="dg-sub dg-mono" x="174" y="110" text-anchor="middle">export</text>
+                      <rect class="dg-thread" x="212.5" y="92.5" width="175" height="47"/>
+                      <rect class="dg-accent" x="212" y="92" width="4" height="48"/>
+                      <text class="dg-name" x="226" y="112" text-anchor="start">ONNX Runtime</text>
+                      <text class="dg-sub dg-mono" x="226" y="128" text-anchor="start">age · gender_model.onnx</text>
+                      <path class="dg-flow" d="M388 116H560" marker-end="url(#hk-runtime-arrow)"/>
+                      <text class="dg-sub dg-mono" x="474" y="110" text-anchor="middle">ort.InferenceSession()</text>
+                      <rect class="dg-thread" x="560.5" y="28.5" width="147" height="111"/>
+                      <text class="dg-name" x="634" y="74" text-anchor="middle">FastAPI</text>
+                      <text class="dg-sub" x="634" y="90" text-anchor="middle">추론 서버</text>
+                      <text class="dg-text dg-result" x="634" y="114" text-anchor="middle">0.3초 이내 응답</text>
+                    </svg>
+                  </div>
+                  <figcaption>모델 변환 구조 — 학습한 PyTorch 모델을 CPU 추론 전용 런타임 포맷으로 변환하고, 디바이스의 FastAPI 추론 서버가 두 런타임을 불러와 사용합니다.</figcaption>
+                </figure>
+                <figure class="detail-figure detail-figure--compact">
+                  <div class="detail-figure__canvas">
+                    <svg viewBox="0 0 400 194" role="img" aria-labelledby="hk-bench-title">
+                      <title id="hk-bench-title">추론 지연 자체 벤치마크(Raspberry Pi 5): 얼굴 탐지는 네이티브 500ms 이상에서 NCNN 약 200ms로, 성별·연령은 PyTorch 네이티브 1000ms 이상에서 ONNX Runtime 약 100ms로, 합계는 1500ms 이상에서 약 300ms로 약 80% 단축. 최대 CPU 온도 68°C.</title>
+                      <rect class="dg-bar-before" x="0" y="1" width="10" height="10"/>
+                      <text class="dg-sub" x="14" y="10" text-anchor="start">네이티브 (PyTorch)</text>
+                      <rect class="dg-bar-after" x="130" y="1" width="10" height="10"/>
+                      <text class="dg-sub" x="144" y="10" text-anchor="start">최적화 (NCNN · ONNX Runtime)</text>
+                      <line class="dg-grid" x1="183.5" y1="24" x2="183.5" y2="140"/>
+                      <line class="dg-grid" x1="266.5" y1="24" x2="266.5" y2="140"/>
+                      <line class="dg-grid" x1="350.5" y1="24" x2="350.5" y2="140"/>
+                      <text class="dg-name" x="0" y="42" text-anchor="start">얼굴 탐지</text>
+                      <text class="dg-sub dg-mono" x="0" y="55" text-anchor="start">YOLOv8n</text>
+                      <rect class="dg-bar-before" x="100" y="30" width="83" height="12"/>
+                      <text class="dg-sub" x="187" y="40" text-anchor="start">500ms+</text>
+                      <rect class="dg-bar-after" x="100" y="44" width="33" height="12"/>
+                      <text class="dg-text" x="137" y="54" text-anchor="start">~200ms</text>
+                      <text class="dg-name" x="0" y="82" text-anchor="start">성별 · 연령</text>
+                      <text class="dg-sub dg-mono" x="0" y="95" text-anchor="start">VGG-16 ×2</text>
+                      <rect class="dg-bar-before" x="100" y="70" width="167" height="12"/>
+                      <text class="dg-sub" x="271" y="80" text-anchor="start">1000ms+</text>
+                      <rect class="dg-bar-after" x="100" y="84" width="17" height="12"/>
+                      <text class="dg-text" x="121" y="94" text-anchor="start">~100ms</text>
+                      <text class="dg-name" x="0" y="122" text-anchor="start">합계</text>
+                      <text class="dg-sub" x="0" y="135" text-anchor="start">전체 응답</text>
+                      <rect class="dg-bar-before" x="100" y="110" width="250" height="12"/>
+                      <text class="dg-sub" x="354" y="120" text-anchor="start">1500ms+</text>
+                      <rect class="dg-bar-after" x="100" y="124" width="50" height="12"/>
+                      <text class="dg-text" x="154" y="134" text-anchor="start">~300ms</text>
+                      <text class="dg-name" x="208" y="134" text-anchor="start">−80%</text>
+                      <line class="dg-axis" x1="100.5" y1="24" x2="100.5" y2="140"/>
+                      <text class="dg-sub dg-mono" x="100" y="154" text-anchor="middle">0</text>
+                      <text class="dg-sub dg-mono" x="183" y="154" text-anchor="middle">500</text>
+                      <text class="dg-sub dg-mono" x="267" y="154" text-anchor="middle">1000</text>
+                      <text class="dg-sub dg-mono" x="350" y="154" text-anchor="middle">1500ms</text>
+                      <text class="dg-sub dg-faint" x="0" y="176" text-anchor="start">RPi 5 8GB · Cortex-A76 · 500ms 간격 반복 요청</text>
+                      <text class="dg-sub dg-faint" x="0" y="190" text-anchor="start">최대 CPU 온도 68°C · 낮을수록 좋음</text>
+                    </svg>
+                  </div>
+                  <figcaption>자체 벤치마크 — 모델별 추론 지연, 네이티브 대비 최적화 후</figcaption>
+                </figure>
+              </div>
               <ul class="detail-list">
                 <li>YOLO 모델을 NCNN으로 변환 → 200ms 이내 추론</li>
                 <li>연령 · 성별 모델을 ONNX Runtime으로 변환 → 100ms 이내 추론</li>
               </ul>
               <h4 class="detail-label">결과</h4>
               <p class="detail-text">총 추론 시간 0.3초 이내로 기존 대비 약 80% 단축 (500ms 간격 반복 요청 자체 벤치마크 기준).</p>
-              <!-- TODO: 이미지 — <img src="../../assets/img/..."> -->
             </div>
           </details>
           <details class="detail-accordion" id="impl-printer">
@@ -313,13 +462,72 @@
             </summary>
             <div class="detail-accordion__body">
               <p class="detail-text">키오스크에 꼭 필요한 영수증 프린터(열전사 프린터)를 제어하는 UART 통신 애플리케이션을 구현했습니다. 이를 실제 환경(대동제 축제, 졸업전시회)에서 주문 영수증 출력과 이벤트용 포토 프린터로 운용하며 사용자 경험을 얻었습니다.</p>
+              <figure class="detail-figure detail-figure--wide">
+                <div class="detail-figure__canvas">
+                  <svg viewBox="0 0 720 168" role="img" aria-labelledby="hk-print-title">
+                    <title id="hk-print-title">프린터 출력 흐름: 키오스크가 HTTP로 FastAPI의 GET /print 엔드포인트에 출력을 요청하면, ESC/POS 애플리케이션의 print_receipt()가 이미지·QR·텍스트를 출력 명령으로 만들고, Serial(/dev/ttyAMA0, 115200 · 8N1)을 통해 UART로 열전사 프린터에 전송한다. Raspberry Pi 5에서는 디바이스 트리와 부팅 스크립트로 UART를 별도로 설정했다.</title>
+                    <defs><marker id="hk-print-arrow" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path class="dg-head" d="M0 0 8 4 0 8z"/></marker></defs>
+                    <rect class="dg-ext" x="0.5" y="36.5" width="91" height="55"/>
+                    <text class="dg-name" x="46" y="60" text-anchor="middle">키오스크</text>
+                    <text class="dg-sub" x="46" y="76" text-anchor="middle">출력 요청</text>
+                    <path class="dg-flow" d="M92 64H140" marker-end="url(#hk-print-arrow)"/>
+                    <text class="dg-sub dg-mono" x="116" y="58" text-anchor="middle">HTTP</text>
+                    <rect class="dg-thread" x="140.5" y="32.5" width="115" height="63"/>
+                    <rect class="dg-accent" x="140" y="32" width="4" height="64"/>
+                    <text class="dg-name" x="154" y="51" text-anchor="start">FastAPI</text>
+                    <text class="dg-text dg-mono" x="154" y="69" text-anchor="start">GET /print</text>
+                    <text class="dg-sub" x="154" y="85" text-anchor="start">AI 추론 서버에 통합</text>
+                    <path class="dg-flow" d="M256 64H276" marker-end="url(#hk-print-arrow)"/>
+                    <rect class="dg-thread" x="276.5" y="32.5" width="123" height="63"/>
+                    <rect class="dg-accent" x="276" y="32" width="4" height="64"/>
+                    <text class="dg-name" x="290" y="51" text-anchor="start">ESC/POS 앱</text>
+                    <text class="dg-text dg-mono" x="290" y="69" text-anchor="start">print_receipt()</text>
+                    <text class="dg-sub" x="290" y="85" text-anchor="start">이미지 · QR · 텍스트</text>
+                    <path class="dg-flow" d="M400 64H420" marker-end="url(#hk-print-arrow)"/>
+                    <rect class="dg-thread" x="420.5" y="32.5" width="131" height="63"/>
+                    <rect class="dg-accent" x="420" y="32" width="4" height="64"/>
+                    <text class="dg-name dg-mono" x="434" y="51" text-anchor="start">Serial</text>
+                    <text class="dg-text dg-mono" x="434" y="69" text-anchor="start">/dev/ttyAMA0</text>
+                    <text class="dg-sub dg-mono" x="434" y="85" text-anchor="start">115200 · 8N1</text>
+                    <path class="dg-flow" d="M552 64H612" marker-end="url(#hk-print-arrow)"/>
+                    <text class="dg-sub dg-mono" x="582" y="58" text-anchor="middle">UART</text>
+                    <rect class="dg-ext" x="612.5" y="36.5" width="107" height="55"/>
+                    <text class="dg-name" x="666" y="60" text-anchor="middle">열전사 프린터</text>
+                    <text class="dg-sub" x="666" y="76" text-anchor="middle">영수증 · 포토</text>
+                    <line class="dg-guide" x1="486" y1="96" x2="486" y2="120"/>
+                    <rect class="dg-group" x="380.5" y="120.5" width="211" height="43"/>
+                    <text class="dg-name" x="486" y="138" text-anchor="middle">RPi 5 UART 설정</text>
+                    <text class="dg-sub" x="486" y="155" text-anchor="middle">디바이스 트리 · 부팅 스크립트</text>
+                    <text class="dg-sub dg-faint" x="372" y="146" text-anchor="end">RPi 4와 달리 별도 설정 필요</text>
+                  </svg>
+                </div>
+                <figcaption>프린터 출력 흐름 — 키오스크의 HTTP 요청을 FastAPI 엔드포인트가 받아 ESC/POS 명령으로 만들고, UART로 열전사 프린터에 전송합니다.</figcaption>
+              </figure>
               <ul class="detail-list">
                 <li>ESC/POS 규격 애플리케이션 — Python 시리얼 통신 라이브러리로 이미지 · QR · 텍스트 출력 API 구현</li>
                 <li>Raspberry Pi 5 디바이스 세팅 — RPi 4와 달리 별도 시리얼 디바이스 설정이 필요해 디바이스 트리 · 부팅 스크립트 구성</li>
                 <li>FastAPI 엔드포인트에 통합 — 내부 키오스크 클라이언트의 HTTP 출력 요청 → ESC/POS 애플리케이션 → UART</li>
-                <li>대동제 동아리 주점의 주문 키오스크, 졸업프로젝트 전시회의 이벤트용 포토 프린터로 활용</li>
               </ul>
-              <!-- TODO: 이미지 — <img src="../../assets/img/..."> -->
+              <h4 class="detail-label">현장 운용</h4>
+              <p class="detail-text">대동제 동아리 주점의 주문 키오스크와 졸업프로젝트 전시회의 이벤트용 포토 프린터로 활용했습니다.</p>
+              <div class="detail-gallery">
+                <figure>
+                  <img src="../../assets/img/projects/hoiks/hoiks_event_1.webp" width="600" height="800" alt="주점 주문 키오스크 앞에서 출력된 주문 영수증을 들고 있는 모습" loading="lazy">
+                  <figcaption>대동제 동아리 주점 — 주문 영수증</figcaption>
+                </figure>
+                <figure>
+                  <img src="../../assets/img/projects/hoiks/hoiks_event_2.webp" width="600" height="800" alt="축제 부스에서 손님이 키오스크 화면으로 주문하는 모습" loading="lazy">
+                  <figcaption>대동제 동아리 주점 — 주문 키오스크</figcaption>
+                </figure>
+                <figure>
+                  <img src="../../assets/img/projects/hoiks/hoiks_event_3.webp" width="600" height="800" alt="사진과 QR 코드가 인쇄된 HOIKS 포토 영수증" loading="lazy">
+                  <figcaption>졸업프로젝트 전시회 — 포토 영수증</figcaption>
+                </figure>
+                <figure>
+                  <img src="../../assets/img/projects/hoiks/hoiks_event_4.webp" width="600" height="800" alt="HOIKS PHOTO 화면으로 관람객들이 사진을 찍는 모습" loading="lazy">
+                  <figcaption>졸업프로젝트 전시회 — HOIKS PHOTO</figcaption>
+                </figure>
+              </div>
             </div>
           </details>
         </div>

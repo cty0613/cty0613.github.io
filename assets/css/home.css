@@ -749,6 +749,34 @@ body {
 
 .detail-flow__label svg { transform: rotate(90deg); }
 
+/* 이미지가 있는 행: 내용(.detail-flow__body) | 이미지 2열, 좁은 화면에서는 세로로 */
+.detail-flow__body {
+  display: grid;
+  gap: var(--cds-spacing-04);
+  align-content: start;
+}
+
+.detail-flow__media img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  background-color: var(--cds-layer-01);
+  border: 1px solid var(--cds-border-subtle-01);
+}
+
+/* 배경이 투명한 세로 이미지: 행 높이를 키우지 않도록 높이를 제한하고 가운데 맞춤 */
+.detail-flow__media--contain img {
+  max-block-size: 16rem;
+  object-fit: contain;
+}
+
+@media (min-width: 42rem) {
+  .detail-flow__row:has(> .detail-flow__media) {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 3fr);
+    gap: var(--cds-spacing-06);
+  }
+}
+
 .detail-flow__ref {
   margin-block-start: var(--cds-spacing-03);
   font-size: var(--cds-label-01-font-size);
@@ -826,6 +854,216 @@ body {
 }
 
 .detail-accordion__body > .detail-label:first-child { margin-block-start: 0; }
+
+/* 구현 과정 다이어그램: 인라인 SVG, 색은 Carbon 토큰으로 두 테마 대응.
+   좁은 화면에서는 글자가 너무 작아지지 않도록 가로 스크롤 */
+.detail-figure { margin-block: var(--cds-spacing-05) var(--cds-spacing-06); }
+
+.detail-figure__canvas {
+  overflow-x: auto;
+  padding: var(--cds-spacing-05) var(--cds-spacing-04);
+  background-color: var(--cds-layer-01);
+}
+
+.detail-figure svg {
+  display: block;
+  inline-size: 100%;
+  min-inline-size: 24rem;
+  max-inline-size: 40rem;
+  block-size: auto;
+  margin-inline: auto;
+  font-family: inherit;
+}
+
+/* 가로로 긴 다이어그램: 넓은 화면에서는 1:1 이하로, 좁으면 가로 스크롤 */
+.detail-figure--wide svg { min-inline-size: 36rem; max-inline-size: 45rem; }
+.detail-figure--wide .dg-name { font-size: 12px; }
+.detail-figure--wide .dg-text { font-size: 11px; }
+.detail-figure--wide .dg-sub { font-size: 10px; }
+
+.detail-figure--compact svg { max-inline-size: 25rem; }
+.detail-figure--compact .dg-name { font-size: 11px; }
+.detail-figure--compact .dg-sub { font-size: 10px; }
+.detail-figure--compact .dg-block-label { font-size: 9px; }
+
+/* 두 다이어그램 묶음: 충분히 넓으면 나란히(SVG 폭 720:400 비율), 아니면 세로로 */
+.detail-figure-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--cds-spacing-05);
+  margin-block: var(--cds-spacing-05) var(--cds-spacing-06);
+}
+
+.detail-figure-row > .detail-figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.detail-figure-row .detail-figure__canvas {
+  flex: 1;
+  display: grid;
+  align-content: center;
+}
+
+@media (min-width: 88rem) {
+  .detail-figure-row {
+    grid-template-columns: minmax(0, 720fr) minmax(0, 400fr);
+    gap: var(--cds-spacing-04);
+  }
+
+  .detail-figure-row .detail-figure svg { min-inline-size: 0; }
+}
+
+/* 텍스트 | 다이어그램 2열: 넓은 화면에서 다이어그램을 텍스트 오른쪽에 */
+.detail-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--cds-spacing-06);
+}
+
+.detail-split__text > .detail-label:first-child { margin-block-start: 0; }
+
+.detail-split > .detail-figure { margin: 0; }
+
+.detail-figure--arch svg { min-inline-size: 30rem; max-inline-size: 36rem; }
+.detail-figure--arch .dg-name { font-size: 11px; }
+.detail-figure--arch .dg-text { font-size: 10px; }
+.detail-figure--arch .dg-sub { font-size: 9px; }
+
+@media (min-width: 88rem) {
+  .detail-split { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); align-items: start; }
+  .detail-split .detail-figure svg { min-inline-size: 0; }
+}
+
+.detail-figure figcaption {
+  margin-block-start: var(--cds-spacing-03);
+  font-size: var(--cds-label-01-font-size);
+  line-height: var(--cds-label-01-line-height);
+  letter-spacing: var(--cds-label-01-letter-spacing);
+  color: var(--cds-text-secondary);
+}
+
+/* 사진 그림: 다이어그램과 같은 캔버스 안에 이미지 */
+.detail-figure__canvas > img {
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 40rem;
+  block-size: auto;
+  margin-inline: auto;
+}
+
+/* 현장 사진 묶음(3:4): 좁은 화면 2열, 넓은 화면 4열 */
+.detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--cds-spacing-05) var(--cds-spacing-04);
+  margin-block: var(--cds-spacing-05) var(--cds-spacing-06);
+}
+
+@media (min-width: 66rem) {
+  .detail-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.detail-gallery img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  background-color: var(--cds-layer-01);
+}
+
+/* 가로 사진 묶음(4:3): 넓은 화면 3열, 좁으면 1열 */
+.detail-gallery--wide { grid-template-columns: minmax(0, 1fr); }
+
+@media (min-width: 42rem) {
+  .detail-gallery--wide { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.detail-gallery--wide img { aspect-ratio: 4 / 3; }
+
+/* 정사각형 묶음(곡 커버 등): 기본 그리드(2열 → 넓은 화면 4열) 그대로 */
+
+/* 갤러리가 breadcrumb 바로 아래에 오는 페이지(others/*) */
+.detail-hero .detail-gallery { margin-block-start: var(--cds-spacing-07); }
+
+/* 클릭 가능한 셀(작곡): 정지 썸네일 위에 미리보기 영상을 겹쳐 두고 재생될 때만 보이게 한다 */
+.detail-gallery__link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  color: var(--cds-text-primary);
+}
+
+.detail-gallery__link:focus { outline: none; }
+
+.detail-gallery__link:focus-visible {
+  outline: 2px solid var(--cds-focus);
+  outline-offset: -2px;
+}
+
+.detail-gallery__preview {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 110ms cubic-bezier(0.2, 0, 0.38, 0.9);
+  pointer-events: none;
+}
+
+.detail-gallery__link.is-previewing .detail-gallery__preview { opacity: 1; }
+
+.detail-gallery--square img { aspect-ratio: 1 / 1; }
+
+.detail-gallery figcaption {
+  margin-block-start: var(--cds-spacing-03);
+  font-size: var(--cds-label-01-font-size);
+  line-height: var(--cds-label-01-line-height);
+  letter-spacing: var(--cds-label-01-letter-spacing);
+  color: var(--cds-text-secondary);
+}
+
+/* 곡 캡션: 제목 / 역할 / 아티스트 · 날짜를 한 줄씩 */
+.detail-gallery figcaption span { display: block; }
+
+.detail-gallery__title { color: var(--cds-text-primary); }
+
+.dg-ext { fill: none; stroke: var(--cds-border-strong-01); stroke-dasharray: 4 3; }
+.dg-thread { fill: var(--cds-background); stroke: var(--cds-border-strong-01); }
+.dg-accent { fill: var(--cds-border-interactive); }
+.dg-queue { fill: var(--cds-layer-accent-01); }
+.dg-slot { stroke: var(--cds-border-strong-01); }
+.dg-flow { fill: none; stroke: var(--cds-icon-secondary); stroke-width: 1.5; }
+.dg-flow--meta { stroke-dasharray: 5 3; }
+.dg-head { fill: var(--cds-icon-secondary); }
+.dg-name { fill: var(--cds-text-primary); font-size: 13px; font-weight: 600; }
+.dg-text { fill: var(--cds-text-primary); font-size: 12px; }
+.dg-sub { fill: var(--cds-text-secondary); font-size: 11px; }
+.dg-frame { fill: none; }
+.dg-bbox { fill: none; stroke: var(--cds-support-success); stroke-width: 1.5; }
+.dg-result { fill: var(--cds-link-primary); }
+.dg-group { fill: none; stroke: var(--cds-border-subtle-01); }
+.dg-shm { fill: var(--cds-support-info); fill-opacity: 0.14; stroke: var(--cds-support-info); }
+.dg-faint { opacity: 0.75; }
+.dg-mono { font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', monospace; }
+.dg-guide { stroke: var(--cds-border-strong-01); stroke-dasharray: 3 3; }
+.dg-axis { stroke: var(--cds-text-secondary); }
+.dg-block-label { fill: #ffffff; font-size: 10px; }
+.dg-stage-1 { fill: #0f62fe; }
+.dg-stage-2 { fill: #8a3ffc; }
+.dg-stage-3 { fill: #007d79; }
+.dg-stage-4 { fill: #d02670; }
+.dg-bar-before { fill: var(--cds-border-strong-01); }
+.dg-bar-after { fill: var(--cds-border-interactive); }
+.dg-grid { stroke: var(--cds-border-subtle-01); }
+.dg-wave { fill: none; stroke: var(--cds-border-interactive); stroke-width: 1.5; stroke-linejoin: round; }
+.dg-wave-ref { fill: none; stroke: var(--cds-icon-secondary); stroke-width: 1; stroke-linejoin: round; }
+.dg-guide-solid { fill: none; stroke: var(--cds-icon-secondary); }
+.dg-dot-tx { fill: var(--cds-background); stroke: var(--cds-icon-secondary); stroke-width: 1.5; }
+.dg-dot-rx { fill: var(--cds-border-interactive); }
 
 /* 기술 스택: 아이콘 타일. 아이콘은 mask로 그려 테마 글자색을 따름 */
 .detail-stack {

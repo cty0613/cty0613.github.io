@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko" class="cds--white">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>작곡 · Tae Young Choi</title>
+  <meta name="description" content="취미 · 작곡">
+
+  <script>
+    (function () {
+      var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.className = dark ? 'cds--g100' : 'cds--white';
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@carbon/styles@1.116.0/css/styles.min.css" rel="stylesheet">
+  <link href="../../assets/css/home.css" rel="stylesheet">
+</head>
+<body>
+  <header class="cds--header" aria-label="Tae Young Choi">
+    <a class="cds--skip-to-content" href="#main-content" tabindex="0">본문으로 건너뛰기</a>
+    <button class="cds--header__menu-trigger cds--header__action cds--header__menu-toggle cds--header__menu-toggle__hidden"
+            type="button" aria-label="메뉴 열기" title="메뉴 열기" aria-expanded="false" aria-controls="side-nav" data-menu-toggle>
+      <svg class="icon-menu" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6H28V8H4zM4 24H28V26H4zM4 12H28V14H4zM4 18H28V20H4z"/></svg>
+      <svg class="icon-close" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M17.4141 16 24 9.4141 22.5859 8 16 14.5859 9.4143 8 8 9.4141 14.5859 16 8 22.5859 9.4143 24 16 17.4141 22.5859 24 24 22.5859 17.4141 16z"/></svg>
+    </button>
+    <a class="cds--header__name" href="../../">
+      <span class="cds--header__name--prefix">Tae Young Choi</span>&nbsp;Portfolio
+    </a>
+    <nav class="cds--header__nav" aria-label="섹션 이동">
+      <ul class="cds--header__menu-bar">
+        <li><a class="cds--header__menu-item" href="../../#about">About</a></li>
+        <li><a class="cds--header__menu-item" href="../../#experience">Experience</a></li>
+        <li><a class="cds--header__menu-item" href="../../#projects">Projects</a></li>
+        <li><a class="cds--header__menu-item" href="../../#archives">Archives</a></li>
+        <li><a class="cds--header__menu-item" href="../../#others">Others</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav id="side-nav" class="cds--side-nav cds--side-nav__navigation cds--side-nav--ux cds--side-nav--hidden" aria-label="섹션 이동">
+    <ul class="cds--side-nav__items">
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#about"><span class="cds--side-nav__link-text">About</span></a></li>
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#experience"><span class="cds--side-nav__link-text">Experience</span></a></li>
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#projects"><span class="cds--side-nav__link-text">Projects</span></a></li>
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#archives"><span class="cds--side-nav__link-text">Archives</span></a></li>
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#others"><span class="cds--side-nav__link-text">Others</span></a></li>
+    </ul>
+  </nav>
+  <div class="cds--side-nav__overlay" data-menu-overlay></div>
+
+  <main id="main-content" class="home">
+    <section class="home-section home-section--hero detail-hero">
+      <div class="cds--css-grid">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-16">
+          <nav aria-label="Breadcrumb">
+            <ol class="cds--breadcrumb cds--breadcrumb--no-trailing-slash">
+              <li class="cds--breadcrumb-item"><a class="cds--link" href="../../">Home</a></li>
+              <li class="cds--breadcrumb-item"><a class="cds--link" href="../../#others">Others</a></li>
+              <li class="cds--breadcrumb-item cds--breadcrumb-item--current"><a class="cds--link" href="./" aria-current="page">작곡</a></li>
+            </ol>
+          </nav>
+
+          <!-- 곡마다 figure 하나 (최신순, 복제 · 삭제 자유). 셀을 호버/포커스하면 미리보기가 재생되고, 클릭하면 YouTube(href)가 새 탭으로 열린다.
+               · 정지 썸네일: assets/img/others/composition/<slug>.webp (1:1, 720px)
+               · 미리보기: img에 data-gif="…/<slug>.anim.webp" (애니메이션 WebP/GIF, 호버 시 src 교체)
+                 또는 img 뒤에 <video class="detail-gallery__preview" src="….mp4" muted loop playsinline preload="none"></video> (무음 짧은 클립)
+                 미리보기를 둘 다 두지 않으면 클릭만 동작 -->
+          <div class="detail-gallery detail-gallery--square">
+            <figure>
+              <a class="detail-gallery__link" href="https://youtu.be/kgheAW6IHqQ" target="_blank" rel="noopener" data-preview aria-label="청천난류 (Skyline) — YouTube에서 보기">
+                <img src="../../assets/img/others/composition/skyline.webp" width="720" height="720" alt="" data-gif="../../assets/img/others/composition/skyline.anim.webp" loading="lazy">
+              </a>
+              <figcaption><span class="detail-gallery__title">청천난류 (Skyline)</span><span>작사 · 작곡</span><span>정이 · 2026.07</span></figcaption>
+            </figure>
+            <figure>
+              <a class="detail-gallery__link" href="https://youtu.be/hT85AC2o2Ps" target="_blank" rel="noopener" data-preview aria-label="없는 자리 (Residue) — YouTube에서 보기">
+                <img src="../../assets/img/others/composition/residue.webp" width="720" height="720" alt="" data-gif="../../assets/img/others/composition/residue.anim.webp" loading="lazy">
+              </a>
+              <figcaption><span class="detail-gallery__title">없는 자리 (Residue)</span><span>작곡</span><span>정이 · 2026.02</span></figcaption>
+            </figure>
+            <figure>
+              <a class="detail-gallery__link" href="https://youtu.be/dPnQILMM4m8" target="_blank" rel="noopener" data-preview aria-label="여름이오나요? (summer comes) — YouTube에서 보기">
+                <img src="../../assets/img/others/composition/summer-comes.webp" width="720" height="720" alt="" loading="lazy">
+              </a>
+              <figcaption><span class="detail-gallery__title">여름이오나요? (summer comes)</span><span>작곡 · 기타</span><span>정이 · 2025.02</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section detail-section">
+      <div class="cds--css-grid">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-16">
+          <a class="cds--btn cds--btn--ghost detail-back" href="../../#others">
+            <svg class="detail-back__icon" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M14 26 15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z"/></svg>
+            Others 목록으로
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="home-footer">
+    <div class="cds--css-grid">
+      <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-16">
+        <p>© Tae Young Choi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/home.js"></script>
+</body>
+</html>

@@ -53,6 +53,43 @@
     update();
   });
 
+  // ---------- 작곡 갤러리: 셀 호버/포커스 시 미리보기(video 또는 data-gif) 재생 ----------
+  // 모션 줄이기 설정이면 정지 썸네일만 보이고, 터치 기기는 탭하면 바로 링크로 이동
+  Array.prototype.slice.call(document.querySelectorAll('[data-preview]')).forEach(function (cell) {
+    var video = cell.querySelector('video');
+    var gif = cell.querySelector('img[data-gif]');
+    if (!video && !gif) return;
+    var still = gif && gif.getAttribute('src');
+    // 호버 순간에 내려받으면 재생이 늦으므로 로드가 끝난 뒤 미리 받아 둠
+    if (gif) window.addEventListener('load', function () { new Image().src = gif.getAttribute('data-gif'); });
+
+    var start = function () {
+      if (reduceMotion.matches) return;
+      if (video) {
+        var played = video.play();
+        if (played && played.catch) played.catch(function () {});
+      } else {
+        gif.src = gif.getAttribute('data-gif');
+      }
+    };
+    var stop = function () {
+      if (video) {
+        video.pause();
+        video.currentTime = 0;
+        cell.classList.remove('is-previewing');
+      } else {
+        gif.src = still;
+      }
+    };
+
+    // 첫 프레임이 실제로 그려진 뒤에만 영상을 보여 줘 빈 화면이 번쩍이지 않게 함
+    if (video) video.addEventListener('playing', function () { cell.classList.add('is-previewing'); });
+    cell.addEventListener('mouseenter', start);
+    cell.addEventListener('focus', start);
+    cell.addEventListener('mouseleave', stop);
+    cell.addEventListener('blur', stop);
+  });
+
   // ---------- 모바일 사이드 내비게이션 (Carbon UI shell, 1056px 미만) ----------
   var toggle = document.querySelector('[data-menu-toggle]');
   var sideNav = document.getElementById('side-nav');

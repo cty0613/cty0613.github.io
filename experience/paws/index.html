@@ -36,6 +36,7 @@
         <li><a class="cds--header__menu-item" href="../../#experience">Experience</a></li>
         <li><a class="cds--header__menu-item" href="../../#projects">Projects</a></li>
         <li><a class="cds--header__menu-item" href="../../#archives">Archives</a></li>
+        <li><a class="cds--header__menu-item" href="../../#others">Others</a></li>
       </ul>
     </nav>
   </header>
@@ -46,6 +47,7 @@
       <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#experience"><span class="cds--side-nav__link-text">Experience</span></a></li>
       <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#projects"><span class="cds--side-nav__link-text">Projects</span></a></li>
       <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#archives"><span class="cds--side-nav__link-text">Archives</span></a></li>
+      <li class="cds--side-nav__item"><a class="cds--side-nav__link" href="../../#others"><span class="cds--side-nav__link-text">Others</span></a></li>
     </ul>
   </nav>
   <div class="cds--side-nav__overlay" data-menu-overlay></div>
@@ -81,10 +83,10 @@
 
     <section class="home-section detail-section">
       <div class="cds--css-grid">
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-3">
           <h2 class="home-section__title">개요</h2>
         </div>
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
           <dl class="detail-table">
             <div>
               <dt>프로젝트 기간</dt>
@@ -96,7 +98,7 @@
             </div>
             <div>
               <dt>프로젝트 목적</dt>
-              <dd>비가청 주파수 대역의 음향 물리계층을 활용하여, 단순 스마트폰 마이크와 스피커만으로 보행자에게 차량이 접근하고 있다는 경고 신호를 전달하는 E2E 안전 시스템 개발</dd>
+              <dd>비가청 주파수 대역의 음향 물리계층을 활용하여, 단순 스마트폰 마이크와 스피커만으로 <br> 보행자에게 차량이 접근하고 있다는 경고 신호를 전달하는 E2E 안전 시스템 개발</dd>
             </div>
             <div>
               <dt>프로젝트 내용</dt>
@@ -147,10 +149,10 @@
 
     <section class="home-section detail-section">
       <div class="cds--css-grid">
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-3">
           <h2 class="home-section__title">기술 스택</h2>
         </div>
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
           <ul class="detail-stack">
             <li class="detail-stack__item">
               <span class="detail-stack__icon" style="-webkit-mask-image: url(../../assets/img/icons/cplusplus.svg); mask-image: url(../../assets/img/icons/cplusplus.svg)" aria-hidden="true"></span>
@@ -189,56 +191,65 @@
 
     <section class="home-section detail-section">
       <div class="cds--css-grid">
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-3">
           <h2 class="home-section__title">주요 기능</h2>
         </div>
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
           <ol class="detail-flow">
             <li class="detail-flow__row">
-              <div class="detail-flow__req">
-                <p class="detail-flow__title">운전자가 보행자에게 경고 신호 발생</p>
-                <ul class="detail-list">
-                  <li>경적 사용이 제한되는 상황에서도 경고 가능</li>
-                  <li>차량 속도와 연동된 신호 송신</li>
-                </ul>
+              <div class="detail-flow__body">
+                <div class="detail-flow__req">
+                  <p class="detail-flow__title">운전자가 보행자에게 경고 신호 발생</p>
+                  <ul class="detail-list">
+                    <li>경적 사용이 제한되는 상황에서도 경고 가능</li>
+                    <li>차량 속도와 연동된 신호 송신</li>
+                  </ul>
+                </div>
+                <div class="detail-flow__task">
+                  <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                  <ul class="detail-list">
+                    <li>차량용 송신 디바이스 개발</li>
+                  </ul>
+                </div>
               </div>
-              <div class="detail-flow__task">
-                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
-                <ul class="detail-list">
-                  <li>차량용 송신 디바이스 개발</li>
-                </ul>
-              </div>
+              <figure class="detail-flow__media"><img src="../../assets/img/projects/paws/paws_func_1.webp" width="800" height="449" alt="차량 대시보드 위 PAWS 송신 모듈 옆에서 운전하는 모습" loading="lazy"></figure>
             </li>
             <li class="detail-flow__row">
-              <div class="detail-flow__req">
-                <p class="detail-flow__title">비가청 주파수를 통한 차량-보행자 통신</p>
-                <ul class="detail-list">
-                  <li>마이크 · 스피커만으로 통신, 별도 인프라 불필요</li>
-                  <li>19kHz 대역 BPSK 변조</li>
-                </ul>
+              <div class="detail-flow__body">
+                <div class="detail-flow__req">
+                  <p class="detail-flow__title">비가청 주파수를 통한 차량-보행자 통신</p>
+                  <ul class="detail-list">
+                    <li>마이크 · 스피커만으로 통신, 별도 인프라 불필요</li>
+                    <li>19kHz 대역 BPSK 변조</li>
+                  </ul>
+                </div>
+                <div class="detail-flow__task">
+                  <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                  <ul class="detail-list">
+                    <li>비가청 주파수를 활용한 신호 물리계층 설계</li>
+                    <li>고신뢰성 · 저지연 신호 전달</li>
+                  </ul>
+                </div>
               </div>
-              <div class="detail-flow__task">
-                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
-                <ul class="detail-list">
-                  <li>비가청 주파수를 활용한 신호 물리계층 설계</li>
-                  <li>고신뢰성 · 저지연 신호 전달</li>
-                </ul>
-              </div>
+              <figure class="detail-flow__media"><img src="../../assets/img/projects/paws/paws_func_2.webp" width="800" height="449" alt="건물 사이 골목에서 보행자에게 다가오는 차량을 위에서 내려다본 모습" loading="lazy"></figure>
             </li>
             <li class="detail-flow__row">
-              <div class="detail-flow__req">
-                <p class="detail-flow__title">스마트폰 앱을 통한 보행자 위험 인지</p>
-                <ul class="detail-list">
-                  <li>휴대폰 마이크로 경고 신호 수신 및 복조</li>
-                  <li>경고 시 미디어 재생 강제 중지, 음성 알림</li>
-                </ul>
+              <div class="detail-flow__body">
+                <div class="detail-flow__req">
+                  <p class="detail-flow__title">스마트폰 앱을 통한 보행자 위험 인지</p>
+                  <ul class="detail-list">
+                    <li>휴대폰 마이크로 경고 신호 수신 및 복조</li>
+                    <li>경고 시 미디어 재생 강제 중지, 음성 알림</li>
+                  </ul>
+                </div>
+                <div class="detail-flow__task">
+                  <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
+                  <ul class="detail-list">
+                    <li>보행자용 전용 모바일 앱 개발</li>
+                  </ul>
+                </div>
               </div>
-              <div class="detail-flow__task">
-                <p class="detail-flow__label"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"/></svg>핵심 구현 과제</p>
-                <ul class="detail-list">
-                  <li>보행자용 전용 모바일 앱 개발</li>
-                </ul>
-              </div>
+              <figure class="detail-flow__media detail-flow__media--contain"><img src="../../assets/img/projects/paws/paws_func_3.webp" width="480" height="634" alt="PAWS 앱 설정 화면 위에 COLLISION HAZARD 경고 알림이 표시된 스마트폰" loading="lazy"></figure>
             </li>
           </ol>
         </div>
@@ -247,10 +258,10 @@
 
     <section class="home-section detail-section">
       <div class="cds--css-grid">
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-4">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-3">
           <h2 class="home-section__title">구현 과정</h2>
         </div>
-        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-8">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
           <details class="detail-accordion" id="impl-phy">
             <summary class="detail-accordion__head">
               <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/waveform.svg); mask-image: url(../../assets/img/icons/waveform.svg)" aria-hidden="true"></span>
@@ -268,6 +279,94 @@
                 <li>데이터 프레임 크기 — 너무 길면 송수신 응답이 길어지고, 너무 짧으면 전달 정확성을 확보하기 어려움</li>
               </ul>
               <h4 class="detail-label">최종 설계</h4>
+              <div class="detail-figure-row">
+                <figure class="detail-figure detail-figure--wide">
+                  <div class="detail-figure__canvas">
+                    <svg viewBox="0 0 720 196" role="img" aria-labelledby="pw-bpsk-title">
+                      <title id="pw-bpsk-title">BPSK 변조 예시: 8비트 프레임 01000001을 보내면 19kHz 반송파의 위상이 비트 0일 때는 그대로, 비트 1일 때는 180도(π) 반전된다. 128bps이므로 1비트는 약 7.8ms, 8비트 프레임 하나는 62.5ms이며, 수신 측은 기준 위상과 비교해 비트를 판정한다.</title>
+                      <defs><marker id="pw-bpsk-arrow" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="dg-head" d="M0 0 8 4 0 8z"/></marker></defs>
+                      <line class="dg-grid" x1="100.5" y1="8" x2="100.5" y2="174"/>
+                      <line class="dg-grid" x1="175.5" y1="8" x2="175.5" y2="174"/>
+                      <line class="dg-grid" x1="250.5" y1="8" x2="250.5" y2="174"/>
+                      <line class="dg-grid" x1="325.5" y1="8" x2="325.5" y2="174"/>
+                      <line class="dg-grid" x1="400.5" y1="8" x2="400.5" y2="174"/>
+                      <line class="dg-grid" x1="475.5" y1="8" x2="475.5" y2="174"/>
+                      <line class="dg-grid" x1="550.5" y1="8" x2="550.5" y2="174"/>
+                      <line class="dg-grid" x1="625.5" y1="8" x2="625.5" y2="174"/>
+                      <line class="dg-grid" x1="700.5" y1="8" x2="700.5" y2="174"/>
+                      <rect class="dg-shm" x="176" y="8" width="74" height="166"/>
+                      <rect class="dg-shm" x="626" y="8" width="74" height="166"/>
+                      <text class="dg-name dg-mono" x="137.5" y="22" text-anchor="middle">0</text>
+                      <text class="dg-name dg-mono" x="212.5" y="22" text-anchor="middle">1</text>
+                      <text class="dg-name dg-mono" x="287.5" y="22" text-anchor="middle">0</text>
+                      <text class="dg-name dg-mono" x="362.5" y="22" text-anchor="middle">0</text>
+                      <text class="dg-name dg-mono" x="437.5" y="22" text-anchor="middle">0</text>
+                      <text class="dg-name dg-mono" x="512.5" y="22" text-anchor="middle">0</text>
+                      <text class="dg-name dg-mono" x="587.5" y="22" text-anchor="middle">0</text>
+                      <text class="dg-name dg-mono" x="662.5" y="22" text-anchor="middle">1</text>
+                      <text class="dg-name" x="0" y="22" text-anchor="start">데이터</text>
+                      <path class="dg-flow" d="M100 52H175V34H250V52H325H400H475H550H625V34H700"/>
+                      <text class="dg-sub" x="0" y="47" text-anchor="start">비트 신호</text>
+                      <path class="dg-wave-ref" d="M100 84.0L102.5 79.1L105 75.1L107.5 72.6L110 72.1L112.5 73.6L115 76.9L117.5 81.5L120 86.5L122.5 91.1L125 94.4L127.5 95.9L130 95.4L132.5 92.9L135 88.9L137.5 84.0L140 79.1L142.5 75.1L145 72.6L147.5 72.1L150 73.6L152.5 76.9L155 81.5L157.5 86.5L160 91.1L162.5 94.4L165 95.9L167.5 95.4L170 92.9L172.5 88.9L175 84.0L177.5 79.1L180 75.1L182.5 72.6L185 72.1L187.5 73.6L190 76.9L192.5 81.5L195 86.5L197.5 91.1L200 94.4L202.5 95.9L205 95.4L207.5 92.9L210 88.9L212.5 84.0L215 79.1L217.5 75.1L220 72.6L222.5 72.1L225 73.6L227.5 76.9L230 81.5L232.5 86.5L235 91.1L237.5 94.4L240 95.9L242.5 95.4L245 92.9L247.5 88.9L250 84.0L252.5 79.1L255 75.1L257.5 72.6L260 72.1L262.5 73.6L265 76.9L267.5 81.5L270 86.5L272.5 91.1L275 94.4L277.5 95.9L280 95.4L282.5 92.9L285 88.9L287.5 84.0L290 79.1L292.5 75.1L295 72.6L297.5 72.1L300 73.6L302.5 76.9L305 81.5L307.5 86.5L310 91.1L312.5 94.4L315 95.9L317.5 95.4L320 92.9L322.5 88.9L325 84.0L327.5 79.1L330 75.1L332.5 72.6L335 72.1L337.5 73.6L340 76.9L342.5 81.5L345 86.5L347.5 91.1L350 94.4L352.5 95.9L355 95.4L357.5 92.9L360 88.9L362.5 84.0L365 79.1L367.5 75.1L370 72.6L372.5 72.1L375 73.6L377.5 76.9L380 81.5L382.5 86.5L385 91.1L387.5 94.4L390 95.9L392.5 95.4L395 92.9L397.5 88.9L400 84.0L402.5 79.1L405 75.1L407.5 72.6L410 72.1L412.5 73.6L415 76.9L417.5 81.5L420 86.5L422.5 91.1L425 94.4L427.5 95.9L430 95.4L432.5 92.9L435 88.9L437.5 84.0L440 79.1L442.5 75.1L445 72.6L447.5 72.1L450 73.6L452.5 76.9L455 81.5L457.5 86.5L460 91.1L462.5 94.4L465 95.9L467.5 95.4L470 92.9L472.5 88.9L475 84.0L477.5 79.1L480 75.1L482.5 72.6L485 72.1L487.5 73.6L490 76.9L492.5 81.5L495 86.5L497.5 91.1L500 94.4L502.5 95.9L505 95.4L507.5 92.9L510 88.9L512.5 84.0L515 79.1L517.5 75.1L520 72.6L522.5 72.1L525 73.6L527.5 76.9L530 81.5L532.5 86.5L535 91.1L537.5 94.4L540 95.9L542.5 95.4L545 92.9L547.5 88.9L550 84.0L552.5 79.1L555 75.1L557.5 72.6L560 72.1L562.5 73.6L565 76.9L567.5 81.5L570 86.5L572.5 91.1L575 94.4L577.5 95.9L580 95.4L582.5 92.9L585 88.9L587.5 84.0L590 79.1L592.5 75.1L595 72.6L597.5 72.1L600 73.6L602.5 76.9L605 81.5L607.5 86.5L610 91.1L612.5 94.4L615 95.9L617.5 95.4L620 92.9L622.5 88.9L625 84.0L627.5 79.1L630 75.1L632.5 72.6L635 72.1L637.5 73.6L640 76.9L642.5 81.5L645 86.5L647.5 91.1L650 94.4L652.5 95.9L655 95.4L657.5 92.9L660 88.9L662.5 84.0L665 79.1L667.5 75.1L670 72.6L672.5 72.1L675 73.6L677.5 76.9L680 81.5L682.5 86.5L685 91.1L687.5 94.4L690 95.9L692.5 95.4L695 92.9L697.5 88.9L700 84.0"/>
+                      <text class="dg-text" x="0" y="82" text-anchor="start">반송파</text>
+                      <text class="dg-sub dg-mono" x="0" y="96" text-anchor="start">19kHz</text>
+                      <path class="dg-wave" d="M100 132.0L102.5 126.3L105 121.6L107.5 118.7L110 118.1L112.5 119.9L115 123.8L117.5 129.1L120 134.9L122.5 140.2L125 144.1L127.5 145.9L130 145.3L132.5 142.4L135 137.7L137.5 132.0L140 126.3L142.5 121.6L145 118.7L147.5 118.1L150 119.9L152.5 123.8L155 129.1L157.5 134.9L160 140.2L162.5 144.1L165 145.9L167.5 145.3L170 142.4L172.5 137.7L175 132.0L177.5 137.7L180 142.4L182.5 145.3L185 145.9L187.5 144.1L190 140.2L192.5 134.9L195 129.1L197.5 123.8L200 119.9L202.5 118.1L205 118.7L207.5 121.6L210 126.3L212.5 132.0L215 137.7L217.5 142.4L220 145.3L222.5 145.9L225 144.1L227.5 140.2L230 134.9L232.5 129.1L235 123.8L237.5 119.9L240 118.1L242.5 118.7L245 121.6L247.5 126.3L250 132.0L252.5 126.3L255 121.6L257.5 118.7L260 118.1L262.5 119.9L265 123.8L267.5 129.1L270 134.9L272.5 140.2L275 144.1L277.5 145.9L280 145.3L282.5 142.4L285 137.7L287.5 132.0L290 126.3L292.5 121.6L295 118.7L297.5 118.1L300 119.9L302.5 123.8L305 129.1L307.5 134.9L310 140.2L312.5 144.1L315 145.9L317.5 145.3L320 142.4L322.5 137.7L325 132.0L327.5 126.3L330 121.6L332.5 118.7L335 118.1L337.5 119.9L340 123.8L342.5 129.1L345 134.9L347.5 140.2L350 144.1L352.5 145.9L355 145.3L357.5 142.4L360 137.7L362.5 132.0L365 126.3L367.5 121.6L370 118.7L372.5 118.1L375 119.9L377.5 123.8L380 129.1L382.5 134.9L385 140.2L387.5 144.1L390 145.9L392.5 145.3L395 142.4L397.5 137.7L400 132.0L402.5 126.3L405 121.6L407.5 118.7L410 118.1L412.5 119.9L415 123.8L417.5 129.1L420 134.9L422.5 140.2L425 144.1L427.5 145.9L430 145.3L432.5 142.4L435 137.7L437.5 132.0L440 126.3L442.5 121.6L445 118.7L447.5 118.1L450 119.9L452.5 123.8L455 129.1L457.5 134.9L460 140.2L462.5 144.1L465 145.9L467.5 145.3L470 142.4L472.5 137.7L475 132.0L477.5 126.3L480 121.6L482.5 118.7L485 118.1L487.5 119.9L490 123.8L492.5 129.1L495 134.9L497.5 140.2L500 144.1L502.5 145.9L505 145.3L507.5 142.4L510 137.7L512.5 132.0L515 126.3L517.5 121.6L520 118.7L522.5 118.1L525 119.9L527.5 123.8L530 129.1L532.5 134.9L535 140.2L537.5 144.1L540 145.9L542.5 145.3L545 142.4L547.5 137.7L550 132.0L552.5 126.3L555 121.6L557.5 118.7L560 118.1L562.5 119.9L565 123.8L567.5 129.1L570 134.9L572.5 140.2L575 144.1L577.5 145.9L580 145.3L582.5 142.4L585 137.7L587.5 132.0L590 126.3L592.5 121.6L595 118.7L597.5 118.1L600 119.9L602.5 123.8L605 129.1L607.5 134.9L610 140.2L612.5 144.1L615 145.9L617.5 145.3L620 142.4L622.5 137.7L625 132.0L627.5 137.7L630 142.4L632.5 145.3L635 145.9L637.5 144.1L640 140.2L642.5 134.9L645 129.1L647.5 123.8L650 119.9L652.5 118.1L655 118.7L657.5 121.6L660 126.3L662.5 132.0L665 137.7L667.5 142.4L670 145.3L672.5 145.9L675 144.1L677.5 140.2L680 134.9L682.5 129.1L685 123.8L687.5 119.9L690 118.1L692.5 118.7L695 121.6L697.5 126.3L700 132.0"/>
+                      <text class="dg-text" x="0" y="130" text-anchor="start">BPSK 송신</text>
+                      <text class="dg-sub" x="0" y="144" text-anchor="start">1 → 위상 π</text>
+                      <path class="dg-guide-solid" d="M101 184H174" marker-start="url(#pw-bpsk-arrow)" marker-end="url(#pw-bpsk-arrow)"/>
+                      <text class="dg-sub" x="183" y="188" text-anchor="start">1bit = 1/128초 ≈ 7.8ms · 8bit 프레임 = 62.5ms</text>
+                      <text class="dg-sub dg-faint" x="700" y="188" text-anchor="end">반송파 주기 수는 개념적 표현</text>
+                    </svg>
+                  </div>
+                  <figcaption>BPSK 변조 예시 — 8bit 프레임의 비트가 1인 구간에서 19kHz 반송파의 위상을 180° 뒤집어 보내고, 수신 측은 기준 위상과 비교해 비트를 판정합니다.</figcaption>
+                </figure>
+                <figure class="detail-figure detail-figure--compact">
+                  <div class="detail-figure__canvas">
+                    <svg viewBox="0 0 400 208" role="img" aria-labelledby="pw-band-title">
+                      <title id="pw-band-title">주파수 대역 설계(개념도): 18kHz 아래의 가청 대역은 음성과 생활 소음이 많아 피하고, 18.5–19.5kHz 비가청 대역에서 19kHz 반송파로 BPSK 신호를 보낸다. 차량이 보행자에게 다가오면 도플러 효과로 수신 주파수가 올라가므로, 차속에 연동해 송신 주파수를 미리 편이시켜 수신 주파수를 19kHz 부근에 맞춘다.</title>
+                      <defs><marker id="pw-band-arrow" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto"><path class="dg-head" d="M0 0 8 4 0 8z"/></marker></defs>
+                      <rect class="dg-queue" x="20" y="16" width="144" height="64"/>
+                      <text class="dg-name" x="92" y="44" text-anchor="middle">가청 대역</text>
+                      <text class="dg-sub" x="92" y="60" text-anchor="middle">음성 · 생활 소음</text>
+                      <rect class="dg-shm" x="200.5" y="16.5" width="71" height="63"/>
+                      <line class="dg-guide" x1="236" y1="101" x2="236" y2="174"/>
+                      <text class="dg-name" x="236" y="44" text-anchor="middle">BPSK</text>
+                      <text class="dg-sub" x="236" y="60" text-anchor="middle">송신 대역</text>
+                      <text class="dg-sub" x="330" y="44" text-anchor="middle">비가청 대역</text>
+                      <text class="dg-sub" x="330" y="60" text-anchor="middle">노출 적음</text>
+                      <line class="dg-axis" x1="20" y1="80.5" x2="380" y2="80.5"/>
+                      <line class="dg-axis" x1="20.5" y1="80" x2="20.5" y2="85"/>
+                      <line class="dg-axis" x1="164.5" y1="80" x2="164.5" y2="85"/>
+                      <line class="dg-axis" x1="200.5" y1="80" x2="200.5" y2="85"/>
+                      <line class="dg-axis" x1="272.5" y1="80" x2="272.5" y2="85"/>
+                      <line class="dg-axis" x1="380.5" y1="80" x2="380.5" y2="85"/>
+                      <text class="dg-sub dg-mono" x="20" y="97" text-anchor="middle">16k</text>
+                      <text class="dg-sub dg-mono" x="164" y="97" text-anchor="middle">18k</text>
+                      <text class="dg-sub dg-mono dg-faint" x="200" y="111" text-anchor="middle">18.5k</text>
+                      <text class="dg-name dg-mono" x="236" y="97" text-anchor="middle">19k</text>
+                      <text class="dg-sub dg-mono dg-faint" x="272" y="111" text-anchor="middle">19.5k</text>
+                      <text class="dg-sub dg-mono" x="380" y="97" text-anchor="end">21kHz</text>
+                      <text class="dg-text" x="0" y="138" text-anchor="start">보정 없음</text>
+                      <circle class="dg-dot-tx" cx="236" cy="134" r="4"/>
+                      <path class="dg-flow dg-flow--meta" d="M241 134H298" marker-end="url(#pw-band-arrow)"/>
+                      <circle class="dg-dot-rx" cx="304" cy="134" r="4"/>
+                      <text class="dg-sub" x="314" y="138" text-anchor="start">수신 ↑</text>
+                      <text class="dg-text" x="0" y="168" text-anchor="start">차속 연동 보정</text>
+                      <circle class="dg-dot-tx" cx="176" cy="164" r="4"/>
+                      <path class="dg-flow dg-flow--meta" d="M181 164H226" marker-end="url(#pw-band-arrow)"/>
+                      <circle class="dg-dot-rx" cx="236" cy="164" r="4"/>
+                      <text class="dg-sub" x="246" y="168" text-anchor="start">수신 ≈ 19kHz</text>
+                      <circle class="dg-dot-tx" cx="24" cy="198" r="4"/>
+                      <text class="dg-sub" x="32" y="202" text-anchor="start">송신</text>
+                      <circle class="dg-dot-rx" cx="76" cy="198" r="4"/>
+                      <text class="dg-sub" x="84" y="202" text-anchor="start">수신 (보행자)</text>
+                      <path class="dg-flow dg-flow--meta" d="M168 198H190" marker-end="url(#pw-band-arrow)"/>
+                      <text class="dg-sub" x="196" y="202" text-anchor="start">차량 접근 시 도플러 편이</text>
+                    </svg>
+                  </div>
+                  <figcaption>주파수 대역 설계 (개념도) — 18kHz 이상 비가청 대역의 19kHz를 반송파로 쓰고, 다가오는 차량의 도플러 편이는 차속에 맞춰 송신 주파수를 옮겨 보정합니다.</figcaption>
+                </figure>
+              </div>
               <ul class="detail-list">
                 <li>변 · 복조 — BPSK(Binary Phase Shift Keying)
                   <ul class="detail-list">
@@ -287,7 +386,21 @@
                 </li>
                 <li>도플러 보정 — 보행자와의 상대속도로 생기는 신호 왜곡을 줄이기 위해 차속에 연동해 반송 주파수를 편이</li>
               </ul>
-              <!-- TODO: 이미지 — <img src="../../assets/img/..."> -->
+              <h4 class="detail-label">송수신 테스트</h4>
+              <div class="detail-gallery detail-gallery--wide">
+                <figure>
+                  <img src="../../assets/img/projects/paws/paws_test_1.webp" width="800" height="450" alt="다가오는 차량 앞에서 태블릿 앱으로 경고 신호 수신을 확인하는 모습" loading="lazy">
+                  <figcaption>차량 전방 수신 테스트</figcaption>
+                </figure>
+                <figure>
+                  <img src="../../assets/img/projects/paws/paws_test_2.webp" width="800" height="534" alt="주차장 통로에서 차량이 다가오는 동안 보행자가 태블릿으로 수신 상태를 확인하는 모습" loading="lazy">
+                  <figcaption>주행 중 차량 접근 테스트</figcaption>
+                </figure>
+                <figure>
+                  <img src="../../assets/img/projects/paws/paws_test_3.webp" width="800" height="450" alt="해 질 무렵 버스 차고지에서 차량 전면부 너머로 진행한 송신 테스트" loading="lazy">
+                  <figcaption>야외 개방 공간 테스트</figcaption>
+                </figure>
+              </div>
             </div>
           </details>
           <details class="detail-accordion" id="impl-app">
@@ -300,6 +413,73 @@
               <svg class="detail-accordion__chevron" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 22 6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"/></svg>
             </summary>
             <div class="detail-accordion__body">
+              <p class="detail-text">차량 쪽 송신 모듈은 차속에 맞춰 BPSK 신호를 만들어 스피커로 내보내고, 보행자 쪽 앱은 마이크로 받은 소리에서 신호를 복조해 경고를 띄웁니다.</p>
+              <figure class="detail-figure detail-figure--wide">
+                <div class="detail-figure__canvas">
+                  <svg viewBox="0 0 720 244" role="img" aria-labelledby="pw-sys-title">
+                    <title id="pw-sys-title">PAWS 송수신 구조: 차량용 송신 모듈에서 CAN으로 받은 차속을 ESP32 펌웨어가 받아 반송 주파수 편이량을 정하고 BPSK 신호를 만들어, 오디오 DAC와 스피커로 18.5–19.5kHz 비가청 음파를 내보낸다. 보행자 스마트폰에서는 Kotlin 네이티브 코드가 AudioRecord로 마이크 입력을 받아 FFT, 위상 비교기, Decoder(bitString → 메시지) 순서로 복조하고, Platform Channel로 Flutter UI에 전달해 경고 알림을 띄우고 미디어 재생을 멈춘다.</title>
+                    <defs><marker id="pw-sys-arrow" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path class="dg-head" d="M0 0 8 4 0 8z"/></marker></defs>
+                    <rect class="dg-group" x="0.5" y="0.5" width="719" height="96"/>
+                    <text class="dg-sub dg-faint" x="12" y="16" text-anchor="start">차량용 송신 모듈</text>
+                    <rect class="dg-ext" x="12.5" y="28.5" width="99" height="55"/>
+                    <text class="dg-name" x="62" y="52" text-anchor="middle">차량 CAN</text>
+                    <text class="dg-sub" x="62" y="68" text-anchor="middle">차속 수신</text>
+                    <path class="dg-flow" d="M112 56H148" marker-end="url(#pw-sys-arrow)"/>
+                    <text class="dg-sub" x="130" y="50" text-anchor="middle">차속</text>
+                    <rect class="dg-thread" x="148.5" y="28.5" width="175" height="55"/>
+                    <rect class="dg-accent" x="148" y="28" width="4" height="56"/>
+                    <text class="dg-name" x="162" y="45" text-anchor="start">ESP32 펌웨어</text>
+                    <text class="dg-text" x="162" y="61" text-anchor="start">반송 주파수 편이량 결정</text>
+                    <text class="dg-sub" x="162" y="76" text-anchor="start">BPSK 신호 생성</text>
+                    <path class="dg-flow" d="M324 56H352" marker-end="url(#pw-sys-arrow)"/>
+                    <rect class="dg-thread" x="352.5" y="28.5" width="107" height="55"/>
+                    <rect class="dg-accent" x="352" y="28" width="4" height="56"/>
+                    <text class="dg-name" x="366" y="52" text-anchor="start">오디오 DAC</text>
+                    <text class="dg-sub" x="366" y="68" text-anchor="start">별도 하드웨어</text>
+                    <path class="dg-flow" d="M460 56H488" marker-end="url(#pw-sys-arrow)"/>
+                    <rect class="dg-thread" x="488.5" y="28.5" width="99" height="55"/>
+                    <rect class="dg-accent" x="488" y="28" width="4" height="56"/>
+                    <text class="dg-name" x="502" y="52" text-anchor="start">스피커</text>
+                    <text class="dg-sub" x="502" y="68" text-anchor="start">음파 송출</text>
+                    <path class="dg-wave-ref" d="M598 46A14 14 0 0 1 598 66M604 40A22 22 0 0 1 604 72M610 34A30 30 0 0 1 610 78"/>
+                    <path class="dg-flow dg-flow--meta" d="M659 84V172" marker-end="url(#pw-sys-arrow)"/>
+                    <text class="dg-name" x="650" y="122" text-anchor="end">비가청 음파</text>
+                    <text class="dg-sub dg-mono" x="650" y="138" text-anchor="end">BPSK · 18.5–19.5kHz</text>
+                    <rect class="dg-group" x="0.5" y="146.5" width="719" height="96"/>
+                    <text class="dg-sub dg-faint" x="12" y="162" text-anchor="start">보행자 앱 · Flutter</text>
+                    <text class="dg-sub dg-faint" x="236" y="162" text-anchor="start">Android 네이티브 (Kotlin) · 실시간 신호 처리</text>
+                    <rect class="dg-thread" x="610.5" y="172.5" width="97" height="55"/>
+                    <rect class="dg-accent" x="610" y="172" width="4" height="56"/>
+                    <text class="dg-name" x="624" y="190" text-anchor="start">마이크</text>
+                    <text class="dg-text dg-mono" x="624" y="206" text-anchor="start">AudioRecord</text>
+                    <text class="dg-sub" x="624" y="220" text-anchor="start">버퍼 크기 고정</text>
+                    <path class="dg-flow" d="M610 200H584" marker-end="url(#pw-sys-arrow)"/>
+                    <rect class="dg-thread" x="500.5" y="172.5" width="83" height="55"/>
+                    <rect class="dg-accent" x="500" y="172" width="4" height="56"/>
+                    <text class="dg-name" x="514" y="196" text-anchor="start">FFT</text>
+                    <text class="dg-sub" x="514" y="212" text-anchor="start">19kHz 성분</text>
+                    <path class="dg-flow" d="M500 200H474" marker-end="url(#pw-sys-arrow)"/>
+                    <rect class="dg-thread" x="372.5" y="172.5" width="101" height="55"/>
+                    <rect class="dg-accent" x="372" y="172" width="4" height="56"/>
+                    <text class="dg-name" x="386" y="196" text-anchor="start">위상 비교기</text>
+                    <text class="dg-sub" x="386" y="212" text-anchor="start">0 / π → 비트</text>
+                    <path class="dg-flow" d="M372 200H346" marker-end="url(#pw-sys-arrow)"/>
+                    <rect class="dg-thread" x="236.5" y="172.5" width="109" height="55"/>
+                    <rect class="dg-accent" x="236" y="172" width="4" height="56"/>
+                    <text class="dg-name" x="250" y="190" text-anchor="start">Decoder</text>
+                    <text class="dg-text dg-mono" x="250" y="206" text-anchor="start">bitString</text>
+                    <text class="dg-sub" x="250" y="220" text-anchor="start">→ 경고 메시지</text>
+                    <path class="dg-flow" d="M236 200H172" marker-end="url(#pw-sys-arrow)"/>
+                    <text class="dg-sub dg-mono" x="204" y="190" text-anchor="middle">Platform</text>
+                    <text class="dg-sub dg-mono" x="204" y="216" text-anchor="middle">Channel</text>
+                    <rect class="dg-thread" x="12.5" y="172.5" width="159" height="55"/>
+                    <text class="dg-name" x="24" y="190" text-anchor="start">Flutter UI</text>
+                    <text class="dg-text" x="24" y="206" text-anchor="start">경고 알림 · 상태 표시</text>
+                    <text class="dg-sub" x="24" y="220" text-anchor="start">미디어 재생 중지</text>
+                  </svg>
+                </div>
+                <figcaption>송수신 구조와 데이터 흐름 — 위는 차량용 송신 모듈(ESP32), 아래는 보행자 앱입니다. 신호 처리는 Kotlin 네이티브 코드에서 하고, 디코딩 결과만 Platform Channel로 Flutter UI에 넘깁니다.</figcaption>
+              </figure>
               <h4 class="detail-label">전용 모바일 애플리케이션 (Kotlin + Flutter)</h4>
               <ul class="detail-list">
                 <li>Android 오디오 입력 및 버퍼링 — <code>AudioRecord</code> API로 마이크 입력을 직접 제어하고, 샘플레이트 · 프레임 크기 · 버퍼 크기를 고정해 지연과 프레임 드랍 최소화</li>
@@ -311,7 +491,20 @@
                 <li>CAN 모듈로 받아온 차량 속도를 기반으로 반송 주파수 편이량 결정</li>
                 <li>18,500Hz ≤ f ≤ 19,500Hz 대역 내 BPSK 신호 생성 제어 (별도 오디오 DAC 하드웨어 사용)</li>
               </ul>
-              <!-- TODO: 이미지 — <img src="../../assets/img/..."> -->
+              <div class="detail-gallery detail-gallery--wide">
+                <figure>
+                  <img src="../../assets/img/projects/paws/paws_dev_1.webp" width="800" height="600" alt="노트북 디버그 콘솔에 DecodedBits와 Pattern Detected 로그가 이어지는 화면" loading="lazy">
+                  <figcaption>BPSK 디코딩 디버그 과정</figcaption>
+                </figure>
+                <figure>
+                  <img src="../../assets/img/projects/paws/paws_dev_3.webp" width="800" height="600" alt="차량 콘솔에 설치된 ESP32와 오디오 DAC 보드 등으로 구성된 송신 모듈" loading="lazy">
+                  <figcaption>차량용 모듈</figcaption>
+                </figure>
+                <figure>
+                  <img src="../../assets/img/projects/paws/paws_dev_2.webp" width="800" height="600" alt="시리얼 모니터에 수신한 차량 속도가 계속 출력되는 노트북 화면" loading="lazy">
+                  <figcaption>차속 연동 테스트 과정</figcaption>
+                </figure>
+              </div>
             </div>
           </details>
         </div>

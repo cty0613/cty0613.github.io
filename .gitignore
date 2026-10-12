@@ -3,3 +3,6 @@
 *.zip
 # 히어로 배경 원본 사진 (페이지는 assets/img/hero/ 축소본 사용)
 assets/img/photos/
+assets/img/projects/bus-bom/*.png
+assets/img/projects/hoiks/*.png
+assets/img/projects/paws/*.png
