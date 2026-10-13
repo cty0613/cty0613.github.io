@@ -60,8 +60,11 @@
     var gif = cell.querySelector('img[data-gif]');
     if (!video && !gif) return;
     var still = gif && gif.getAttribute('src');
-    // 호버 순간에 내려받으면 재생이 늦으므로 로드가 끝난 뒤 미리 받아 둠
-    if (gif) window.addEventListener('load', function () { new Image().src = gif.getAttribute('data-gif'); });
+    // 호버 순간에 내려받으면 재생이 늦으므로 페이지 로드가 끝난 뒤 미리 받아 둠 (HTML에서는 preload="none")
+    window.addEventListener('load', function () {
+      if (video) { video.preload = 'auto'; video.load(); }
+      else new Image().src = gif.getAttribute('data-gif');
+    });
 
     var start = function () {
       if (reduceMotion.matches) return;

@@ -643,6 +643,20 @@ body {
   overflow-wrap: anywhere;
 }
 
+/* 프리뷰 섹션의 유튜브 데모 임베드: 16:9, 로드 전에는 레이어 색 배경 */
+.detail-video {
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  background-color: var(--cds-layer-01);
+}
+
+.detail-video iframe {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  border: 0;
+}
+
 /* 개요 표: 라벨(dt) | 내용(dd) 2열, 좁은 화면에서는 세로로 */
 .detail-table {
   border-top: 1px solid var(--cds-border-subtle-01);

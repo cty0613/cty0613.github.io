@@ -84,6 +84,19 @@
     <section class="home-section detail-section">
       <div class="cds--css-grid">
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-3">
+          <h2 class="home-section__title">프리뷰</h2>
+        </div>
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
+          <figure class="detail-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/7-66zhigkUE" title="BusBom 데모 영상" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section detail-section">
+      <div class="cds--css-grid">
+        <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-3">
           <h2 class="home-section__title">개요</h2>
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
@@ -271,7 +284,7 @@
           <h2 class="home-section__title">구현 과정</h2>
         </div>
         <div class="cds--css-grid-column cds--sm:col-span-4 cds--md:col-span-8 cds--lg:col-span-13">
-          <details class="detail-accordion" id="impl-rtsp">
+          <details class="detail-accordion" open id="impl-rtsp">
             <summary class="detail-accordion__head">
               <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/video.svg); mask-image: url(../../assets/img/icons/video.svg)" aria-hidden="true"></span>
               <h3 class="detail-accordion__heading">
@@ -472,7 +485,7 @@
               <p class="detail-text">하드웨어 가속 없이 FHD H.264 ALL-I 스트림에서 OCR까지 수행하며 최소 11fps 확보 (L-GOP · 저비트레이트에서는 최대 15fps). 기존 5–6fps 대비 100% 이상 개선.</p>
             </div>
           </details>
-          <details class="detail-accordion" id="impl-ocr">
+          <details class="detail-accordion" open id="impl-ocr">
             <summary class="detail-accordion__head">
               <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/image--search.svg); mask-image: url(../../assets/img/icons/image--search.svg)" aria-hidden="true"></span>
               <h3 class="detail-accordion__heading">
@@ -617,7 +630,7 @@
               </div>
             </div>
           </details>
-          <details class="detail-accordion" id="impl-cgi">
+          <details class="detail-accordion" open id="impl-cgi">
             <summary class="detail-accordion__head">
               <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/api.svg); mask-image: url(../../assets/img/icons/api.svg)" aria-hidden="true"></span>
               <h3 class="detail-accordion__heading">
@@ -719,7 +732,7 @@
               </figure>
             </div>
           </details>
-          <details class="detail-accordion" id="impl-ipc">
+          <details class="detail-accordion" open id="impl-ipc">
             <summary class="detail-accordion__head">
               <span class="detail-accordion__icon" style="-webkit-mask-image: url(../../assets/img/icons/data--connected.svg); mask-image: url(../../assets/img/icons/data--connected.svg)" aria-hidden="true"></span>
               <h3 class="detail-accordion__heading">

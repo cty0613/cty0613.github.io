@@ -66,19 +66,21 @@
 
           <!-- 곡마다 figure 하나 (최신순, 복제 · 삭제 자유). 셀을 호버/포커스하면 미리보기가 재생되고, 클릭하면 YouTube(href)가 새 탭으로 열린다.
                · 정지 썸네일: assets/img/others/composition/<slug>.webp (1:1, 720px)
-               · 미리보기: img에 data-gif="…/<slug>.anim.webp" (애니메이션 WebP/GIF, 호버 시 src 교체)
-                 또는 img 뒤에 <video class="detail-gallery__preview" src="….mp4" muted loop playsinline preload="none"></video> (무음 짧은 클립)
-                 미리보기를 둘 다 두지 않으면 클릭만 동작 -->
+               · 미리보기: img 뒤에 <video class="detail-gallery__preview" src="…/<slug>.mp4" muted loop playsinline preload="none"> (무음 짧은 H.264 클립, 셀 비율에 맞춰 가운데가 잘림)
+                 GIF/애니메이션 WebP를 쓰려면 img에 data-gif="…" 속성만 추가 (호버 시 src 교체)
+                 미리보기를 두지 않으면 클릭만 동작 -->
           <div class="detail-gallery detail-gallery--square">
             <figure>
               <a class="detail-gallery__link" href="https://youtu.be/kgheAW6IHqQ" target="_blank" rel="noopener" data-preview aria-label="청천난류 (Skyline) — YouTube에서 보기">
-                <img src="../../assets/img/others/composition/skyline.webp" width="720" height="720" alt="" data-gif="../../assets/img/others/composition/skyline.anim.webp" loading="lazy">
+                <img src="../../assets/img/others/composition/skyline.webp" width="720" height="720" alt="" loading="lazy">
+                <video class="detail-gallery__preview" src="../../assets/img/others/composition/skyline.mp4" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
               </a>
               <figcaption><span class="detail-gallery__title">청천난류 (Skyline)</span><span>작사 · 작곡</span><span>정이 · 2026.07</span></figcaption>
             </figure>
             <figure>
               <a class="detail-gallery__link" href="https://youtu.be/hT85AC2o2Ps" target="_blank" rel="noopener" data-preview aria-label="없는 자리 (Residue) — YouTube에서 보기">
-                <img src="../../assets/img/others/composition/residue.webp" width="720" height="720" alt="" data-gif="../../assets/img/others/composition/residue.anim.webp" loading="lazy">
+                <img src="../../assets/img/others/composition/residue.webp" width="720" height="720" alt="" loading="lazy">
+                <video class="detail-gallery__preview" src="../../assets/img/others/composition/residue.mp4" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
               </a>
               <figcaption><span class="detail-gallery__title">없는 자리 (Residue)</span><span>작곡</span><span>정이 · 2026.02</span></figcaption>
             </figure>
